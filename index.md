@@ -1,3 +1,3 @@
-## Welcome to My Notes
+## Notes 
 
 Don't have high expectations.
