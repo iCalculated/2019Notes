@@ -6,8 +6,8 @@ description:
   convenient than sending files whenever I need to share.
 # social links
 github_username: iCalculated
-theme: jekyll-theme-dinky
-# theme: jekyll-theme-slate
+# theme: jekyll-theme-dinky
+theme: minima
 show_excerpts: true # set to false to remove excerpts on the homepage
 markdown: kramdown
 kramdown:
