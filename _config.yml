@@ -1,9 +1,7 @@
 title: 2019 Notes
 author: Sasha Hydrie
 email: hydri001@umn.edu
-description:
-  This was created to host my notes, because it's more
-  convenient than sending files whenever I need to share.
+description: "The place Sasha is dumping his 2019 class notes"
 # social links
 github_username: iCalculated
 # theme: jekyll-theme-dinky
@@ -11,5 +9,5 @@ theme: minima
 show_excerpts: true # set to false to remove excerpts on the homepage
 markdown: kramdown
 kramdown:
-  math_engine: katex
+  math_engine: null
 highlighter: pygments
