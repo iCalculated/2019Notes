@@ -10,4 +10,3 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 markdown: kramdown
 kramdown:
   math_engine: null
-highlighter: pygments
