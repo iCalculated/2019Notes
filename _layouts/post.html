@@ -5,8 +5,6 @@
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="en-us" />
     <title>2019 Notes | {{ page.title }}</title>
-    <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Atom Feed">
-    <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="RSS Feed">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta property="og:site_name" content="2019 Notes" />
     <meta property="og:title" content="{{ page.title }}" />
@@ -21,11 +19,6 @@
   </head>
   <body>
     <div class='wrapper'>
-      <header class="entry-unrelated">
-        {% include header.html %}
-        {% include nav-pages.html %}
-        {% include nav-blog.html %}
-      </header>
       <section itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="entry-title title" itemprop="name">{{ page.title }}</h1>
         <span>on <span itemprop="datePublished" class="published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</span></span>
