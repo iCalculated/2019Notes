@@ -5,7 +5,7 @@ description: "The place Sasha is dumping his 2019 class notes"
 # social links
 github_username: iCalculated
 # theme: jekyll-theme-dinky
-theme: minima
+theme: jekyll-theme-cayman
 show_excerpts: true # set to false to remove excerpts on the homepage
 markdown: kramdown
 kramdown:
