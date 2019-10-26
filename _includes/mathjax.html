@@ -8,6 +8,11 @@
       "a11y/accessibility-menu.js"
     ],
     jax: ["input/TeX", "output/CommonHTML"],
+    tex2jax: {
+    extensions: [
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true
     TeX: {
       extensions: [
         "AMSmath.js",
