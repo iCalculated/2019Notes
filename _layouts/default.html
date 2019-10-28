@@ -2,13 +2,16 @@
 <html lang="{{ site.locale }}">
   
   {% include head.html %}
+  {% include mathjax.html %}
 
   <body>
+    {% include page-header.html %}
 
     <section class="main-content">
-
+      
       {{ content }}
 
+      <!-- {% include page-footer.html %} -->
 
     </section>
 
