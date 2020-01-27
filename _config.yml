@@ -4,7 +4,8 @@ email: hydri001@umn.edu
 description: "The place Sasha is dumping his 2019 class notes"
 # social links
 github_username: iCalculated
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+remote_theme: "mmistakes/minimal-mistakes@4.18.1" 
 show_excerpts: true # set to false to remove excerpts on the homepage
 markdown: kramdown
 baseurl: ""
