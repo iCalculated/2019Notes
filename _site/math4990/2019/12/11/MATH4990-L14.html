@@ -52,15 +52,15 @@
 
 <p>Take a geometric theorem and say if it’s true or false.</p>
 
-<p>“Geometric” pertains to within the scope of Euclidean geometry (thus, you can’t talk about angles beyond relations). <em>However,</em> we are even more checking if statements are true over <script type="math/tex">\mathbb{C}</script> so intuition breaks down (sometimes).</p>
+<p>“Geometric” pertains to within the scope of Euclidean geometry (thus, you can’t talk about angles beyond relations). <em>However,</em> we are even more checking if statements are true over $\mathbb{C}$ so intuition breaks down (sometimes).</p>
 
 <h3 id="example">Example</h3>
 
-<p><strong>(Fake) Thm:</strong> If ABCD is a quadrilateral and N is the intersection of <script type="math/tex">\overline{AC}</script> and <script type="math/tex">\overline{BD}</script> then N is the midpoint of those segments.</p>
+<p><strong>(Fake) Thm:</strong> If ABCD is a quadrilateral and N is the intersection of $\overline{AC}$ and $\overline{BD}$ then N is the midpoint of those segments.</p>
 
-<p>We want <script type="math/tex">\overline{AB}\parallel\overline{CD}</script>, <script type="math/tex">\overline{AD}\parallel\overline{BC}</script> and <script type="math/tex">\{D,N,B\}</script>, <script type="math/tex">\{A,N,C\}</script> colinear implies <script type="math/tex">DN=BN</script> and <script type="math/tex">AN=CN</script>.</p>
+<p>We want $\overline{AB}\parallel\overline{CD}$, $\overline{AD}\parallel\overline{BC}$ and ${D,N,B}$, ${A,N,C}$ colinear implies $DN=BN$ and $AN=CN$.</p>
 
-<p>Give coordinates to all of the points: <script type="math/tex">A=(0,0)</script>, <script type="math/tex">B=(u_1,0)</script>, <script type="math/tex">C=(u_2,u_3)</script>, <script type="math/tex">D=(x_1,x_2)</script> and <script type="math/tex">N=(x_3,x_4)</script>. Notably, <script type="math/tex">u</script> subs indicate indepdent variables which <script type="math/tex">x</script> subs are depdendent, so it functions as a parametrization of the space.</p>
+<p>Give coordinates to all of the points: $A=(0,0)$, $B=(u_1,0)$, $C=(u_2,u_3)$, $D=(x_1,x_2)$ and $N=(x_3,x_4)$. Notably, $u$ subs indicate indepdent variables which $x$ subs are depdendent, so it functions as a parametrization of the space.</p>
 
 <p>(apparently I’m worse at being a computer than I thought, because I instantly put together properties without thinking about them :( ).</p>
 
@@ -69,26 +69,18 @@
 <p><strong>Prop::</strong> The following statements have polynomial translations:</p>
 
 <ul>
-  <li>
-    <script type="math/tex; mode=display">\overline{AB}\parallel\overline{CD}</script>
-  </li>
-  <li>
-    <script type="math/tex; mode=display">\overline{AB}\perp\overline{CD}</script>
-  </li>
+  <li>$\overline{AB}\parallel\overline{CD}$</li>
+  <li>$\overline{AB}\perp\overline{CD}$</li>
   <li>colinearity</li>
-  <li>
-    <script type="math/tex; mode=display">AB=CD</script>
-  </li>
-  <li><script type="math/tex">C</script> lies on a circle at <script type="math/tex">A</script> with radius <script type="math/tex">AB</script></li>
-  <li>
-    <script type="math/tex; mode=display">\angle ABC=\angle DEF</script>
-  </li>
+  <li>$AB=CD$</li>
+  <li>$C$ lies on a circle at $A$ with radius $AB$</li>
+  <li>$\angle ABC=\angle DEF$</li>
 </ul>
 
 <h3 id="actually-proving-a-statement">Actually Proving a Statement</h3>
 
-<p><strong>Def:</strong> A polynomial <script type="math/tex">g\in \mathbb{R}[u_1,\dots,u_n,x_1,\dots,x_m]</script> follows strictly from <script type="math/tex">h_1,\dots,h_s</script> if <script type="math/tex">g\in I(V(h_1,\dots,h_2))</script>. 
-    - Technically needs to be in the root ideal, <script type="math/tex">\sqrt{I}=\{f\vert f^n\in I\}</script>
+<p><strong>Def:</strong> A polynomial $g\in \mathbb{R}[u_1,\dots,u_n,x_1,\dots,x_m]$ follows strictly from $h_1,\dots,h_s$ if $g\in I(V(h_1,\dots,h_2))$. 
+    - Technically needs to be in the root ideal, $\sqrt{I}={f\vert f^n\in I}$
     - TL;DR: All values in the input space have the desired properties.</p>
 
 <h3 id="facts">Facts</h3>
@@ -102,14 +94,14 @@
   <li>We’re not going to see anything that resembles the real world</li>
   <li>I can’t spell things today, so I’m looking at all of my words and thinking they are not spelled right</li>
   <li>There is a theorem that says it does not actually matter</li>
-  <li>Our euclidean geometry is a little bit false, it knows things about <script type="math/tex">\mathbb{C}</script> it shouldn’t know</li>
+  <li>Our euclidean geometry is a little bit false, it knows things about $\mathbb{C}$ it shouldn’t know</li>
   <li>We’re just going to ignore that</li>
   <li>This is not an interesting theorem of new content</li>
   <li>It’s going to feel a bit like shoehorning a tool in, but we’re going to use commutative algebra</li>
   <li>The other statement is false, so it’s a bit hard to prove</li>
   <li>Pictures are deceptive</li>
   <li>Right now we can say “we’re human and know which of these are important”</li>
-  <li>Sorry, I just got confused by which one is <script type="math/tex">y</script> and which one is <script type="math/tex">x</script></li>
+  <li>Sorry, I just got confused by which one is $y$ and which one is $x$</li>
   <li>If your signs get reversed just square everything</li>
   <li><em>[reverses the order of a line segment]</em></li>
   <li>Numbers are not a thing</li>

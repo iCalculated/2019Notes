@@ -56,19 +56,19 @@
 
 <p>(Currently on a tangent about triangles in spherical geometry)</p>
 
-<p><strong>Problem:</strong> A pig weighs <script type="math/tex">w=200</script> pounds and gains 5 pounds per day. Market price is current <script type="math/tex">p=0.65</script> dollars per pound, but falls by <script type="math/tex">0.01</script> dollar per pound per day. When should the pig be sold?</p>
+<p><strong>Problem:</strong> A pig weighs $w=200$ pounds and gains 5 pounds per day. Market price is current $p=0.65$ dollars per pound, but falls by $0.01$ dollar per pound per day. When should the pig be sold?</p>
 
 <p>(this is the example from chapter 1 of the textbook)</p>
 
-<p>The problem is discrete, so differentiating is fake but we’ll do so anyway. In addition, let <script type="math/tex">t</script> equal the time in days. We can let <script type="math/tex">R</script> be revenue and <script type="math/tex">C</script> be cost of upkeep, which can be modeled as</p>
+<p>The problem is discrete, so differentiating is fake but we’ll do so anyway. In addition, let $t$ equal the time in days. We can let $R$ be revenue and $C$ be cost of upkeep, which can be modeled as</p>
 
-<script type="math/tex; mode=display">R=(w+5t)(p-0.01t)\text{ and } C = 0.45t.</script>
+<p>$R=(w+5t)(p-0.01t)\text{ and } C = 0.45t.$</p>
 
-<p>We then have a profit <script type="math/tex">P=R-C</script>, written out as</p>
+<p>We then have a profit $P=R-C$, written out as</p>
 
-<script type="math/tex; mode=display">P=(w+5t)(p-0.01t)-0.45t.</script>
+<p>$P=(w+5t)(p-0.01t)-0.45t.$</p>
 
-<p>Now we differentiate, find that the maximum is at <script type="math/tex">t=7</script> and call it a day. (If we want to be precise we’re taking the derivative of <script type="math/tex">P=f(x)</script> such that <script type="math/tex">x=t</script>)</p>
+<p>Now we differentiate, find that the maximum is at $t=7$ and call it a day. (If we want to be precise we’re taking the derivative of $P=f(x)$ such that $x=t$)</p>
 
 <p>Oh wait, we’re making 1400 assumptions!</p>
 
@@ -81,7 +81,7 @@
 
 <p>(I was trying to take notes before we actually got to the topic, but we ran out of time. For now, just being able to take the derivative suffices and you may tell your 6-year-old supervisor that the pig must be sold after 8 days taking all assumptions as law.)</p>
 
-<p>The problem can also be solved discretely, every morning determine if the pig should be sold today or reconsidered tomorrow. Pretty much, just write <script type="math/tex">R=wr-0.45t\implies \dfrac{dR}{dt}=w'r + wr'-0.45</script> which is positive when <script type="math/tex">w'r+wr'>0.45</script>. Pretty much means that the pig gains more value than it loses.</p>
+<p>The problem can also be solved discretely, every morning determine if the pig should be sold today or reconsidered tomorrow. Pretty much, just write $R=wr-0.45t\implies \dfrac{dR}{dt}=w’r + wr’-0.45$ which is positive when $w’r+wr’&gt;0.45$. Pretty much means that the pig gains more value than it loses.</p>
 
 <p>(did a multivariable example in the last few minutes, but it was trivial and boring. Casually wish I’d held onto MATH5445 but I think that would have killed me.)</p>
 

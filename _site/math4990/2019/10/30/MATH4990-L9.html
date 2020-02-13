@@ -50,7 +50,7 @@
   <li><em>[18th of a second later]</em> This is going to be a vague proof</li>
   <li>Pi does not equal pi always</li>
   <li>There are things called restrictions, but they are not relevant here</li>
-  <li><em>[I try to repeatedly Detexify <script type="math/tex">\mapsto</script> and keep getting longmapsto]</em></li>
+  <li><em>[I try to repeatedly Detexify $\mapsto$ and keep getting longmapsto]</em></li>
   <li>Apparently I’m confused by pictures</li>
   <li>I’m terrible with pictures</li>
   <li>I get to write down one of the messiest theorems in this book</li>
@@ -70,37 +70,37 @@
 <h3 id="elimination-ideal">Elimination Ideal</h3>
 
 <ul>
-  <li><strong>Def’n:</strong> Let <script type="math/tex">I\subseteq k[x_1,\dots,x_n]</script> be an ideal, then 
-<script type="math/tex">I_k := I \cap k[x_{k+1},\dots,k_n]</script> 
-for <script type="math/tex">0\leq k \leq n</script> is the <script type="math/tex">k</script>th elimination ideal.</li>
-  <li><strong>Elimination Thm:</strong> If <script type="math/tex">G</script> is a lex gb with <script type="math/tex">x_1>\dots>x_n</script> then <script type="math/tex">G_k:=G\cap k[x_{k+1},\dots,x_n]</script> is a lex gb for <script type="math/tex">I_k</script>.</li>
-  <li><strong>Projection map:</strong> <script type="math/tex">\pi_k: \mathbb{A}^n\to\mathbb{A}^{n-k}</script>, maps a point <script type="math/tex">(a_1,\dots,a_n)\mapsto (a_{k_1},\dots,a_n)</script>.</li>
+  <li><strong>Def’n:</strong> Let $I\subseteq k[x_1,\dots,x_n]$ be an ideal, then 
+$I_k := I \cap k[x_{k+1},\dots,k_n]$ 
+for $0\leq k \leq n$ is the $k$th elimination ideal.</li>
+  <li><strong>Elimination Thm:</strong> If $G$ is a lex gb with $x_1&gt;\dots&gt;x_n$ then $G_k:=G\cap k[x_{k+1},\dots,x_n]$ is a lex gb for $I_k$.</li>
+  <li><strong>Projection map:</strong> $\pi_k: \mathbb{A}^n\to\mathbb{A}^{n-k}$, maps a point $(a_1,\dots,a_n)\mapsto (a_{k_1},\dots,a_n)$.</li>
 </ul>
 
 <h3 id="closure">Closure</h3>
 
 <ul>
-  <li><strong>Closure Thm:</strong> Let <script type="math/tex">I\subseteq k[x_1,\dots,x_n]</script> and <script type="math/tex">V=V(I)</script> then <script type="math/tex">V(I_k)</script> is the smallest variety containing <script type="math/tex">\pi_k(V)</script> and if <script type="math/tex">V\neq 0</script> there exists <script type="math/tex">W\subseteq V(I_k)</script> such that <script type="math/tex">V(I_k) - W\subseteq \pi_k(V)</script>.</li>
-  <li>Note: The smallest variety in <script type="math/tex">\mathbb{A}^1</script> containing <script type="math/tex">\mathbb{Z}</script> is <script type="math/tex">\mathbb{A^1}</script>.</li>
+  <li><strong>Closure Thm:</strong> Let $I\subseteq k[x_1,\dots,x_n]$ and $V=V(I)$ then $V(I_k)$ is the smallest variety containing $\pi_k(V)$ and if $V\neq 0$ there exists $W\subseteq V(I_k)$ such that $V(I_k) - W\subseteq \pi_k(V)$.</li>
+  <li>Note: The smallest variety in $\mathbb{A}^1$ containing $\mathbb{Z}$ is $\mathbb{A^1}$.</li>
 </ul>
 
 <h3 id="messy-thm">Messy Thm</h3>
 
 <ul>
-  <li><strong>Partial Solution:</strong> <script type="math/tex">(a_2,\dots,a_n)\in V(I_1)</script>
+  <li><strong>Partial Solution:</strong> $(a_2,\dots,a_n)\in V(I_1)$
     <ul>
-      <li>Pretty much means there exists a (hyper)point within the hypersurface defined by <script type="math/tex">\pi_k</script></li>
+      <li>Pretty much means there exists a (hyper)point within the hypersurface defined by $\pi_k$</li>
     </ul>
   </li>
-  <li><strong>Extension Thm:</strong> Let <script type="math/tex">I=\langle f_1,\dots f_s\rangle \subseteq \mathbb{C}[x_1,\dots,x_n]</script> let <script type="math/tex">I_1</script> be the first elimination ideal for all <script type="math/tex">1\leq i \leq S</script> write 
-<script type="math/tex">f_i = g_c(x_2,\dots,x_n)x_1^{N_i} + \dots</script> 
-followed by the terms with lower degree on <script type="math/tex">x_1</script>, with <script type="math/tex">g_c \neq 0</script> and <script type="math/tex">N_i \geq 0</script>. Suppose <script type="math/tex">(a_2,\dots,a_n)</script> is a partial solution if <script type="math/tex">(a_2,\dots,a_n)\notin V(g_1,\dots,g_s)</script> <script type="math/tex">\exists a_1</script> such that <script type="math/tex">(a_1,\dots,a_n)\in V(I)</script>.
+  <li><strong>Extension Thm:</strong> Let $I=\langle f_1,\dots f_s\rangle \subseteq \mathbb{C}[x_1,\dots,x_n]$ let $I_1$ be the first elimination ideal for all $1\leq i \leq S$ write 
+$f_i = g_c(x_2,\dots,x_n)x_1^{N_i} + \dots$ 
+followed by the terms with lower degree on $x_1$, with $g_c \neq 0$ and $N_i \geq 0$. Suppose $(a_2,\dots,a_n)$ is a partial solution if $(a_2,\dots,a_n)\notin V(g_1,\dots,g_s)$ $\exists a_1$ such that $(a_1,\dots,a_n)\in V(I)$.
     <ul>
       <li>Working understanding: Terms can be grouped and then extended to <em>somehow</em> derive solutions through extension</li>
     </ul>
   </li>
   <li>Proof left to those who actually read the textbook <del>beyond the sections about robotics.</del></li>
-  <li>Example: <script type="math/tex">f_1=xy-1\implies f_1 = (y)x^1+\dots</script> and <script type="math/tex">f_2=xz-1\implies f_2=(z)x+\dots</script> in least dramatic terms. This tells us that if <script type="math/tex">(a_2,a_3)\in V(y,z) =\{0,0\}</script> then there exists an <script type="math/tex">a_1</script> such that <script type="math/tex">(a_1,a_2,a_3)\in V</script>.</li>
+  <li>Example: $f_1=xy-1\implies f_1 = (y)x^1+\dots$ and $f_2=xz-1\implies f_2=(z)x+\dots$ in least dramatic terms. This tells us that if $(a_2,a_3)\in V(y,z) ={0,0}$ then there exists an $a_1$ such that $(a_1,a_2,a_3)\in V$.</li>
 </ul>
 
 

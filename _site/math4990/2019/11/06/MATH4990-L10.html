@@ -54,7 +54,7 @@
   <li>This is one of the problems with math.</li>
   <li>I’m being slightly less detailed than I would be on paper.</li>
   <li><em>[on the topic of \not]</em> Sometimes it puts the line in a stupid place</li>
-  <li><em>[turns out \not\mid (<script type="math/tex">\not\mid</script>) looks terrible but \nmid (<script type="math/tex">\nmid</script>) is a command]</em></li>
+  <li><em>[turns out \not\mid ($\not\mid$) looks terrible but \nmid ($\nmid$) is a command]</em></li>
   <li><em>[trying to stop talking about \not when he himself started it]</em> We’re on a terrible tangent though</li>
   <li><em>[still on that tangent}</em> I’m not saying all mac users are idiots…</li>
   <li>As long as your not circular it’s fine</li>
@@ -88,18 +88,16 @@
   <li>7-1:
     <ul>
       <li>Same sets and monomial → unique “minimal” generating set.</li>
-      <li><script type="math/tex">LT(G)</script> and <script type="math/tex">LT(\tilde{G})</script> are minimal generating sets, suppose redundancy then check divisibility.</li>
+      <li>$LT(G)$ and $LT(\tilde{G})$ are minimal generating sets, suppose redundancy then check divisibility.</li>
     </ul>
   </li>
   <li>9-3:
     <ul>
       <li>More struggle than expected</li>
-      <li>Pretty much <script type="math/tex">V(I_2)</script> compared to <script type="math/tex">\pi_2(V(I))</script></li>
+      <li>Pretty much $V(I_2)$ compared to $\pi_2(V(I))$</li>
       <li>First exclusion is the empty set because of the constant</li>
-      <li>
-        <script type="math/tex; mode=display">I_1=\langle v^2z-x,vx-y, vyz-x^3, x^4-y^2z\rangle</script>
-      </li>
-      <li>Extension Thm makes us think about about <script type="math/tex">V(z,x,yz,x^4-y^2z)</script>, thus $z=x=0$ and $y$ can be whatever.</li>
+      <li>$I_1=\langle v^2z-x,vx-y, vyz-x^3, x^4-y^2z\rangle$</li>
+      <li>Extension Thm makes us think about about $V(z,x,yz,x^4-y^2z)$, thus $z=x=0$ and $y$ can be whatever.</li>
     </ul>
   </li>
 </ul>
@@ -109,65 +107,57 @@
 <h3 id="extension-thm-2">Extension Thm 2</h3>
 
 <ul>
-  <li><strong>Extension Thm:</strong> Let <script type="math/tex">I=\langle f_1,\dots f_s\rangle \subseteq \mathbb{C}[x_1,\dots,x_n]</script> let <script type="math/tex">I_1</script> be the first elimination ideal for all <script type="math/tex">1\leq i \leq S</script> write 
-<script type="math/tex">f_i = g_c(x_2,\dots,x_n)x_1^{N_i} + \dots</script> 
-followed by the terms with lower degree on <script type="math/tex">x_1</script>, with <script type="math/tex">g_c \neq 0</script> and <script type="math/tex">N_i \geq 0</script>. Suppose <script type="math/tex">(a_2,\dots,a_n)</script> is a partial solution if <script type="math/tex">(a_2,\dots,a_n)\notin V(g_1,\dots,g_s)</script> <script type="math/tex">\exists a_1</script> such that <script type="math/tex">(a_1,\dots,a_n)\in V(I)</script>.
+  <li><strong>Extension Thm:</strong> Let $I=\langle f_1,\dots f_s\rangle \subseteq \mathbb{C}[x_1,\dots,x_n]$ let $I_1$ be the first elimination ideal for all $1\leq i \leq S$ write 
+$f_i = g_c(x_2,\dots,x_n)x_1^{N_i} + \dots$ 
+followed by the terms with lower degree on $x_1$, with $g_c \neq 0$ and $N_i \geq 0$. Suppose $(a_2,\dots,a_n)$ is a partial solution if $(a_2,\dots,a_n)\notin V(g_1,\dots,g_s)$ $\exists a_1$ such that $(a_1,\dots,a_n)\in V(I)$.
     <ul>
       <li>Working understanding: Terms can be grouped and then extraneous ones are derived from $g$ terms.</li>
       <li>(I did not just copy from last week)</li>
     </ul>
   </li>
-  <li>Geometrically, <script type="math/tex">\pi_1(V(I))\subseteq V(I_1)</script> and <script type="math/tex">V(I_1) - \pi_1(V(I)) \subseteq V(g_1,\dots,g_s)</script></li>
+  <li>Geometrically, $\pi_1(V(I))\subseteq V(I_1)$ and $V(I_1) - \pi_1(V(I)) \subseteq V(g_1,\dots,g_s)$</li>
 </ul>
 
 <h3 id="resultants">Resultants</h3>
 
 <ul>
-  <li><strong>Sylvester matrix:</strong> For <script type="math/tex">f,g\in k[x]</script>, <script type="math/tex">f=a_0x^n+a_1x^{n-1}+\dots+a_n</script> and <script type="math/tex">g=b_0x^{m}+b_1x^{m-1}+\dots+b_m</script>, is the matrix</li>
+  <li><strong>Sylvester matrix:</strong> For $f,g\in k[x]$, $f=a_0x^n+a_1x^{n-1}+\dots+a_n$ and $g=b_0x^{m}+b_1x^{m-1}+\dots+b_m$, is the matrix</li>
 </ul>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\text{Syl}(f,g,x)=\underbrace{\begin{mathbfatrix}
-a_0 & & & & b_0 & & & \\
-a_1 & a_0 & & & b_1 & b_0 & & \\
-a_2 & a_1 &  \ddots & & b_2 & b_1 & \ddots & \\
-\vdots & & \ddots & a_0 & \vdots & & \ddots & b_0 \\
-& \vdots & & a_1 & &\vdots& & b_1 \\
-a_n & & & & b_m & & & \\
-& a_n & & \vdots & & b_m & & \vdots \\
-& & \ddots & & & & \ddots & \\
-& & & a_n & & & b_m\
-\end{mathbfatrix}}_{m+n} %]]></script>
+<p>$\text{Syl}(f,g,x)=\underbrace{\begin{mathbfatrix}
+a_0 &amp; &amp; &amp; &amp; b_0 &amp; &amp; &amp; <br />
+a_1 &amp; a_0 &amp; &amp; &amp; b_1 &amp; b_0 &amp; &amp; <br />
+a_2 &amp; a_1 &amp;  \ddots &amp; &amp; b_2 &amp; b_1 &amp; \ddots &amp; <br />
+\vdots &amp; &amp; \ddots &amp; a_0 &amp; \vdots &amp; &amp; \ddots &amp; b_0 <br />
+&amp; \vdots &amp; &amp; a_1 &amp; &amp;\vdots&amp; &amp; b_1 <br />
+a_n &amp; &amp; &amp; &amp; b_m &amp; &amp; &amp; <br />
+&amp; a_n &amp; &amp; \vdots &amp; &amp; b_m &amp; &amp; \vdots <br />
+&amp; &amp; \ddots &amp; &amp; &amp; &amp; \ddots &amp; <br />
+&amp; &amp; &amp; a_n &amp; &amp; &amp; b_m\
+\end{mathbfatrix}}_{m+n}$</p>
 
 <ul>
-  <li><strong>Resultant:</strong> <script type="math/tex">\text{Res}(f,g,x)=\text{det}(\text{Syl}(f,g,x))</script></li>
-  <li><strong>Thm:</strong> If <script type="math/tex">f,g</script> have a common root then the resultant is zero.
+  <li><strong>Resultant:</strong> $\text{Res}(f,g,x)=\text{det}(\text{Syl}(f,g,x))$</li>
+  <li><strong>Thm:</strong> If $f,g$ have a common root then the resultant is zero.
     <ul>
       <li>Follows from non-zero kernel:</li>
-      <li>If <script type="math/tex">x</script> is a common root, then <script type="math/tex">(a^{n+m-1},\dots,1)\cdot \text{Syl}(f,y,x)=\vec{0}\implies \text{Res}(f,g,x)=0</script></li>
+      <li>If $x$ is a common root, then $(a^{n+m-1},\dots,1)\cdot \text{Syl}(f,y,x)=\vec{0}\implies \text{Res}(f,g,x)=0$</li>
       <li>Stronger iff theorem is also true.</li>
     </ul>
   </li>
-  <li><strong>Prop:</strong> Let <script type="math/tex">f,g\in k[x]</script> of degrees <script type="math/tex">n,m>0</script>, then <script type="math/tex">f,g</script> have a common factor iff there exist polynomials <script type="math/tex">A,B\in k[x]</script> such that:
+  <li><strong>Prop:</strong> Let $f,g\in k[x]$ of degrees $n,m&gt;0$, then $f,g$ have a common factor iff there exist polynomials $A,B\in k[x]$ such that:
     <ul>
-      <li>
-        <script type="math/tex; mode=display">A,B\neq 0</script>
-      </li>
-      <li>
-        <script type="math/tex; mode=display">% <![CDATA[
-\text{deg}A < m,\ \text{deg}B< n %]]></script>
-      </li>
-      <li>
-        <script type="math/tex; mode=display">Af+Bg=0</script>
-      </li>
+      <li>$A,B\neq 0$</li>
+      <li>$\text{deg}A &lt; m,\ \text{deg}B&lt; n$</li>
+      <li>$Af+Bg=0$</li>
     </ul>
   </li>
-  <li><script type="math/tex">\text{Res}(f,f',x)=0</script> iff <script type="math/tex">f</script> has a repeated root.
+  <li>$\text{Res}(f,f’,x)=0$ iff $f$ has a repeated root.
     <ul>
-      <li><script type="math/tex">b^2-4ac</script> is the discriminant of a two-by-two matrix</li>
+      <li>$b^2-4ac$ is the discriminant of a two-by-two matrix</li>
     </ul>
   </li>
-  <li>Discriminant of any polynomial is <script type="math/tex">\dfrac{(-1)^{n-1}}{a_0}\text{Res}(f,f',x)</script></li>
+  <li>Discriminant of any polynomial is $\dfrac{(-1)^{n-1}}{a_0}\text{Res}(f,f’,x)$</li>
 </ul>
 
 

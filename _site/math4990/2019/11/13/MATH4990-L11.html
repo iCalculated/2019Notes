@@ -47,7 +47,7 @@
   <li>It’s a bit of a black magic thing</li>
   <li>It’s more theoretically useful</li>
   <li>This will probably never matter for any of you again, but it’s a fun little thing</li>
-  <li><script type="math/tex">f</script> is irreducible if it’s not reducible</li>
+  <li>$f$ is irreducible if it’s not reducible</li>
   <li>Depending on the context they make not look very constant</li>
   <li>This make you happier depending on your inclination towards statements with lots of nots in them</li>
   <li>The proof is “obvious” <em>puts quotes around “obvious” on the board</em></li>
@@ -93,16 +93,16 @@
 <h3 id="unique-factorization">Unique factorization</h3>
 
 <ul>
-  <li><strong>Irreducible:</strong> For <script type="math/tex">f\in k[x_1,\dots,x_n]</script>, <script type="math/tex">f</script> is irreducible if it’s <del>not reducible</del> not constant and is not the product of two non-constant polyonmials.</li>
+  <li><strong>Irreducible:</strong> For $f\in k[x_1,\dots,x_n]$, $f$ is irreducible if it’s <del>not reducible</del> not constant and is not the product of two non-constant polyonmials.</li>
   <li>Every non-constant polyonmial is a product of irredicibles
     <ul>
       <li>Proof: Inductively decompose into irreducibles (termination is difficult)</li>
     </ul>
   </li>
-  <li>If <script type="math/tex">f</script> is irreducible and <script type="math/tex">f\vert g\cdot h</script> then <script type="math/tex">f\vert g</script> or <script type="math/tex">f\vert h</script>.
+  <li>If $f$ is irreducible and $f\vert g\cdot h$ then $f\vert g$ or $f\vert h$.
     <ul>
-      <li><script type="math/tex">(1+\sqrt{-5})(1-\sqrt{-5})=6=3\cdot 2</script>, different irreducible domain</li>
-      <li>Notably, <script type="math/tex">k[x_1,\dots,x_n]</script> is a UFD</li>
+      <li>$(1+\sqrt{-5})(1-\sqrt{-5})=6=3\cdot 2$, different irreducible domain</li>
+      <li>Notably, $k[x_1,\dots,x_n]$ is a UFD</li>
     </ul>
   </li>
   <li>A field has division, while a domain does not necessarily</li>
@@ -111,46 +111,43 @@
 <h3 id="multi-variable-resultants">Multi-variable Resultants</h3>
 
 <ul>
-  <li><strong>Def’n:</strong>  <script type="math/tex">f,g\in k[x_2,\dots,x_n][x_1]</script>, <script type="math/tex">f=a_0x_1^l+\dots</script> and <script type="math/tex">g=b_0x_1^m+\dots</script> st <script type="math/tex">a_0,\dots,a_l,b_0,\dots,b_n\in k[x_2,\dots,x_n]</script>, determinant of the Sylvester matrix wrt <script type="math/tex">x_1</script>. Thus, resultant is a polynomial <script type="math/tex">r\in k[x_2,\dots,x_n]</script></li>
-  <li><strong>Prop:</strong> For <script type="math/tex">f,g\in k[x_1,\dots,x_n]</script> with positive degree in <script type="math/tex">x_1</script>:
+  <li><strong>Def’n:</strong>  $f,g\in k[x_2,\dots,x_n][x_1]$, $f=a_0x_1^l+\dots$ and $g=b_0x_1^m+\dots$ st $a_0,\dots,a_l,b_0,\dots,b_n\in k[x_2,\dots,x_n]$, determinant of the Sylvester matrix wrt $x_1$. Thus, resultant is a polynomial $r\in k[x_2,\dots,x_n]$</li>
+  <li><strong>Prop:</strong> For $f,g\in k[x_1,\dots,x_n]$ with positive degree in $x_1$:
     <ol>
-      <li>
-        <script type="math/tex; mode=display">Res(f,g,x_1)\in\langle f,g \rangle \cap k[x_2,\dots,x_n]</script>
-      </li>
-      <li><script type="math/tex">Res(f,g,x_1)=0</script> iff <script type="math/tex">f</script> and <script type="math/tex">g</script> have a common factor with positive <script type="math/tex">x_1</script> degree
+      <li>$Res(f,g,x_1)\in\langle f,g \rangle \cap k[x_2,\dots,x_n]$</li>
+      <li>$Res(f,g,x_1)=0$ iff $f$ and $g$ have a common factor with positive $x_1$ degree
         <ul>
-          <li>Proof: 1. <script type="math/tex">\exists A,B \in k[x_2,\dots,x_n]\mid Af+Bg\in \langle f, g\rangle=Res(f,g,x_1)</script> 2. <script type="math/tex">k(x_2,\dots,x_n)[x_1]</script> such that rounded parantheses indicate the field of rational functions (providing access to division). Thus, $\left{\dfrac{f}{g}\vert f,g\in k[x_2,\dots,x_n]\right}</li>
+          <li>Proof: 1. $\exists A,B \in k[x_2,\dots,x_n]\mid Af+Bg\in \langle f, g\rangle=Res(f,g,x_1)$ 2. $k(x_2,\dots,x_n)[x_1]$ such that rounded parantheses indicate the field of rational functions (providing access to division). Thus, $\left{\dfrac{f}{g}\vert f,g\in k[x_2,\dots,x_n]\right}</li>
         </ul>
       </li>
     </ol>
   </li>
-  <li>Let <script type="math/tex">f,g\in k[x_1,\dots,x_n]</script> of degrees <script type="math/tex">l</script>, <script type="math/tex">m</script>, let <script type="math/tex">c\in\mathbb{C}^{n-1}</script> then if <script type="math/tex">f(x_1,c)</script> has degree <script type="math/tex">l</script> and <script type="math/tex">g(x_1,c)</script> has degree <script type="math/tex">% <![CDATA[
-p< m %]]></script>. Then $Res(f,g,x_1)(c)=(a_0(c))^{l-p}\cdot Res(f(x,c),g(x,c),x_1)</li>
+  <li>Let $f,g\in k[x_1,\dots,x_n]$ of degrees $l$, $m$, let $c\in\mathbb{C}^{n-1}$ then if $f(x_1,c)$ has degree $l$ and $g(x_1,c)$ has degree $p&lt; m$. Then $Res(f,g,x_1)(c)=(a_0(c))^{l-p}\cdot Res(f(x,c),g(x,c),x_1)</li>
 </ul>
 
 <h3 id="extension-thm-proof">Extension Thm Proof</h3>
 
-<p>Suppose <script type="math/tex">(c_2,\dots,c_n)\in V(I_1)</script> and <script type="math/tex">(c_2,\dots,c_n)\notin V(g_1,\dots,g_s).</script> Let <script type="math/tex">J=\left\{(x_1,c)\vert f\in I\right\}.</script> Claim <script type="math/tex">J</script> is an ideal in <script type="math/tex">k[x_1]</script> and <script type="math/tex">J\subseteq k[x]</script> so <script type="math/tex">J</script> is a principle ideal such that <script type="math/tex">J=\langle u(x_1) \rangle.</script></p>
+<p>Suppose $(c_2,\dots,c_n)\in V(I_1)$ and $(c_2,\dots,c_n)\notin V(g_1,\dots,g_s).$ Let $J=\left{(x_1,c)\vert f\in I\right}.$ Claim $J$ is an ideal in $k[x_1]$ and $J\subseteq k[x]$ so $J$ is a principle ideal such that $J=\langle u(x_1) \rangle.$</p>
 
-<p>Case 1, <script type="math/tex">u</script> is not constant:</p>
+<p>Case 1, $u$ is not constant:</p>
 
-<p><script type="math/tex">V(J)\neq\emptyset</script> such that for <script type="math/tex">c_1\in V(J))</script> we have <script type="math/tex">f(c_1,c)=0\forall f \in I (c_1,c)\in V(I).</script></p>
+<p>$V(J)\neq\emptyset$ such that for $c_1\in V(J))$ we have $f(c_1,c)=0\forall f \in I (c_1,c)\in V(I).$</p>
 
-<p>Case 2, <script type="math/tex">u</script> is a constant:</p>
+<p>Case 2, $u$ is a constant:</p>
 
-<script type="math/tex; mode=display">u\in J=\left\{ f(x,c)\vert f\in I\right\}\exists f\in I\mid f(x,c)=u(x).</script>
+<p>$u\in J=\left{ f(x,c)\vert f\in I\right}\exists f\in I\mid f(x,c)=u(x).$</p>
 
 <p>From</p>
 
-<script type="math/tex; mode=display">Res(f_i,f,x)(c)=(g_i(c))^{N_i-\text{degree}(u)=0}\cdot Res(f_i(x,c),f(x,c),x)=(g_i(c))^{N_i}u^{N_i}\neq 0</script>
+<p>$Res(f_i,f,x)(c)=(g_i(c))^{N_i-\text{degree}(u)=0}\cdot Res(f_i(x,c),f(x,c),x)=(g_i(c))^{N_i}u^{N_i}\neq 0$</p>
 
 <p>we have</p>
 
-<script type="math/tex; mode=display">c\in V(I_1)</script>
+<p>$c\in V(I_1)$</p>
 
 <p>and</p>
 
-<script type="math/tex; mode=display">Res(f_i,f,x)\in \langle f_i,f\rangle\cap k[x_1,\dots,x_n]\subseteq I \cap k[x_2,\dots,x_n]</script>
+<p>$Res(f_i,f,x)\in \langle f_i,f\rangle\cap k[x_1,\dots,x_n]\subseteq I \cap k[x_2,\dots,x_n]$</p>
 
 <p>which is a contradiction so the case never occurs.</p>
 
