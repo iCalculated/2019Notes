@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>CSCI2021 Lecture 4: Semantics</h2>
+<p class="meta">29 Jan 2020</p>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>CSE fair on Feb 4th, 1200-1700 Mariucci</li>
+  <li>Emacs lecture on Feb 4th, 1830-2000 Keller 3-180.
+    <ul>
+      <li>During bots but incredibly tempting…</li>
+      <li>Kauffman is an emacs fanatic</li>
+    </ul>
+  </li>
+  <li>Kauffman’s user is phaedrus</li>
+</ul>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>HW2</li>
+  <li>Project 1 up soon</li>
+  <li>Read Bryant Ch1</li>
+  <li>Know <em>all of</em> C</li>
+</ul>
+
+<h3 id="void-pointers">Void Pointers</h3>
+
+<p>“C is like a sharp knife, you should be able to cut yourself.”</p>
+
+<p>Void points are bad if abused, but they exist for good reason.</p>
+
+<p>In all practical systems pointers are of consistent size, always 8 bytes. (64 bit systems need 8 bytes to store a memory address.)</p>
+
+<h3 id="types">Types</h3>
+
+<p>Oh wait, there are more!</p>
+
+<p>Many more specific types exist, such as unsigned types or fixed width variants. Fixed types are used for future-proofing since standards sometimes change.</p>
+
+<h3 id="pointers-versus-arrays">Pointers versus Arrays</h3>
+
+<p>Both refer to memory locations, which for pointers is changeable but for arrays is fixed. We can pretend arrays are pointers and vice versa when passing into functions, which is <em>absolutely terrifying</em>, but in a good way. Arithmetic can be done to pointers and they can be pointed at new places, but an array is a matter of compiler allocation.</p>
+
+<p>Brace notation jumps ahead based on the size of the pointer type. Can also shift pointers with arithmetic operations. Notably, void pointer arithmetic will make the compiler angry, though you can cast it for arithmetic.</p>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

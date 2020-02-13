@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>MATH4990 Lecture 3: Division Algorithm</h2>
+<p class="meta">18 Sep 2019</p>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>Lowest homework dropped</li>
+</ul>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>Hommework lmao</li>
+</ul>
+
+<h3 id="facts">Facts</h3>
+
+<ul>
+  <li>I suspect everyone will be fine with that. Unless, if, you know, something happens.</li>
+  <li>If you say 1-1=2… <em>long pause</em> well it’s stupid <em>longer pause</em> but I don’t care.</li>
+  <li>Let’s see how this goes with a very tired me</li>
+  <li>I meant to take -6</li>
+  <li>I don’t wan to say it because it won’t be useful</li>
+  <li>I’m going to try and answer three questions. Well, maybe two, I don’t know.</li>
+  <li>[Question] 2 is just a better version of 1</li>
+  <li>They’re both true so it’s hard to get the right one</li>
+  <li>We’re not really going to see this again</li>
+</ul>
+
+<h3 id="homework-notes">Homework Notes</h3>
+
+<ul>
+  <li>Function <script type="math/tex">x^3+y^3</script> over <script type="math/tex">\mathbb{Z}/3\mathbb{Z}</script> is <script type="math/tex">x^3+y^3</script>, because while given <script type="math/tex">f(x)=x^3</script> and <script type="math/tex">g(x)=x</script>, <script type="math/tex">f=g</script> but the <em>polynomials</em> are not equal.</li>
+</ul>
+
+<h3 id="enlightenment">Enlightenment</h3>
+
+<ul>
+  <li>Algebraic geometry has varieties, which are geometric</li>
+  <li>Commutative Algebra can take the ideal of the variety</li>
+  <li><script type="math/tex">V=V(I(V))</script>, but $$I\neq I(V(I))</li>
+</ul>
+
+<h3 id="ideals-in-kx">Ideals in <script type="math/tex">k[x]</script></h3>
+
+<ul>
+  <li>When are two ideals equal?</li>
+  <li>MInimal representation an of ideal?</li>
+  <li>Is an element in an ideal?</li>
+</ul>
+
+<h3 id="division-algorithm-thm">Division Algorithm (Thm)</h3>
+
+<ul>
+  <li><strong>Def’n:</strong> For <script type="math/tex">f,g\in k[x]</script> there exists <script type="math/tex">q,r\in k[x]</script> such that <script type="math/tex">f=q\cdot g+r</script> and <script type="math/tex">% <![CDATA[
+\text{deg}(r)<\text{deg}(g) %]]></script>.</li>
+</ul>
+
+<h3 id="gcd-greatest-common-divisor">GCD (greatest common divisor)</h3>
+
+<ul>
+  <li><strong>Def’n:</strong> For <script type="math/tex">f,g\in k[x]</script> <script type="math/tex">h\in\mathbb{Z}</script> is the GCD if <script type="math/tex">h\vert f</script> and <script type="math/tex">h\vert g</script>, and if <script type="math/tex">d\vert f</script> and <script type="math/tex">d\vert g</script> then <script type="math/tex">d\vert h</script>.</li>
+  <li>Can be calculated with the Euclidean Algorithm</li>
+  <li><strong>Lemma:</strong> <script type="math/tex">\langle f,g\rangle=\langle \text{gcd}(f,g)\rangle</script></li>
+  <li>Principal ideals: <script type="math/tex">k[x]</script> amd <script type="math/tex">\mathbb{Z}</script>, meaning that it is generated by a single element</li>
+  <li>Everything breaks in higher dimensions</li>
+</ul>
+
+<h3 id="things-to-fix">Things to fix</h3>
+
+<ul>
+  <li><strong>Monomial order:</strong> A relation on <script type="math/tex">k[x_1,\dots,x_n]</script> such that greater than is a total ordering, a well ordering, and commutative property holds.</li>
+</ul>
+
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

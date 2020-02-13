@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>MATH4428 Lecture 1: ???</h2>
+<p class="meta">21 Jan 2020</p>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>Lind 203, 1220 - 1310, same room for final.</li>
+  <li>Office hours MWF 1320 - 1400 at Vincent 231.</li>
+</ul>
+
+<h3 id="todo">TODO</h3>
+
+<h3 id="topics">Topics</h3>
+
+<ul>
+  <li>Optimization (sensitivity analysis, Lagrange multipliers, linear programming)</li>
+  <li>Dynamical modeling (steady-states, stability analysis, eigenvalue methods)</li>
+  <li>Probabilistic methods (models, markov chains)</li>
+</ul>
+
+<h3 id="info">Info</h3>
+
+<ul>
+  <li>Homework (0.35), Midterm (.25), and Final (.4)
+    <ul>
+      <li>4 homework projects, due Feb 19, Mar 18, Apr 8, Apr 29.</li>
+      <li>March 25th midterm during class</li>
+      <li>May 12 1030 - 1230 final</li>
+      <li>TI89 for exams</li>
+    </ul>
+  </li>
+  <li>Nobel was not a great person (whole anecdote excluded)</li>
+</ul>
+
+<p>Lectures do appear to be rather unorganized, but should be alright at office hours.</p>
+
+<h3 id="n-dimensional-linear-programming">N-dimensional linear programming</h3>
+
+<p>(this ended up just being topology review?)</p>
+
+<p>Nobel prize for economics was awarded.</p>
+
+<p>No clear generic intution in higher dimensions, requires state-space search. Solution can be checked in polynomial time.</p>
+
+<p>How do we determine a “corner” in higher dimensions?</p>
+
+<p><strong>Def:</strong> Segment <script type="math/tex">[a,b]</script>, such that <script type="math/tex">a, b\in\mathbb{R}^n</script> is the set <script type="math/tex">\{x\in\mathbb{R}^n \vert x = (1-t)a+tb, 0\leq t\leq 1\}</script></p>
+
+<p><strong>Def:</strong> <script type="math/tex">D\subset \mathbb{R}^n</script> is convex if for every <script type="math/tex">a,b\in D</script> segment <script type="math/tex">[a,b]\in D</script>.</p>
+
+<p><strong>Def:</strong> A set is open if for any point in the set there is a disk of radius greater than zero such that every point on the disc is in the set.</p>
+
+<p><strong>Def:</strong> <script type="math/tex">p\in D</script> is a convex point if <script type="math/tex">p=a=b</script> follows from $p\in[a,b]\subset D$$.</p>
+
+<p>Circles have infinite corners, but we only like straight lines so it does not matter.</p>
+
+<p>(oh no, he just mentioned real analysis!)</p>
+
+<p>(the clock moves a few seconds at a time, which is terrifying in the corner of my eye)</p>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

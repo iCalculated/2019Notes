@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>MATH4990 Lecture 8: Parametrization and Implicitization, 2 for 3</h2>
+<p class="meta">23 Oct 2019</p>
+
+<h3 id="announcement">Announcement</h3>
+
+<ul>
+  <li>I did not have my laptop to take notes last week.</li>
+</ul>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>Homework lmao.</li>
+</ul>
+
+<h3 id="facts">Facts</h3>
+
+<ul>
+  <li>Someone is solving equations using Newton’s method. That’s funny.</li>
+  <li>It’ll be completely anonymous, unless if Google messes up somehow.</li>
+  <li>Don’t say “I am so-and-so, give me an A”</li>
+  <li>I’m going to put “wrong” in quotes, because it’s not that “wrong” but it’s “wrong” enough for this problem.</li>
+  <li>[Jason checking his SAT Subject scores as if he does not know them purely to flex on Akshay]</li>
+  <li><em>[puts greek letters everywhere]</em></li>
+  <li><em>[Anvya says p]</em> No, that’s a rho</li>
+  <li><em>[“could we have a reminder what affine space is?”]</em> Affine space is the board</li>
+  <li>That was confusing and I didn’t realize it</li>
+  <li>You can miss infinitely many points, but you must be in a higher dimension</li>
+  <li>There are a lot of issues with closure</li>
+  <li><em>[on the topic of closure]</em> That’s why I’m pretending it’s just magic</li>
+  <li>I’m not going to write things that actually make sense in algebraic geometry</li>
+  <li>Sin and cosine don’t exist</li>
+  <li>We’re just going to give up on (1,0)</li>
+  <li>You can only draw real pictures</li>
+  <li>The second one is wrong, don’t start it yet</li>
+  <li>Pictures can deceive you</li>
+  <li>The point that does not look nice</li>
+  <li>That is a much harder problem that we will never talk about</li>
+  <li>I have to finish eventually</li>
+  <li>I wrote it so sloppy I confused myself</li>
+  <li><em>[48 times]</em> Magic!</li>
+</ul>
+
+<h3 id="homework-review">Homework Review</h3>
+
+<ul>
+  <li>Apply previous part in 2, or the logic becomes circular</li>
+</ul>
+
+<h3 id="parametrization">Parametrization</h3>
+
+<ul>
+  <li><strong>Def’n:</strong> Is a function from <script type="math/tex">f:\mathbb{A}^k\to\mathbb{A}^n</script> such that <script type="math/tex">V</script> is the smallest variety containing <script type="math/tex">f(\mathbb{A}^k)</script>.</li>
+  <li>Can miss a lower-dimensional subsectio</li>
+  <li>Create single-intersection lines through chosen point</li>
+</ul>
+
+<h3 id="implicitization">Implicitization</h3>
+
+<ul>
+  <li>Eliminate <script type="math/tex">t</script> from the ideal of parametrics
+    <ul>
+      <li>Use lex st <script type="math/tex">t>x>y>z</script></li>
+    </ul>
+  </li>
+  <li>Clear denominators</li>
+  <li><strong>Elimination Ideal:</strong> For <script type="math/tex">I\subseteq k[x_1,\dots,x_n]</script> the <script type="math/tex">r</script>-th elimination ideal of <script type="math/tex">I</script> is <script type="math/tex">I_r=I\cap k[x_{r+1},\dots,x_n]</script></li>
+  <li><strong>Elimination Thm:</strong> If <script type="math/tex">G</script> is a lex gb of <script type="math/tex">I</script> with <script type="math/tex">x_1>\dots>x_n</script> then <script type="math/tex">G_r</script> is a lex gb of <script type="math/tex">I_r</script>.</li>
+</ul>
+
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

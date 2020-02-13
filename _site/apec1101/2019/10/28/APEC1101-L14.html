@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>APEC1101 Lecture 14: Minimaxing</h2>
+<p class="meta">28 Oct 2019</p>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>ACE</li>
+</ul>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>“When you lose money in business become a professor”</li>
+  <li>Court Brief</li>
+</ul>
+
+<h3 id="perfect-competition">Perfect Competition</h3>
+
+<ul>
+  <li>Exists and has obvious traits.</li>
+</ul>
+
+<h3 id="mr-darp">MR. DARP</h3>
+
+<ul>
+  <li>Small firms will avoid a high-quantity market</li>
+  <li>Price-taking firm phases perfectly elastic demand curve</li>
+</ul>
+
+<h3 id="shutdown-and-exxits">Shutdown and exxits</h3>
+
+<ul>
+  <li>Fixed costs must be incurred, can choose to shut down if revenue is less than marginal cost
+    <ul>
+      <li>Shutdown if revenue is less than variable cost, average revenueis less than average cost, or on a DARP graph if price is less than average cost.
+        <ul>
+          <li>(yes, those terms are all synonomous)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>However, repeated loss suggests leaving the industry entirely</li>
+</ul>
+
+<h3 id="short-run-maximization">Short-Run Maximization</h3>
+
+<ul>
+  <li>Simple  calculus, continue while revenue is greater than cost.</li>
+  <li>Remember fixed costs</li>
+  <li>This class would be so much better with math and at an actually reasonable pace.</li>
+</ul>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

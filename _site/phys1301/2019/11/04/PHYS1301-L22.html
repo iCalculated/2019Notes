@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>PHYS1301 Lecture 22: Inertial Moments</h2>
+<p class="meta">04 Nov 2019</p>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>Lab Problem 3-5</li>
+  <li>Actually study</li>
+</ul>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>Extra office hours Tues + Wed PAN110 1000-1100</li>
+  <li>Exam exists</li>
+</ul>
+
+<h3 id="recap">Recap</h3>
+
+<ul>
+  <li>Rotational kinetic energy is <script type="math/tex">K=\dfrac{1}{2}I\omega^2</script></li>
+  <li><script type="math/tex">I</script> is moment of intertia: <script type="math/tex">I=\sum_i m_ir_i^2</script>
+    <ul>
+      <li>Notably depends on axis of rotation</li>
+    </ul>
+  </li>
+  <li>Total kinetic energy is rotational plus linear energy</li>
+</ul>
+
+<h3 id="moment-of-inertia">Moment of inertia</h3>
+
+<ul>
+  <li>Varies with axis of rotation</li>
+  <li>For continuous objects <script type="math/tex">I=\int_0^M r^2\ dm</script></li>
+  <li>In integrals mass per unit length is a good trick
+    <ul>
+      <li>
+        <script type="math/tex; mode=display">\lambda = M/L</script>
+      </li>
+      <li>Thus, rod rotating around an end has moment of inertia <script type="math/tex">\dfrac{M}{3}L^2</script>.</li>
+    </ul>
+  </li>
+  <li>Regular shapes, all in form <script type="math/tex">I=c(MR2)</script>:
+    <ul>
+      <li>Hollow cylinder along axis: <script type="math/tex">c=1</script></li>
+      <li>Solid rod along perpendicular: <script type="math/tex">c=\frac{1}{2}</script></li>
+      <li>Thin sphere along diameter: <script type="math/tex">c=\frac{2}{3}</script></li>
+      <li>Solid sphere: <script type="math/tex">c=\frac{2}{5}</script></li>
+      <li>(2 more)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sliding-along-incline">Sliding along incline</h3>
+
+<ul>
+  <li>All objects have the same speed if not rolling</li>
+  <li>Velocity at bottom is <script type="math/tex">\sqrt{2gh}</script>, no dependance on mass without friction</li>
+  <li>Rolls without slipping:
+    <ul>
+      <li>
+        <script type="math/tex; mode=display">v_{cm}=\omega R\implies K_{tot} = \dfrac{1}{2}mv^2_{cm} + \dfrac{1}{2}\dfrac{I}{R^2}v^2_{cm}</script>
+      </li>
+      <li>Increasing <script type="math/tex">R</script> lowers fraction.</li>
+      <li>For fixed <script type="math/tex">R</script> greater <script type="math/tex">I</script> results in more rotational energy</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

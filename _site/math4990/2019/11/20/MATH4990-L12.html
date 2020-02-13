@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>MATH4990 Lecture 12: Robotics</h2>
+<p class="meta">20 Nov 2019</p>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>Homework lmao.</li>
+  <li>Don’t show up to class next week</li>
+</ul>
+
+<h3 id="facts">Facts</h3>
+
+<ul>
+  <li><em>[Prior to class students failed to plan an “adult” party, after having been told that a pizza party would be childish]</em></li>
+  <li>No class next week</li>
+  <li>I really have no idea how much material I have</li>
+  <li>I’m probably not going to cover anything interesting on the last day</li>
+  <li>The second time I read it I was like “oh wait, it’s trivial” but I included it anyway</li>
+  <li>That’s a problem I’m comfortable calling trivial</li>
+  <li>People often quote Einstein as saying this</li>
+  <li>We’re going to pretend the real world is easy</li>
+  <li>Everyone nowadays is about flexible robots</li>
+  <li>It’ll be convenient to have some width for this</li>
+  <li>Not for actual math</li>
+  <li>Create a mathematical model, figure out all the things it tells you, then figure out all the ways it doesn’t tell you anything</li>
+  <li>Now you can draw a robot</li>
+  <li>We’re just going to pretend that there is maybe ground and just that the robot can move through the ground</li>
+  <li>Math and the real world do not always get along</li>
+  <li>You can’t move the ground</li>
+  <li>Making up numbers</li>
+  <li>I really am making numbers up, I have not prepared these.</li>
+  <li>The hand is just a generic magical hand thing that does anything we want it to</li>
+  <li>The hand I’ve drawn is for pictoral purposes only</li>
+  <li>Angles are horrible</li>
+  <li>People whose job it is to take mathematical nonsense we write on the board and translate it to real world problems</li>
+  <li>It’s not that I don’t trust you, I’d just have to listen and write at the same time</li>
+  <li>We’re going to solve the dummy version</li>
+  <li>Unfortunately, that’s not actually true</li>
+  <li>The origin is here and my picture is terrible</li>
+  <li>All we have here are circles, we don’t have any weirder shapes</li>
+  <li>Let’s just write this even though I don’t like what I’m writing</li>
+  <li><em>“Until he draws axes my x-direction is up”</em> <em>[he draws axes]</em></li>
+  <li>In my opinion <script type="math/tex">\theta_1</script> and <script type="math/tex">\theta_2</script> are negative</li>
+  <li>I’m just going to complain about that</li>
+  <li>You just put a negative sign in front of all of your thetas</li>
+  <li>Hopefully I’m going to get minimally confused this way.</li>
+  <li>Here is where we confuse ourselves</li>
+  <li>None of this requires any thought</li>
+  <li>Let’s just draw our angles in the positive direction and pretend untiil we need to worry about that</li>
+  <li>Did I put a minus there? That’s supposed to be a plus no matter what</li>
+  <li>We know how to deal with polynomial constraints. At least in theory.</li>
+  <li><em>[on the topic of trig identities]</em> When I don’t have my phone I know roughly what they look like, then I plug in sins and cosines</li>
+  <li>I’ve written a lot of things we haven’t written in this class</li>
+  <li>I can’t deal with inequalities in this class</li>
+  <li>I feel like I have a big point I’m building up to, but then I forgot</li>
+  <li>Oh wait, there is one thing you can do.</li>
+  <li>I don’t know how to do that because I don’t know <em>real</em> algebraic geometry</li>
+  <li>I’d consider myself a commutative algebraist</li>
+  <li>There is all kinds of fancy stuff they do and I don’t understand it</li>
+  <li>I know how to do this, but I’m not sure if I’ve taught you all of the prerequisites to do this</li>
+  <li>I don’t have the tools to deal with this <em>[gestures at entire problem]</em></li>
+  <li>I don’t know what I’m putting on the homework yet</li>
+  <li>Here is a stupid robot. Alright, here is a <em>silly</em> robot</li>
+  <li>We have a lot of time, we’re not going to waste all of it</li>
+  <li>if you’re in 4+ dimensions, what is a robot <em>[turns into a philosophy class]</em></li>
+  <li>It turns out you can add a lot of different joints in three dimensions</li>
+  <li>I did not sign up for art class</li>
+  <li>It’s hard to understand two angles</li>
+  <li>I haven’t thought about this either</li>
+  <li>The wrist is nonsense</li>
+  <li>I have a function, now invert it ! *[points at board] I erased it though.</li>
+</ul>
+
+<h3 id="homework-review">Homework Review</h3>
+
+<ul>
+  <li>Homework was easy for once.</li>
+</ul>
+
+<h3 id="robots">“Robots”</h3>
+
+<ul>
+  <li>Allowed segments, revolute joints (with parameter <script type="math/tex">\theta</script>), and prismatic joints (with parameter <script type="math/tex">L</script>, as a piston)</li>
+  <li>Questions:
+    <ul>
+      <li>In what configuration is the hand? (forward kinematic)</li>
+      <li>Where can the hand be? (also forward kinematics)</li>
+      <li>How to move between configuations? (reverse kinematics)</li>
+    </ul>
+  </li>
+  <li>Create variables with respect to trig</li>
+  <li>Utilize limited mapping, for example <script type="math/tex">f: S^1\times S^1\times [1,3]\to \mathbb{A}^2\times S^1</script>
+    <ul>
+      <li><script type="math/tex">S^n</script> is an abstract space, indicating the <script type="math/tex">n</script>-dimensional sphere</li>
+      <li>Circle is 1-dim’l, because the boundary is the important part</li>
+    </ul>
+  </li>
+  <li>Use elimination ideal, lexical necessary, to remove variables in system.</li>
+  <li><strong>Q:</strong> Is there math for propogating a PID through all the joints?</li>
+</ul>
+
+<h3 id="3-dimensions">3+ Dimensions</h3>
+
+<ul>
+  <li>All of the things from two dimensions can be used, in addition: ball (3-d revolute) joints now exist, helical (prismatic revolute with related rotation and extension), and other things that exist in only Jay’s nightmares</li>
+</ul>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>PHYS1302 Lecture 1: Charge</h2>
+<p class="meta">20 Jan 2020</p>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>Pryke is at the south pole, will teach second half of the semester</li>
+  <li>Haines will teach first half</li>
+</ul>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>Seduce Haines, get into lab.
+    <ul>
+      <li>Get onto Canvas</li>
+      <li>Register clicker</li>
+      <li>Acquire books</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="syllabus">Syllabus</h3>
+
+<ul>
+  <li>Friday will be used sometimes
+    <ul>
+      <li>Lecture this friday</li>
+    </ul>
+  </li>
+  <li>Quizzes on Feb 14th, Mar 4th (wednesday!), Apr 3 and Apr 24th.</li>
+  <li>Mostly same rules as 1301</li>
+  <li>There is actual homework in this class :(</li>
+</ul>
+
+<h3 id="outline">Outline</h3>
+
+<ul>
+  <li>Electrostatics</li>
+  <li>Current, DC circuits</li>
+  <li>Magnetism</li>
+  <li>E&amp;M</li>
+</ul>
+
+<h3 id="charge">Charge</h3>
+
+<p>Like charges repel, unlike attract. Glorious.</p>
+
+<p>Elementary particles have three intrinsic properties: mass (kg), angular momentum (spin), and electric charge (Coulomb). Manitude of charge of an electron is <script type="math/tex">e=1.6\times 10^{-19}</script> C, they have negative charge.</p>
+
+<p>Charge is difficult to measure, so we use the MKSA system instead of MKSC. A is for ampere, which is <script type="math/tex">C/s</script>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Total charge of the universe *may* be zero, because charge seems to be conserved. Neutrons decay following $$n\implies p + e + \overbar{v}_e$$, antineutrino has no charge.
+</code></pre></div></div>
+
+<h3 id="coulombs-law">Coulomb’s Law</h3>
+
+<p>Oh look, it’s an inverse square law!</p>
+
+<script type="math/tex; mode=display">\left\vert\vec{F}_{\text{elec}}\right\vert = k\dfrac{q_1q_2}{r^2}</script>
+
+<p>such that <script type="math/tex">k=\dfrac{1}{4\pi\epsilon_0} = 9\times 10^9 \dfrac{Nm^2}{C^2}.</script></p>
+
+<p>Vector law also exists,</p>
+
+<script type="math/tex; mode=display">\vec{F}_{\text{elec}} = k\dfrac{q_1q_2}{r^2}\vec{r}</script>
+
+<p>but notation is different in every damn book, so just apply common sense at the end.</p>
+
+<p>By Newton’s 3rd law, <script type="math/tex">\vec{F_{12}} = -\vec{F_{21}}.</script></p>
+
+<p>Gravity is considered a weak force because of magnitude ratios. For a pair of electrions, <script type="math/tex">\dfrac{F_{\text{elec}}}=\dfrac{F_{\text{grav}}} = 4.17 \times 10^{42}</script>, thus electrons do come together naturally (surprised?).</p>
+
+<h3 id="dipoles">Dipoles</h3>
+
+<p>Dipoles are attracted to charg.</p>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

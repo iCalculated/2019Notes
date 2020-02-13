@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>APEC1101 Lecture 17: Price Discrimination</h2>
+<p class="meta">04 Nov 2019</p>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>ACE</li>
+  <li>Study for exam?</li>
+</ul>
+
+<h3 id="review">Review</h3>
+
+<ul>
+  <li>Monopolies have MR &lt; P
+    <ul>
+      <li>Will not be allocatively or productively efficient</li>
+      <li>Nonzero DWL</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="how-evil-is-monopoly">How Evil is Monopoly?</h3>
+
+<ul>
+  <li>Good:
+    <ul>
+      <li>Utilizes economy of scale</li>
+      <li>Could be natural monopoly
+        <ul>
+          <li><strong>Def’n:</strong> Does not make sense to have multiple firms because of startup price</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Bad:
+    <ul>
+      <li><strong>X-inefficiency:</strong> Not focused on minizing price of production because no competition</li>
+      <li><strong>Rent-Seeking:</strong> Effort goes towards other causes, such as lobbying</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="natural-monopoly">Natural Monopoly</h3>
+
+<ul>
+  <li>High one-time startup cost
+    <ul>
+      <li>Thus <script type="math/tex">% <![CDATA[
+MC << ATC %]]></script></li>
+    </ul>
+  </li>
+  <li>Machine learning :(</li>
+</ul>
+
+<h3 id="regulation">Regulation</h3>
+
+<ul>
+  <li><strong>Sherman Act (1890):</strong> Attempting to monopolize is uncool.</li>
+  <li><strong>Clayton Act (1914):</strong> Merging to monopolize is uncool.</li>
+  <li>When splitting a monopoly, force <script type="math/tex">MC=D</script>.
+    <ul>
+      <li>Oh no, monopoly dies. (<script type="math/tex">% <![CDATA[
+ATC < MB %]]></script>)</li>
+    </ul>
+  </li>
+  <li>More reasonably, produce at <script type="math/tex">ATC=D</script> potentially with a percentage-based margin.
+    <ul>
+      <li>Oh no, monopoly still does not need to cut costs.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="price-discrimination">Price Discrimination</h3>
+
+<ul>
+  <li>Discrimination → maximum profit.</li>
+  <li>Conditions:
+    <ul>
+      <li>Must be able to control output quantity <em>or</em> price</li>
+      <li>Must be <del>willing</del> able to segregate</li>
+      <li>No resale</li>
+    </ul>
+  </li>
+  <li>Discriminate by elasticity
+    <ul>
+      <li>Assuming constant MC and zero FC</li>
+      <li>Segment after consumers are satisfied</li>
+    </ul>
+  </li>
+  <li>Implemmentation
+    <ul>
+      <li>Offer rebate coupons, unlikely to be used by upper-class
+        <ul>
+          <li>Exploits both sensitivity and prevents resale</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

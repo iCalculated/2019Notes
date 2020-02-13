@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>APEC1101 Lecture 2: Optimization</h2>
+<p class="meta">09 Sep 2019</p>
+
+<h3 id="announcements">Announcements</h3>
+
+<ul>
+  <li>Liu guessed my name with no hints</li>
+</ul>
+
+<h3 id="opportunity-costs">Opportunity Costs</h3>
+
+<ul>
+  <li><strong>Def’n:</strong> What must be given up to get something</li>
+  <li><strong>Ceteris Paribus:</strong> Other things being equal, focusing on <em>x</em> variables</li>
+  <li><strong>Marginal Benefit:</strong> Benefit from engaging in an activity
+    <ul>
+      <li>Typically decreases with activity, ex: one sandwich good, second sandwich less good</li>
+    </ul>
+  </li>
+  <li><strong>Total Benefit:</strong> Integral of MB</li>
+  <li><strong>Total Cost:</strong> Integral of MC</li>
+  <li><strong>Net Gain:</strong> Integral between MB and MC up to a point, surplus if positive</li>
+</ul>
+
+<h3 id="cost-benefit-analysis">Cost Benefit Analysis</h3>
+
+<ul>
+  <li><strong>Def’n:</strong> Maximizing surplus, if MC &gt; MB → decrease, MC=MB → stay, MC &lt; MB → increase.</li>
+  <li>Study four hours for the exam.</li>
+  <li><strong>Binding Constraint:</strong> A limit on optimization, that prevents reaching a maximum, non-binding if the constraint is not a limiting factor.</li>
+</ul>
+
+<h3 id="individual-budget-line-and-society">Individual (Budget Line) and Society</h3>
+
+<ul>
+  <li><strong>Budget line:</strong> Linear algebra combinations within budget
+    <ul>
+      <li>Slope is exchange rate</li>
+    </ul>
+  </li>
+  <li>Society has four types of resources
+    <ul>
+      <li>Land → natural resources</li>
+      <li>Labor → workers</li>
+      <li>Capital → human-made resources</li>
+      <li>Entrepreneurial Ability → ability to produce</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="questions">Questions</h3>
+
+<ul>
+  <li><strong>Q:</strong> Is opportunity relative to optimization?
+    <ul>
+      <li>Opportunity is relative to best alternative</li>
+      <li>Scheduling is not a factor beyond expected value</li>
+    </ul>
+  </li>
+  <li><strong>Q:</strong> Why is hour cost increasing?</li>
+</ul>
+
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

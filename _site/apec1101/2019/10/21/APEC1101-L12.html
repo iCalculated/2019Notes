@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>APEC1101 Lecture 12: Costs</h2>
+<p class="meta">21 Oct 2019</p>
+
+<h3 id="announcements">Announcements</h3>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>ACE</li>
+  <li>Report Final</li>
+</ul>
+
+<h3 id="costs">Costs</h3>
+
+<ul>
+  <li><strong>Explicit costs:</strong> Cost of other group’s resources</li>
+  <li><strong>Implicit costs:</strong> Cost of own resources</li>
+</ul>
+
+<p>and another class, being</p>
+
+<ul>
+  <li><strong>Fixed cost:</strong> Not changed with quantity</li>
+  <li>
+    <p><strong>Variable cost:</strong> Changes with quantity.</p>
+  </li>
+  <li><strong>Economic Profit:</strong> Total revenue with costs subtracted</li>
+  <li><strong>Acounting Proit:</strong> Total revenue minus just explicit
+    <ul>
+      <li>not including salaries and such</li>
+      <li>also known as normal profit</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="time">Time</h3>
+
+<ul>
+  <li><strong>Long run:</strong> Situation in which there is no fixed input constraint
+    <ul>
+      <li>One decision is made it’s short run again, constraint in place</li>
+    </ul>
+  </li>
+  <li><strong>Short run:</strong> Not long term, fixed inputs exist</li>
+  <li>
+    <p>Different degrees  of fixedness, like an employee that you can pay to terminate is inbetween</p>
+  </li>
+  <li><strong>Law of Dimishing Returns:</strong> Additional output from variable will diminish as increase to infinity
+    <ul>
+      <li>Short run since relying on fixed inputs</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="production">Production</h3>
+
+<ul>
+  <li>Calculate costs per unit of output</li>
+  <li>Fixed cost per unit asymptotically approaches zero</li>
+  <li>Average variable cost looks like a U because high quantity decays value
+    <ul>
+      <li>Law of dimishing returns</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

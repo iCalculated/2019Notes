@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>APEC1101 Lecture 16: Monopoly</h2>
+<p class="meta">04 Nov 2019</p>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>ACE</li>
+  <li>Study for exam?</li>
+</ul>
+
+<h3 id="review">Review</h3>
+
+<ul>
+  <li>Allocative efficiency because benefit to society (price) is equal to cost of production (MC)</li>
+  <li>Zero profit, since <script type="math/tex">P=ATC</script></li>
+  <li>Productive efficiency because production occurs at the minimum possible cost</li>
+</ul>
+
+<h3 id="monopoly">Monopoly</h3>
+
+<ul>
+  <li>Entry is blocked
+    <ul>
+      <li>Thus profit exists</li>
+    </ul>
+  </li>
+  <li>Marginal revenue is lower than price
+    <ul>
+      <li>Selling additional units requires a lower price</li>
+      <li>Because monopoly owns industry vs price-taking</li>
+    </ul>
+  </li>
+  <li>Single seller with no close substitute
+    <ul>
+      <li>Usually because entry was blocked, patents and such</li>
+    </ul>
+  </li>
+  <li>Can be a “fringe” when not the <em>entire</em> market is controlled but enough to practically influence it</li>
+  <li><strong>Natural Monopoly:</strong> When economy of scale creates a monopoly through high initial cost.</li>
+</ul>
+
+<h3 id="profit-maximization">Profit Maximization</h3>
+
+<ul>
+  <li>Monopoly chooses unit elastic point on demand curve.
+    <ul>
+      <li>(this took about 20 minutes to explain, but was thankfully self-evident)</li>
+    </ul>
+  </li>
+  <li>When MC is actually nonzero find intersection of MB and MC</li>
+</ul>
+
+<h3 id="dead-weight-loss">Dead-Weight Loss</h3>
+
+<ul>
+  <li>Socially we all suffer because products are priced higher at lower quantity
+    <ul>
+      <li>Not productively <em>or</em> allocatively efficientl</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

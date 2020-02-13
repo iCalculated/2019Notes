@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>CSCL1101 Prompt 2: Antigone</h2>
+<p class="meta">11 Sep 2019</p>
+
+<p>The central conflict in <em>Antigone</em> is that of the law of the gods versus the laws of man. Antigone stands for the laws of the gods, insisting that Polyneices should be buried because it is his religious right, while Creon stands for the laws of man, saying that his edict must be respected by all as Polyneices was a traitor. Antigone feels that even though Polyneices was a traitor (and possibly not, depending on sketchy contextual info) he has some intrinsic rights that need to be respected, such as that of being buried. In a way, Creon’s edict respects and draws power from the law of the gods, as a suggestion that if you betray Athens you will not even be allowed to enter the afterworld, so it’s clear that they both respect the laws of the gods. His edict entails the death of anyone who acts towards burying Polyneices, but both he and Antigone are far too strong-willed to back down when she attempts to follow the burial rights.</p>
+
+<p>[The next paragraph contains spoilers of the ending. If for whatever reason you have not yet finished the book I recommend not reading it.]</p>
+
+<p>At the end of the story Antigone is dead, and several others followed her to the afterworld. It seems that she has succeeded and become a martyr for her cause, respected by the people of Athens and arguably even Creon as he realizes how wrong he has been. Creon, on the other hand, ends up in shambles with his family dead, many by their own hands. The final words in the play are spoken by the chorus, as the liaison between the actors and the audience their final words contain the moral of the story: “Wise conduct is the key to happiness. / Always rule by the gods and reverence them” (74). The two lines suggest that Creon should have listened, which was clearly illustrated, but also take the more controversial stance (for a modern audience) which is that the laws of the gods must be respected. This resolution seems clear since Antigone is viewed more favorably throughout the play and is more reasonable in her argument.</p>
+
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

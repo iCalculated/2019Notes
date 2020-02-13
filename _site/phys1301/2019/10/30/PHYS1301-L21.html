@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>PHYS1301 Lecture 21: Rotational Forces</h2>
+<p class="meta">30 Oct 2019</p>
+
+<h3 id="todo">TODO</h3>
+
+<ul>
+  <li>Lab Problem 3-5</li>
+  <li>Apparently there is a quiz next friday
+    <ul>
+      <li>Thus practice available</li>
+      <li>Cumulative, focus on 9 and 10</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="announcement-singular">Announcement (singular)</h3>
+
+<ul>
+  <li>Haines is lecturing today
+    <ul>
+      <li>He actually looked at the slides beforehand</li>
+      <li>Can actually perform demos (“years of study”)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="centripetal-acceleration">Centripetal Acceleration</h3>
+
+<p><script type="math/tex">a_c = \dfrac{v^2}{R}=\omega^2 R</script></p>
+<ul>
+  <li>Accounts for $\omega R = v$ because original definition is <em>technically</em> correct but misleading.</li>
+  <li>Usually for rigid rotation</li>
+  <li>
+    <script type="math/tex; mode=display">F_c = ma_c = m\dfrac{v^2}{R}=m\omega^2  R</script>
+  </li>
+  <li>To stay along arc requires frictional force which is equal to centripetal force
+    <ul>
+      <li>Friction is static since no radial velocity</li>
+    </ul>
+  </li>
+  <li>Maximum velocity along arc with radius <script type="math/tex">r</script> and static friction coefficient <script type="math/tex">\mu_s</script> is 
+<script type="math/tex">V=\sqrt{\mu_s g R}</script></li>
+</ul>
+
+<h3 id="rotational-motion">Rotational Motion</h3>
+
+<ul>
+  <li>Things don’t slide. They rotate.</li>
+  <li>Many analogous equations (<script type="math/tex">a\to\alpha</script>, <script type="math/tex">v\to\omega</script>, <script type="math/tex">x\to\theta</script>):
+    <ul>
+      <li>Radians do not have dimensions (making them easy to lose)
+<script type="math/tex">\alpha = \dfrac{d\omega}{dt}=\dfrac{d^2\theta}{dt^2}</script></li>
+    </ul>
+  </li>
+  <li>Constant angular acceleration:
+    <ul>
+      <li>
+        <script type="math/tex; mode=display">\omega = \omega_0 + \alpha t</script>
+      </li>
+      <li>
+        <script type="math/tex; mode=display">\theta = \theta_0 + \omega_0 t + \dfrac{1}{2}\alpha t^2</script>
+      </li>
+      <li>(I’m just typesetting for fun at this point)</li>
+    </ul>
+  </li>
+  <li>Arclength <script type="math/tex">s=R\theta</script>, which is why we <em>appreciate</em> radians
+    <ul>
+      <li>From that, <script type="math/tex">v=R\omega</script> follows and so on.</li>
+      <li>Tangential acceleration also exists, $a_t = R\alpha$</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="moment-of-inertia">Moment of Inertia</h3>
+
+<ul>
+  <li><strong>Moment of Inertia:</strong> <script type="math/tex">I=mr^2</script> with a summation if describing a system</li>
+  <li>
+    <p>Rotational enery of an object
+<script type="math/tex">K=\dfrac{1}{2}I\omega^2</script></p>
+  </li>
+  <li>Thus, takes more enery needed with greater moment</li>
+</ul>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>

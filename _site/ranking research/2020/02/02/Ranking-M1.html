@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  <meta charset="UTF-8">
+  <title>2019-2020 Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/cayman.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127756945-2');
+  </script>
+
+</head>
+
+  <!-- https://docs.mathjax.org/en/latest/configuration.html#local-config-files -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    var TEX = MathJax.InputJax.TeX;
+    var COLS = function (W) {
+      var WW = [];
+      for (var i = 0, m = W.length; i < m; i++)
+        {WW[i] = TEX.Parse.prototype.Em(W[i])}
+      return WW.join(" ");
+    };
+    TEX.Definitions.Add({
+      environment: {
+        psmallmatrix: ['Array',null,'(',')','c',COLS([1/3]),".2em",'S',1],
+      }
+    });
+  });
+</script>
+<script type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js? 
+config=TeX-AMS- 
+MML_HTMLorMML,https://idcrook.github.io/assets/js/MathJaxLocal.js">
+</script>  
+
+
+
+  <body>
+    <section class="page-header">
+  <h1 class="project-name">2019-2020 Notes</h1>
+  <h2 class="project-tagline"></h2>
+</section>
+
+    <section class="main-content">
+      
+      <h2>The Markov Method</h2>
+<p class="meta">02 Feb 2020</p>
+
+<p>(Reading: <em>Who’s #1</em> by Langville and Meyer)</p>
+
+<p>TODO: All of the matrices are broken and the alternative is to have four matrices, one for each set of labels, the data and then finally a shell matrix. I’d <em>rather not</em> do that, so I’ll get KaTeX working instead (at some point).</p>
+
+<h1 id="the-markov-method">The Markov Method</h1>
+
+<p><strong>Maid Idea: ordering objects “vote” on each other based on statistics from one-to-one relationships.</strong></p>
+
+<p>The Markov Method follows the same principles as the (PageRank method)[http://www.ams.org/publicoutreach/feature-column/fcarc-pagerank]. If the method is being used to rank sports teams we can imagine the evaluation process as figuring out how much time a fair-weather fan spends supporting each team. If the fan starts at an arbitrary team <script type="math/tex">A</script>, he could ask “who is the best team?” and team A would say “Team B or C, they both beat us.” He would then flip a coin to decide which bandwagon to join and repeat the process ad infinitum.</p>
+
+<p>Immediately there are some potential problems, for example undefeated teams: Our fair-weather friend would end up at that team and have nowhere to go, suiting him perfectly but a ranking system not so much.</p>
+
+<h2 id="terminology-and-notation">Terminology and Notation</h2>
+
+<p><strong>Stochastic:</strong> Property of a matrix indicating that the rows sum to one.<br />
+<strong>Substochastic:</strong> As stochastic, except rows may add to less than one.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><script type="math/tex">n</script></td>
+      <td>The number of objects being ranked</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">k</script></td>
+      <td>The number of statistics incorporated</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">\mathbf{V}_{1\dots k}</script></td>
+      <td>Raw voting matrix</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">\mathbf{S}_{1\dots k}</script></td>
+      <td>Stochastic voting matrix</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">\alpha_{1\dots k}</script></td>
+      <td>Statistic weights</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">\mathbf{S}</script></td>
+      <td>Composed stochastic matrix</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">\overline{\mathbf{S}}</script></td>
+      <td>Irreducible Markov matrix</td>
+    </tr>
+    <tr>
+      <td><script type="math/tex">\vec{r}</script></td>
+      <td>Rating vector (stationary)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example">Example</h2>
+
+<p>Let’s say that we have a tournament between three teams; A, B, and C. We can make a <strong>voting matrix</strong> from whatever statistic we would like, the simplest being win-loss data. For example, we could have</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{V}=\bordermatrix{ & A & B & C \\
+                      A & 0 & 1 & 1 \\
+                      B & 0 & 0 & 0 \\
+                      C & 0 & 1 & 0}. %]]></script>
+
+<p>Each entry <script type="math/tex">\mathbf{V}_{ij}</script> is the number of votes team <script type="math/tex">i</script> casts for team <script type="math/tex">j</script>. In this case, team A votes for both B and C, indicating that they lost every match, and B votes for no one, indicating that they were undefeated. In addition, note that no team votes for itself, which makes sense since teams can’t compete against themselves.</p>
+
+<p>It seems unfair that A’s votes are worth as much as C’s given that A lost every match, so we will normalize each row to get</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{N}=\bordermatrix{ & A & B & C \\
+                      A & 0 & 1/2 & 1/2 \\
+                      B & 0 & 0 & 0 \\
+                      C & 0 & 1 & 0}. %]]></script>
+
+<p>However, we still have a major problem! This matrix is not properly stochastic, the aforementioned fan will go to B and never leave. The simplest solution is to replace all empty rows with <script type="math/tex">1/n</script>, giving us the stochastic matrix</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{S}=\bordermatrix{ & A & B & C \\
+                      A & 0 & 1/2 & 1/2 \\
+                      B & 1/3 & 1/3 & 1/3 \\
+                      C & 0 & 1 & 0}. %]]></script>
+
+<p>Now, we compute the stationary vector <script type="math/tex">\vec{r}</script>, stationary meaning that <script type="math/tex">\mathbf{S}\vec{r}=\vec{r}</script>.</p>
+
+<p>(I’d draw a Markov graph here but I don’t know how to use tikz)</p>
+
+<h2 id="undefeated-teams">Undefeated Teams</h2>
+
+<p>In the example we handled undefeated teams by saying they vote for every team equally, but there are alternatives:</p>
+
+<h3 id="self-voting">Self-Voting</h3>
+
+<p>An undefeated term deserves to give themselves credit, so we let</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{S}=\bordermatrix{ & A & B & C \\
+                      A & 0 & 1/2 & 1/2 \\
+                      B & 0 & 1 & 0 \\
+                      C & 0 & 1 & 0}. %]]></script>
+
+<p>However, the same issue is present, once the random walk reaches B it’s over. Thus. we take the “teleportation matrix” <script type="math/tex">\mathbf{E}</script>, of all 1’s, and let</p>
+
+<script type="math/tex; mode=display">\overline{\mathbf{S}}=\beta\mathbf{S}+(1-\beta)/n \mathbf{E}</script>
+
+<p>for some scalar <script type="math/tex">\beta</script>. Notably, a larger <script type="math/tex">\beta</script> means respecting the original data more, if <script type="math/tex">\beta=0</script> then all choices will be entirely random. PageRank uses <script type="math/tex">\beta=0.85</script> and lower value such as <script type="math/tex">\beta=0.6</script> or $$\beta=0.5%% have been successful for NFL and NCAA teams.</p>
+
+<h3 id="rejection">Rejection</h3>
+
+<p>(This method seems far more awkward to me, but I have not read much about it)</p>
+
+<p>In this method the undefeated teams send votes back to the teams that vote for them, but it results in an uglier matrix and still has looping problems if there exists a team that lost to <em>just</em> the undefeated team.</p>
+
+<h2 id="improvement">Improvement</h2>
+
+<p>The beauty of the Markov method is that stochastic matrices can be made from any factor, or even a combination of factors. If stochastic matrices <script type="math/tex">\mathbf{S}_1,\dots\mathbf{S}_k</script> are constructed for statistics 1 through <script type="math/tex">k</script> they can then be composed into a final matrix</p>
+
+<script type="math/tex; mode=display">\mathbf{S}=\alpha_1\mathbf{S}_1+\dots+\alpha_k\mathbf{S}_k</script>
+
+<p>such that <script type="math/tex">\alpha_1,\dots,\alpha_k</script> are a set of scalars that add to one. This makes the Markov method incredibly versatile because any new factor or change in data can easily be incorporated.</p>
+
+
+
+
+
+      <!-- <footer class="site-footer">
+  <span class="site-footer-owner"><a href="http://localhost:4000">2019-2020 Notes</a> is maintained by <a href=""></a>.</span>
+</footer> -->
+
+    </section>
+
+  </body>
+</html>
