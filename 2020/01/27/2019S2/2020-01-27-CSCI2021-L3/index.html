@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Announcements  TODO  Homework remains done  HW2 available tomorrow Project 1 up soon   Read Bryant Ch1 Know all of C   scanf Exciting reading function that makes non-local changes. Example usage: 12i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSCI2021 Lecture 3: ">
+<meta property="og:url" content="http://sashahydrie.me/2020/01/27/2019S2/2020-01-27-CSCI2021-L3/index.html">
+<meta property="og:site_name" content="2019-2020 Notes">
+<meta property="og:description" content="Announcements  TODO  Homework remains done  HW2 available tomorrow Project 1 up soon   Read Bryant Ch1 Know all of C   scanf Exciting reading function that makes non-local changes. Example usage: 12i">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-27T06:00:00.000Z">
+<meta property="article:modified_time" content="2020-02-13T18:43:06.523Z">
+<meta property="article:author" content="Sasha Hydrie">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://sashahydrie.me/2020/01/27/2019S2/2020-01-27-CSCI2021-L3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>CSCI2021 Lecture 3:  | 2019-2020 Notes</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css'><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">2019-2020 Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/2020-01-27-CSCI2021-L3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CSCI2021 Lecture 3: 
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:43:06" itemprop="dateModified" datetime="2020-02-13T12:43:06-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCI2021/" itemprop="url" rel="index">
+                    <span itemprop="name">CSCI2021</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Homework remains done
+<ul>
+<li>HW2 available tomorrow</li>
+<li>Project 1 up soon</li>
+</ul>
+</li>
+<li>Read Bryant Ch1</li>
+<li>Know <em>all of</em> C</li>
+</ul>
+<h3 id="scanf"><a class="markdownIt-Anchor" href="#scanf"></a> scanf</h3>
+<p>Exciting reading function that makes non-local changes. Example usage:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int num &#x3D; -1;</span><br><span class="line">scanf(&quot;%d&quot;, &amp;num);</span><br></pre></td></tr></table></figure>
+<p>Note that it takes in the <code>&amp;num</code>, a memory address. Easy to get an error from forgetting that. Also, the <code>%d</code> flag indicates that scanf is looking for a decimal number.</p>
+<p>(He keeps saying that OCaml does not let you reference memory addresses, but it totally does, admittedly it’s supposed to be done implicitly)</p>
+<p>Comparatively, higher level languages pass back values in the form of a “return” so non-local references are not needed.</p>
+<h3 id="safety"><a class="markdownIt-Anchor" href="#safety"></a> Safety</h3>
+<p><em>1972 - Dennis Ritchie invents a powerful gun that shoots both forward and backward simultaneously. Not satisfied with the number of deaths and permanent maimings from that invention he invents C and Unix.</em> - <a href="http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html" target="_blank" rel="noopener">A Brief, Incomplete, and Mostly Wrong History of Programming Languages</a> (this is hilarious)</p>
+<p>C removes all kinds of safety features for speed and <em>grofit</em>. However, it still is “high-level” to an extent, there are things beneath it: THere are Assembly languages, meant to be CPU readable (but only to specific brands). Assembly is human readable, nut only barely. Binary opcodes then represent the digital signal composes of 1’s and 0’s, each code corresponds directly to actions.</p>
+<h3 id="goals-for-csci2021"><a class="markdownIt-Anchor" href="#goals-for-csci2021"></a> Goals for CSCI2021</h3>
+<ul>
+<li>Be a competent C programmer</li>
+<li>Understand how programs work in physical memory</li>
+<li>Comprehend assembly
+<ul>
+<li>“Even if you just know enough to explain why you hate it, that’ll put you ahead of a lot of folks at lesser institutions”</li>
+</ul>
+</li>
+<li>Ability to use a symbolic debugger</li>
+<li>Understanding of how data is encoded in binary</li>
+</ul>
+<h3 id="sizes"><a class="markdownIt-Anchor" href="#sizes"></a> Sizes</h3>
+<p>C has traditional data types, however they are fiendishly inconsistent. <em>Usually</em> integral types are as follows:</p>
+<ul>
+<li>char (1 bytes)</li>
+<li>short (2 bytes)</li>
+<li>int (4 bytes)</li>
+<li>long (8 bytes)</li>
+</ul>
+<p>Floating types:</p>
+<ul>
+<li>float (4 bytes), 6-7 sig figs</li>
+<li>double (8 bytes), 15 sig figs</li>
+</ul>
+<p>Pointer types:</p>
+<ul>
+<li>pointer (4/8), pointers to a 32 or 64bit address, <code>int *</code></li>
+<li>array, pointer to a fixed location, <code>double[]</code></li>
+</ul>
+<p>Oh look, booleans don’t exist. Usually 0 indicates false, anything else is true. Every type in C has some equivalent of 0.</p>
+<p>Oh look, strings don’t exist. Either it can be an array of chars or terrifying. “You make mistakes, you get hurt <em>very</em> badly.”</p>
+<p>Oh look, integer types are not symmetric. “I think it’s an interesting insight into computer scientists that there are more negatives than positives.” That way there are <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> is the number of bits in the type.</p>
+<p>Null pointer does not have allocated memory, it just stores a location. Incredibly useful for confiscating the compilers ability to type check which gives programmers more chances to screw themselves. “Kids, this is why types are useful.”</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/27/2019S2/2020-01-27-MATH4428-L3/" rel="prev" title="MATH4428 Lecture 3: ???">
+      <i class="fa fa-chevron-left"></i> MATH4428 Lecture 3: ???
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/27/2019S2/2020-01-27-MM-S1/" rel="next" title="Mathematical Modeling, Section 1 Notes: Single Variable Optimization">
+      Mathematical Modeling, Section 1 Notes: Single Variable Optimization <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#announcements"><span class="nav-number">1.</span> <span class="nav-text"> Announcements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#todo"><span class="nav-number">2.</span> <span class="nav-text"> TODO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scanf"><span class="nav-number">3.</span> <span class="nav-text"> scanf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#safety"><span class="nav-number">4.</span> <span class="nav-text"> Safety</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#goals-for-csci2021"><span class="nav-number">5.</span> <span class="nav-text"> Goals for CSCI2021</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sizes"><span class="nav-number">6.</span> <span class="nav-text"> Sizes</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Sasha Hydrie</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">147</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sasha Hydrie</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+  
+
+</body>
+</html>
