@@ -1,4 +1,3 @@
-// KaTeX v0.1.1
 {% include js/katex.min.js %}
 {% include js/katex.auto-render.min.js %}
 
