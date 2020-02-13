@@ -48,13 +48,13 @@
 
 <h3 id="quaternions">Quaternions</h3>
 
-<p><strong>Lemma:</strong> Let <script type="math/tex">R</script> be a commutative ring without zero-divisors. If <script type="math/tex">a\in R</script> then <script type="math/tex">a</script> has at most two square roots, <script type="math/tex">r</script> and <script type="math/tex">-r</script>.</p>
+<p><strong>Lemma:</strong> Let $R$ be a commutative ring without zero-divisors. If $a\in R$ then $a$ has at most two square roots, $r$ and $-r$.</p>
 
-<p><strong>Pf:</strong> Suppose we have three roots. <script type="math/tex">s^2-a = 0</script>, <script type="math/tex">r^2-a=0</script> and <script type="math/tex">(-r)^2-a=0</script>. Root of <script type="math/tex">x^2-a=0</script>, also <script type="math/tex">(x+r)(x-r)=x^2-xr+xr-r^2=0\implies x^2-a=0\implies (s-r)(s+r)=0 \implies s=\pm r.</script></p>
+<p><strong>Pf:</strong> Suppose we have three roots. $s^2-a = 0$, $r^2-a=0$ and $(-r)^2-a=0$. Root of $x^2-a=0$, also $(x+r)(x-r)=x^2-xr+xr-r^2=0\implies x^2-a=0\implies (s-r)(s+r)=0 \implies s=\pm r.$</p>
 
-<p><strong>Def:</strong> <script type="math/tex">\mathbb{H}==\{a+bi+cj+dk\vert a,b,c,d\in\mathbb{R}\}</script></p>
+<p><strong>Def:</strong> $\mathbb{H}=={a+bi+cj+dk\vert a,b,c,d\in\mathbb{R}}$</p>
 
-<p>subject to <script type="math/tex">ijk=i^2=j^2=k^2=-1.</script></p>
+<p>subject to $ijk=i^2=j^2=k^2=-1.$</p>
 
 <p>Always remember that things are not commutative, so both left and right division exist.</p>
 
@@ -64,31 +64,31 @@
 Alternatively, unit vector for direction and angle.
 Rotation matrices with determinant 1</p>
 
-<p>We don’t like any of these options, so unit qauternions. For a rotation given by <script type="math/tex">(\vec{u}, \theta)</script> the corresponding quaternion is $q=\cos{\dfrac{\theta}{2}}+(u_1i+u_2k+u_3k)\cdot\sin\dfrac{\theta}{2}</p>
+<p>We don’t like any of these options, so unit qauternions. For a rotation given by $(\vec{u}, \theta)$ the corresponding quaternion is $q=\cos{\dfrac{\theta}{2}}+(u_1i+u_2k+u_3k)\cdot\sin\dfrac{\theta}{2}</p>
 
 <p>Quaternions can be multiplied for fun and grofit.</p>
 
 <h3 id="cayley-dickson-construction">Cayley-Dickson Construction</h3>
 
-<p>Idea: Give a multiplication on <script type="math/tex">\mathbb{C}^2</script></p>
+<p>Idea: Give a multiplication on $\mathbb{C}^2$</p>
 
-<script type="math/tex; mode=display">(a,b)\cdot(c,d)=(ac-\overline{d}b,da+b\overline{C}).</script>
+<p>$(a,b)\cdot(c,d)=(ac-\overline{d}b,da+b\overline{C}).$</p>
 
 <p>Allows generation of quaternions from two imaginary numbers.</p>
 
-<p>The construction can be repeated infinitely to create <script type="math/tex">n</script>-inions.</p>
+<p>The construction can be repeated infinitely to create $n$-inions.</p>
 
 <p>A constructor for octinions appeared on the board, but no thanks. Associativity breaks down.</p>
 
-<p><script type="math/tex">x\cdot(x\cdot x)\stackrel{?}{=}(x\cdot x)\cdot x</script> and we give up on math.</p>
+<p>$x\cdot(x\cdot x)\stackrel{?}{=}(x\cdot x)\cdot x$ and we give up on math.</p>
 
-<p>Octinions are non-associative, but <script type="math/tex">x(xy)=(xx)y</script>, <script type="math/tex">x(yx)=(xy)x</script>, <script type="math/tex">y(xx)=(yx)x</script>.</p>
+<p>Octinions are non-associative, but $x(xy)=(xx)y$, $x(yx)=(xy)x$, $y(xx)=(yx)x$.</p>
 
 <p>I now think Jay is just trying to show us how much math can break down.</p>
 
 <h3 id="broken-math">Broken math</h3>
 
-<p>Suppose <script type="math/tex">a</script>, <script type="math/tex">b</script>, <script type="math/tex">c</script> st <script type="math/tex">ab=1</script> and <script type="math/tex">ca=1</script>. <script type="math/tex">c(ab)=c\implies (ca)b=c\implies b=c</script>. Associativity <em>not</em> abused.</p>
+<p>Suppose $a$, $b$, $c$ st $ab=1$ and $ca=1$. $c(ab)=c\implies (ca)b=c\implies b=c$. Associativity <em>not</em> abused.</p>
 <h3 id="facts">Facts</h3>
 
 <ul>

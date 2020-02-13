@@ -45,17 +45,17 @@
 
 <p>Actual sensitivity is like elasticity in economics:</p>
 
-<script type="math/tex; mode=display">S(x,r)=\dfrac{dx/x}{dr/r}.</script>
+<p>$S(x,r)=\dfrac{dx/x}{dr/r}.$</p>
 
 <p>Apparently the term</p>
 
-<script type="math/tex; mode=display">\dfrac{d(\ln{x}){d(\ln{z})}}</script>
+<p>$\dfrac{d(\ln{x}){d(\ln{z})}}$</p>
 
 <p>also works. (It inspired someone to raise their hand and Safonov hit him with the same look)</p>
 
 <p>(Safonov called on our lad and the mistake was pointed out)</p>
 
-<p>The sensitivity value is a relative percentage, a 1% change in the factor <script type="math/tex">r</script> results in a <script type="math/tex">S(x,r)</script> percent change in <script type="math/tex">x</script>.</p>
+<p>The sensitivity value is a relative percentage, a 1% change in the factor $r$ results in a $S(x,r)$ percent change in $x$.</p>
 
 <h3 id="lagrange-multipliers">Lagrange Multipliers</h3>
 
@@ -67,16 +67,16 @@
 
 <h3 id="probability">Probability</h3>
 
-<p>Let stochastic variable <script type="math/tex">x</script> have values <script type="math/tex">x_k</script> with frequencies <script type="math/tex">p_k=\lim_{n\to\infty}\dfrac{n_k}{N}</script>. Let <script type="math/tex">N</script> be the number of trials and <script type="math/tex">n_k=#(x=x_k)</script>, then</p>
+<p>Let stochastic variable $x$ have values $x_k$ with frequencies $p_k=\lim_{n\to\infty}\dfrac{n_k}{N}$. Let $N$ be the number of trials and $n_k=#(x=x_k)$, then</p>
 
-<script type="math/tex; mode=display">E(x)=\lim_{n\to\infty} \dfrac{x_1n_1+\dots+x_kn_k}{N}.</script>
+<p>$E(x)=\lim_{n\to\infty} \dfrac{x_1n_1+\dots+x_kn_k}{N}.$</p>
 
 <p>(which can also be written as a sum if discrete.)</p>
 
-<p><strong>Jensen’s Thm:</strong> If <script type="math/tex">f(x)</script> is convex, then <script type="math/tex">E(f(x))=\sum f(x_k)p_k \geq f(E(x))</script></p>
+<p><strong>Jensen’s Thm:</strong> If $f(x)$ is convex, then $E(f(x))=\sum f(x_k)p_k \geq f(E(x))$</p>
 
 <ul>
-  <li>Fake proof: Any convex function <script type="math/tex">f(x)=\text{sup}_{\alpha\in\mathbb{A}}(a_\alpha x + b_\alpha)</script>, <script type="math/tex">\forall \alpha E(f(x)) \geq E(a_{\alpha}x + b_{\alpha})=a_\alpha E(x)+b_{\alpha}.</script></li>
+  <li>Fake proof: Any convex function $f(x)=\text{sup}<em>{\alpha\in\mathbb{A}}(a</em>\alpha x + b_\alpha)$, $\forall \alpha E(f(x)) \geq E(a_{\alpha}x + b_{\alpha})=a_\alpha E(x)+b_{\alpha}.$</li>
 </ul>
 
 

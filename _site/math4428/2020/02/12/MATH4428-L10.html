@@ -39,49 +39,43 @@
 
 <h3 id="matrix-basics-">Matrix Basics (?)</h3>
 
-<p>An <script type="math/tex">n\times m</script> matrix has <script type="math/tex">n</script> rows and <script type="math/tex">m</script> columns. Multiplying</p>
+<p>An $n\times m$ matrix has $n$ rows and $m$ columns. Multiplying</p>
 
-<script type="math/tex; mode=display">[m\times k] [k \times n]=[m\times k].</script>
+<p>$[m\times k] [k \times n]=[m\times k].$</p>
 
 <p>For</p>
 
-<script type="math/tex; mode=display">C=AB</script>
+<p>$C=AB$</p>
 
-<p>we have <script type="math/tex">(C_ij)=(i\text{th row of } A)\cdot (j\text{th column of B}).</script></p>
+<p>we have $(C_ij)=(i\text{th row of } A)\cdot (j\text{th column of B}).$</p>
 
 <p>The magnitude of a vector can be found by dotting it with itself then taking the square root.</p>
 
-<p>The <strong>transpose</strong> of a matrix, <script type="math/tex">M^T</script>, is constructed be switching values across the main diagonal:</p>
+<p>The <strong>transpose</strong> of a matrix, $M^T$, is constructed be switching values across the main diagonal:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\implies A^T = \begin{bmatrix} a & c \\ b & d \end{bmatrix}. %]]></script>
+<p>$A=\begin{bmatrix}a&amp;b\c&amp;d\end{bmatrix}\implies A^T = \begin{bmatrix} a &amp; c \ b &amp; d \end{bmatrix}.$</p>
 
 <p>Properties:</p>
 
 <ul>
-  <li>
-    <script type="math/tex; mode=display">(AB)^T=B^TA^T</script>
-  </li>
-  <li>
-    <script type="math/tex; mode=display">(AB)C = A(BC) = ABC</script>
-  </li>
-  <li><script type="math/tex">AB\neq BA</script> (not necessary at least)</li>
+  <li>$(AB)^T=B^TA^T$</li>
+  <li>$(AB)C = A(BC) = ABC$</li>
+  <li>$AB\neq BA$ (not necessary at least)</li>
 </ul>
 
-<p>An <script type="math/tex">n\tmes n</script> matrix is <strong>orthogonal</strong> if</p>
+<p>An $n\tmes n$ matrix is <strong>orthogonal</strong> if</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-M^TM=I=\begin{bmatrix}1&\dots&0\\\vdots&\ddots&\vdots\\0&\dots&1\end{bmatrix}=(\delta_{ij}) %]]></script>
+<p>$M^TM=I=\begin{bmatrix}1&amp;\dots&amp;0\\vdots&amp;\ddots&amp;\vdots\0&amp;\dots&amp;1\end{bmatrix}=(\delta_{ij})$</p>
 
-<p>where <script type="math/tex">\delta_{ij}=1</script> for <script type="math/tex">i=j</script> and 0 otherwise.</p>
+<p>where $\delta_{ij}=1$ for $i=j$ and 0 otherwise.</p>
 
 <p>(less mathematically rigorous but intuitively better: orthogonal matrices have columns with length one, so when an orthogonal matrix is used as a transformation it preserves length)</p>
 
-<p>For <script type="math/tex">\vec{v}\in \mathbb{R}^n \neq \vec{0}</script> if <script type="math/tex">A\vec{v}=\lambda\vec{v}</script> then <script type="math/tex">\lambda</script> is an <strong>eigenvalue</strong> of <script type="math/tex">A</script>$ and <script type="math/tex">\vec{v}</script> is its corresponding <strong>eigenvector</strong>.</p>
+<p>For $\vec{v}\in \mathbb{R}^n \neq \vec{0}$ if $A\vec{v}=\lambda\vec{v}$ then $\lambda$ is an <strong>eigenvalue</strong> of $A$$ and $\vec{v}$ is its corresponding <strong>eigenvector</strong>.</p>
 
-<p>We can find eigenvalues as the roots of the <strong>characteristic polynomial</strong>, which is the determinant of <script type="math/tex">A-\lambda I.</script></p>
+<p>We can find eigenvalues as the roots of the <strong>characteristic polynomial</strong>, which is the determinant of $A-\lambda I.$</p>
 
-<p><strong>Symmetric</strong> (symmetric means that <script type="math/tex">A=A^T</script>) matrices must have at least one eigenvalue.</p>
+<p><strong>Symmetric</strong> (symmetric means that $A=A^T$) matrices must have at least one eigenvalue.</p>
 
 <p>For every symmetric matrix there is an orthonormal eigenbasis.</p>
 

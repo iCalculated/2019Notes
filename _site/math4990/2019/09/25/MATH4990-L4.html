@@ -61,27 +61,27 @@
 <h3 id="monomial">Monomial</h3>
 
 <ul>
-  <li><strong>Def’n:</strong> Monomial ordering is a relation <script type="math/tex">></script> on monomials in <script type="math/tex">k[x_1,...,x_n]</script> such that
+  <li><strong>Def’n:</strong> Monomial ordering is a relation $&gt;$ on monomials in $k[x_1,…,x_n]$ such that
     <ol>
       <li>Is a total order</li>
-      <li>If <script type="math/tex">a>b</script> then <script type="math/tex">ac>bc</script></li>
+      <li>If $a&gt;b$ then $ac&gt;bc$</li>
       <li>Is a well ordering</li>
     </ol>
   </li>
 </ul>
 
-<p>Preconindition for everything we do in class today: <script type="math/tex">x_1>\dots>x_n</script>.</p>
+<p>Preconindition for everything we do in class today: $x_1&gt;\dots&gt;x_n$.</p>
 
 <ul>
-  <li><script type="math/tex">\alpha>_{\text{lex}}\beta</script> if the leftmost nonzero term of <script type="math/tex">\alpha - \beta</script> is positive.</li>
-  <li><script type="math/tex">\alpha>_{\text{glex}}\beta</script> if <script type="math/tex">\vert \alpha\vert >\vert \beta\vert</script>, such that <script type="math/tex">\vert \alpha\vert</script> is the sum of the degrees, or that <script type="math/tex">\vert \alpha\vert =\vert \beta\vert</script> and <script type="math/tex">\alpha>_{\text{lex}}</script>.</li>
-  <li><script type="math/tex">\alpha>_{\text{grevlex}}\beta</script> <script type="math/tex">\vert \alpha\vert >\vert \beta\vert</script> or <script type="math/tex">\vert a\vert =\vert b\vert</script> and in <script type="math/tex">\alpha - \beta</script> the rightmost nonzero term is negative.</li>
+  <li>$\alpha&gt;_{\text{lex}}\beta$ if the leftmost nonzero term of $\alpha - \beta$ is positive.</li>
+  <li>$\alpha&gt;<em>{\text{glex}}\beta$ if $\vert \alpha\vert &gt;\vert \beta\vert $, such that $\vert \alpha\vert $ is the sum of the degrees, or that $\vert \alpha\vert =\vert \beta\vert $ and $\alpha&gt;</em>{\text{lex}}$.</li>
+  <li>$\alpha&gt;_{\text{grevlex}}\beta$ $\vert \alpha\vert &gt;\vert \beta\vert $ or $\vert a\vert =\vert b\vert $ and in $\alpha - \beta$ the rightmost nonzero term is negative.</li>
 </ul>
 
 <h3 id="division-algorithm">Division Algorithm</h3>
 
 <ul>
-  <li><strong>Def’n:</strong> Fix a monomial order. Then fix <script type="math/tex">f, f_1,\dots,f_s\in k[x_0,\dots,x_k]</script>. There exists <script type="math/tex">a_1,\dots,a_s, r\in k[x_1,\dots,x_s]</script> such that <script type="math/tex">f=a_1f_1+\dots+a_sf_s+r</script> with none of the terms of <script type="math/tex">r</script> divisible by LT<script type="math/tex">(f_i)</script> and if <script type="math/tex">a_if_i\neq 0</script> then LM<script type="math/tex">(f)\geq</script>LM<script type="math/tex">(a_if_i)</script>.</li>
+  <li><strong>Def’n:</strong> Fix a monomial order. Then fix $f, f_1,\dots,f_s\in k[x_0,\dots,x_k]$. There exists $a_1,\dots,a_s, r\in k[x_1,\dots,x_s]$ such that $f=a_1f_1+\dots+a_sf_s+r$ with none of the terms of $r$ divisible by LT$(f_i)$ and if $a_if_i\neq 0$ then LM$(f)\geq$LM$(a_if_i)$.</li>
   <li>In relation to one dimension:
     <ul>
       <li>Ending is the degree comparison,</li>
