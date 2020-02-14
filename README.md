@@ -1,3 +1,5 @@
+**This branch is deprecated, I am now using Hexo instead of Jekyll due to its superior math support**
+
 # 2019Notes
 *Version-controlled and works from terminal, don't judge me.*
 
