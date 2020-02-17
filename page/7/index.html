@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -42,6 +42,15 @@
 
   <title>2019-2020 Notes</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-127756945-2');
+      }
+    </script>
 
 
 
@@ -113,9 +122,35 @@
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
+
+  
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -135,6 +170,134 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/14/2019S1/2019-11-14-CSCL1101-L18/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/14/2019S1/2019-11-14-CSCL1101-L18/" class="post-title-link" itemprop="url">CSCL1101 Lecture 18: Never Let Me Go</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-14 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-14T00:00:00-06:00">2019-11-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
+                    <span itemprop="name">CSCL1101</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>11.21: Essay</li>
+<li>Read <em>Never Let Me Go</em> first five chapters.</li>
+</ul>
+<h2 id="never-let-me-go"><a class="markdownIt-Anchor" href="#never-let-me-go"></a> Never Let Me Go</h2>
+<h3 id="context"><a class="markdownIt-Anchor" href="#context"></a> Context</h3>
+<ul>
+<li>Ishiguro was born in Japan but moved to London prior to schooling</li>
+<li>Main theme is memory
+<ul>
+<li>Concerned because Japanese childhood memories</li>
+<li>I can relate (give or take Japan)</li>
+</ul>
+</li>
+<li>Published in 2005</li>
+<li>Is psychological fiction, focusing on thought and memory but simultaneously dystopia</li>
+</ul>
+<h3 id="discourse"><a class="markdownIt-Anchor" href="#discourse"></a> Discourse</h3>
+<ul>
+<li>Uses the term “carer” before the reader is introduced</li>
+<li>Assumes knowledge about the world that is then exposed excruciatingly slowly</li>
+</ul>
+<h3 id="reliability"><a class="markdownIt-Anchor" href="#reliability"></a> Reliability</h3>
+<ul>
+<li>See roasty discussion post</li>
+<li>Acknowledges points at which her memory is flawed</li>
+<li>Has a subjective lens but it is not necessarily warped</li>
+</ul>
+<h3 id="carer"><a class="markdownIt-Anchor" href="#carer"></a> “Carer”</h3>
+<ul>
+<li>Requires compassion</li>
+<li>Undervalued</li>
+<li>Evaluates her own competency relative to job</li>
+<li>Oh look, they are having their organs harvested</li>
+</ul>
+<h3 id="education"><a class="markdownIt-Anchor" href="#education"></a> Education</h3>
+<ul>
+<li>Halisham focuses on artistic expression
+<ul>
+<li>Escapism?</li>
+</ul>
+</li>
+<li>Art going to the gallery is analogous to your organs being taken</li>
+<li>Health education to keep bodies helpful</li>
+</ul>
+<h3 id="defamiliarization"><a class="markdownIt-Anchor" href="#defamiliarization"></a> Defamiliarization</h3>
+<ul>
+<li>Madame sees them as beneath human, example being spiders</li>
+<li>Often comes up with afpes, the perception of white americans shaping the sense of self</li>
+<li>Where are the bounds of huamnity?</li>
+<li>Why is there no resistance?</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -1339,177 +1502,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/05/2019S1/2019-11-05-CSCL1101-L15/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/05/2019S1/2019-11-05-CSCL1101-L15/" class="post-title-link" itemprop="url">CSCL1101 Lecture 15: Persepolis</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-11-05 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-05T00:00:00-06:00">2019-11-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCL1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>“Read” <em>Persepolis</em>
-<ul>
-<li>Probably should re-read it.</li>
-</ul>
-</li>
-<li>11.12: One body paragraph
-<ul>
-<li>Will do some peer-review</li>
-</ul>
-</li>
-<li>11.21: Essay</li>
-<li><em>Never Let Me Go</em> next.</li>
-</ul>
-<h2 id="final-exam"><a class="markdownIt-Anchor" href="#final-exam"></a> Final Exam</h2>
-<ul>
-<li>Will have week to work on</li>
-<li>4 prompts, handed out final day of class
-<ul>
-<li>Choose 2, 2 pages each</li>
-</ul>
-</li>
-</ul>
-<h2 id="setting"><a class="markdownIt-Anchor" href="#setting"></a> Setting</h2>
-<ul>
-<li>Time and place
-<ul>
-<li>Can do both macro and micro-analysis of both</li>
-</ul>
-</li>
-</ul>
-<h3 id="signifiances"><a class="markdownIt-Anchor" href="#signifiances"></a> Signifiances</h3>
-<ul>
-<li>Can focus on a specific aspect and then generalize</li>
-<li>Setting is used to establish credibility</li>
-<li>Provides circumstances of the characters</li>
-<li>Literary symbol: can highlight specific elements</li>
-<li>Establish atmosphere and mood</li>
-</ul>
-<h3 id="analysis-points"><a class="markdownIt-Anchor" href="#analysis-points"></a> Analysis Points</h3>
-<ul>
-<li>How does the narrative change locations and time?</li>
-<li>How detailed are descriptions? Also, specfic vs abstract?</li>
-<li>How are locations and characters connected?</li>
-</ul>
-<h2 id="persepolis"><a class="markdownIt-Anchor" href="#persepolis"></a> Persepolis</h2>
-<h3 id="graphic-novels"><a class="markdownIt-Anchor" href="#graphic-novels"></a> Graphic Novels</h3>
-<ul>
-<li>Combines literary and visual elements</li>
-<li>Term traditionally used for fiction</li>
-<li>More control over pace (???)</li>
-</ul>
-<h3 id="mis-en-page"><a class="markdownIt-Anchor" href="#mis-en-page"></a> <em>Mis-en-page</em></h3>
-<ul>
-<li><strong>Panel:</strong> Each box within the page</li>
-<li><strong>Frame:</strong> Edge of panel</li>
-<li><strong>Gutter:</strong> Space between panels
-<ul>
-<li>Control movement of time</li>
-</ul>
-</li>
-<li><strong>Caption:</strong> Label of panel’s contents</li>
-<li><strong>Speech Balloon:</strong> This is getting ridiculous</li>
-<li><strong>Splash Panel:</strong> Panel that consumes more of the page
-<ul>
-<li>Used to assign value</li>
-</ul>
-</li>
-<li><strong>Splash Page:</strong> Splash Panel but full page.</li>
-</ul>
-<h3 id="context"><a class="markdownIt-Anchor" href="#context"></a> Context</h3>
-<ul>
-<li>From 2003, Bush was like “look at Ir* → axis of evil”
-<ul>
-<li><em>Persepolis</em> adds other side</li>
-</ul>
-</li>
-<li>Book moves between personal and familial</li>
-<li>Both about overall effecs of revolution and individual experience</li>
-</ul>
-<h3 id="analysis"><a class="markdownIt-Anchor" href="#analysis"></a> “Analysis”</h3>
-<ul>
-<li>Monochromatic
-<ul>
-<li>Inversion is used to create tension</li>
-</ul>
-</li>
-<li>Very stylized
-<ul>
-<li>Juxtaposition of literal photographs of dead bodies as compared to childish interpretation</li>
-<li>She said violence is too normalized to include, realism reduces</li>
-<li>Not about elimination, instead stripping away details provides focus</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1580,7 +1572,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">147</span>
+          <span class="site-state-item-count">148</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1590,6 +1582,14 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iCalculated" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iCalculated" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hydri001@2umn.edu" title="E-Mail → mailto:hydri001@2umn.edu" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
 
 
 
@@ -1655,6 +1655,13 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 
   
 
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+<script src="/js/algolia-search.js"></script>
 
 
 

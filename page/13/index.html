@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -42,6 +42,15 @@
 
   <title>2019-2020 Notes</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127756945-2"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-127756945-2');
+      }
+    </script>
 
 
 
@@ -113,9 +122,35 @@
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container"></div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="algolia-results">
+  <div id="algolia-stats"></div>
+  <div id="algolia-hits"></div>
+  <div id="algolia-pagination" class="algolia-pagination"></div>
+</div>
+
+  
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -135,6 +170,82 @@
             
 
   <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/09/24/2019S1/2019-09-24-CSCL1101-E1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/24/2019S1/2019-09-24-CSCL1101-E1/" class="post-title-link" itemprop="url">CSCL1101 Paper 1: Antigone Character Study</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-09-24 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-24T00:00:00-05:00">2019-09-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
+                    <span itemprop="name">CSCL1101</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><em>Haemon and Antigone</em></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
         
   
   
@@ -836,6 +947,132 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/09/16/2019S1/2019-09-16-PHYS1301-L6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/16/2019S1/2019-09-16-PHYS1301-L6/" class="post-title-link" itemprop="url">PHYS1301 Lecture 6: Kinetic Energy</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-09-16 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-16T00:00:00-05:00">2019-09-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
+                    <span itemprop="name">PHYS1301</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Chapter 5 homework (hypothetically)</li>
+</ul>
+<h3 id="kinetic-energy"><a class="markdownIt-Anchor" href="#kinetic-energy"></a> Kinetic Energy</h3>
+<ul>
+<li><strong>Def’n:</strong> Energy associated with motion.
+<ul>
+<li>Breaking functions by converting kinetic to thermal</li>
+<li>Often collision → heat</li>
+</ul>
+</li>
+<li><strong>Conservation of Energy:</strong> Exists.
+<ul>
+<li>Holds in isolated system</li>
+<li>Isolation can be determined by if a process is reversible</li>
+<li>Reversible indicates mechanical energy is preserved
+<ul>
+<li>Conversion to heat usually implies irreversible</li>
+</ul>
+</li>
+<li>Determined by formula: $ K =\frac{1}{2}mv^2$</li>
+<li>Can use momentum, in the form: $K=\dfrac{p^2}{2m}</li>
+<li>1 J = 1 kg m<sup>2/s</sup>2</li>
+</ul>
+</li>
+<li>Systems have total kinetic energy</li>
+</ul>
+<h3 id="collision"><a class="markdownIt-Anchor" href="#collision"></a> Collision</h3>
+<ul>
+<li>Types:
+<ul>
+<li>Elastic → all energy is preserved
+<ul>
+<li>Relative speed preserved</li>
+</ul>
+</li>
+<li>Inelastic → some energy is preserved
+<ul>
+<li>Heat produced or stickiness</li>
+</ul>
+</li>
+<li>Totally inelastic → no energy is preserved</li>
+</ul>
+</li>
+<li>Momentum is always preserved in collisions
+<ul>
+<li>Not enough to solve the problems</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/09/16/2019S1/2019-09-16-APEC1101-L4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -996,132 +1233,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/09/16/2019S1/2019-09-16-PHYS1301-L6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/16/2019S1/2019-09-16-PHYS1301-L6/" class="post-title-link" itemprop="url">PHYS1301 Lecture 6: Kinetic Energy</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-09-16 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-16T00:00:00-05:00">2019-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
-                    <span itemprop="name">PHYS1301</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Chapter 5 homework (hypothetically)</li>
-</ul>
-<h3 id="kinetic-energy"><a class="markdownIt-Anchor" href="#kinetic-energy"></a> Kinetic Energy</h3>
-<ul>
-<li><strong>Def’n:</strong> Energy associated with motion.
-<ul>
-<li>Breaking functions by converting kinetic to thermal</li>
-<li>Often collision → heat</li>
-</ul>
-</li>
-<li><strong>Conservation of Energy:</strong> Exists.
-<ul>
-<li>Holds in isolated system</li>
-<li>Isolation can be determined by if a process is reversible</li>
-<li>Reversible indicates mechanical energy is preserved
-<ul>
-<li>Conversion to heat usually implies irreversible</li>
-</ul>
-</li>
-<li>Determined by formula: $ K =\frac{1}{2}mv^2$</li>
-<li>Can use momentum, in the form: $K=\dfrac{p^2}{2m}</li>
-<li>1 J = 1 kg m<sup>2/s</sup>2</li>
-</ul>
-</li>
-<li>Systems have total kinetic energy</li>
-</ul>
-<h3 id="collision"><a class="markdownIt-Anchor" href="#collision"></a> Collision</h3>
-<ul>
-<li>Types:
-<ul>
-<li>Elastic → all energy is preserved
-<ul>
-<li>Relative speed preserved</li>
-</ul>
-</li>
-<li>Inelastic → some energy is preserved
-<ul>
-<li>Heat produced or stickiness</li>
-</ul>
-</li>
-<li>Totally inelastic → no energy is preserved</li>
-</ul>
-</li>
-<li>Momentum is always preserved in collisions
-<ul>
-<li>Not enough to solve the problems</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/09/13/2019S1/2019-09-13-APEC1101-D2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1216,124 +1327,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/09/12/2019S1/2019-09-12-CSCL1101-L4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/12/2019S1/2019-09-12-CSCL1101-L4/" class="post-title-link" itemprop="url">CSCL1101 Lecture 4: The Myth of Whiteness</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-09-12 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-12T00:00:00-05:00">2019-09-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCL1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
-<ul>
-<li>Paper 1 Prompt Thursday</li>
-<li>Three classes for the tempest, then modern interpretations</li>
-</ul>
-<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Read <em>The Tempest</em>, Acts 1 and 2</li>
-</ul>
-<h3 id="the-myth-of-whiteness"><a class="markdownIt-Anchor" href="#the-myth-of-whiteness"></a> The Myth of Whiteness</h3>
-<ul>
-<li><em>TL;DR:</em> Greek statues were actually colored</li>
-<li><strong>Aesthetics:</strong> The study of baeuty and artistic taste</li>
-<li>Not having a historical precedent forces us to reconsider why we hold our ideals
-<ul>
-<li>Specifically color → crude and ugly and white → pristine and refined</li>
-<li>Willful denial becomes a factor when there are commited groups</li>
-</ul>
-</li>
-</ul>
-<h3 id="antigone"><a class="markdownIt-Anchor" href="#antigone"></a> Antigone</h3>
-<ul>
-<li>Chorus play a variety of roles, mainly mediating and amplifying.
-<ul>
-<li>Illustrates the lack of a villain</li>
-</ul>
-</li>
-<li>Antigone is a woke biopolitical play about the creation of the outsider</li>
-<li>Lots ofjuxtaposition:
-<ul>
-<li>Customs vs laws</li>
-<li>Insider vs outsider</li>
-<li>Masculine vs feminine</li>
-<li>King vs subjects</li>
-<li>Young vs old</li>
-<li>Obedience vs diobedience</li>
-</ul>
-</li>
-</ul>
-<h3 id="thoughts"><a class="markdownIt-Anchor" href="#thoughts"></a> Thoughts</h3>
-<ul>
-<li>I want to say something innacurate and watch Prof Lewis say “Yeah, good.”</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1404,7 +1397,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">147</span>
+          <span class="site-state-item-count">148</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1414,6 +1407,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iCalculated" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iCalculated" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hydri001@2umn.edu" title="E-Mail → mailto:hydri001@2umn.edu" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
 
 
 
@@ -1479,6 +1480,13 @@
 
   
 
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
+<script src="/js/algolia-search.js"></script>
 
 
 
