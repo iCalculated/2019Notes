@@ -173,6 +173,474 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/29/2019S2/CSCI2021/2020-01-29-CSCI2021-L4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/29/2019S2/CSCI2021/2020-01-29-CSCI2021-L4/" class="post-title-link" itemprop="url">CSCI2021 Lecture 4: Semantics</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-29 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-29T00:00:00-06:00">2020-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-17 13:24:41" itemprop="dateModified" datetime="2020-02-17T13:24:41-06:00">2020-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCI2021/" itemprop="url" rel="index">
+                    <span itemprop="name">CSCI2021</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<ul>
+<li>CSE fair on Feb 4th, 1200-1700 Mariucci</li>
+<li>Emacs lecture on Feb 4th, 1830-2000 Keller 3-180.
+<ul>
+<li>During bots but incredibly tempting…</li>
+<li>Kauffman is an emacs fanatic</li>
+</ul>
+</li>
+<li>Kauffman’s user is phaedrus</li>
+</ul>
+<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>HW2</li>
+<li>Project 1 up soon</li>
+<li>Read Bryant Ch1</li>
+<li>Know <em>all of</em> C</li>
+</ul>
+<h3 id="void-pointers"><a class="markdownIt-Anchor" href="#void-pointers"></a> Void Pointers</h3>
+<p>“C is like a sharp knife, you should be able to cut yourself.”</p>
+<p>Void points are bad if abused, but they exist for good reason.</p>
+<p>In all practical systems pointers are of consistent size, always 8 bytes. (64 bit systems need 8 bytes to store a memory address.)</p>
+<h3 id="types"><a class="markdownIt-Anchor" href="#types"></a> Types</h3>
+<p>Oh wait, there are more!</p>
+<p>Many more specific types exist, such as unsigned types or fixed width variants. Fixed types are used for future-proofing since standards sometimes change.</p>
+<h3 id="pointers-versus-arrays"><a class="markdownIt-Anchor" href="#pointers-versus-arrays"></a> Pointers versus Arrays</h3>
+<p>Both refer to memory locations, which for pointers is changeable but for arrays is fixed. We can pretend arrays are pointers and vice versa when passing into functions, which is <em>absolutely terrifying</em>, but in a good way. Arithmetic can be done to pointers and they can be pointed at new places, but an array is a matter of compiler allocation.</p>
+<p>Brace notation jumps ahead based on the size of the pointer type. Can also shift pointers with arithmetic operations. Notably, void pointer arithmetic will make the compiler angry, though you can cast it for arithmetic.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/29/2019S2/MATH4428/2020-01-29-MATH4428-L4./">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/29/2019S2/MATH4428/2020-01-29-MATH4428-L4./" class="post-title-link" itemprop="url">MATH4428 Lecture 4: Highschool Geometry</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-29 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-29T00:00:00-06:00">2020-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-17 13:24:43" itemprop="dateModified" datetime="2020-02-17T13:24:43-06:00">2020-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MATH4428/" itemprop="url" rel="index">
+                    <span itemprop="name">MATH4428</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<ul>
+<li>He may actually create a Canvas site</li>
+<li>Apparently we dropped the analysis and are just a geometry class today
+<ul>
+<li>(worth noting that the hard stuff was done on paper)</li>
+</ul>
+</li>
+<li>Day 4: no student has spoken in class, I think they may be figments of my imagination</li>
+<li>College senior sliding is <em>wild</em></li>
+</ul>
+<h3 id="arbitrary-triangle-facts"><a class="markdownIt-Anchor" href="#arbitrary-triangle-facts"></a> Arbitrary Triangle Facts</h3>
+<ol>
+<li>Medians intersect at the center of mass, assuming even density
+<ul>
+<li><strong>Pf:</strong> integrate along the median creating trapezoidal strips</li>
+</ul>
+</li>
+<li>Circumcenter at intersection of perpendicular bisectors</li>
+<li>Incenter at intersection of angle bisectors</li>
+<li>Orthocenter at intersection of altitudes</li>
+</ol>
+<h3 id="snells-law"><a class="markdownIt-Anchor" href="#snells-law"></a> Snell’s Law</h3>
+<p>(this is now a course on optics)</p>
+<p><strong>Ex:</strong> You are at point A, <s>somewhat inland and someone is drowning</s> at point B. (<s>I really should use MS paint but I can’t be bothered.</s> nevermind) See the figure for details:</p>
+<p><img src="assets/productive.png" alt="if you see this, Sasha messed up" /></p>
+<p>If you move at <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">v_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> on land an <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">v_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> in the water (both conveniently labeled), it’s probably fair to presume that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mi mathvariant="normal">/</mi><mi>g</mi><mi>g</mi><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">v_1/gg v_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>. Thus, a straight line is not the fastest path. However, you happen to be able to do trigonometry on arbitrary angles in your head, so you know that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><msub><mi>v</mi><mn>1</mn></msub><msub><mi>v</mi><mn>2</mn></msub></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><msub><mo><mi>sin</mi><mo>⁡</mo></mo><mn>1</mn></msub><mi>θ</mi></mrow><mrow><msub><mo><mi>sin</mi><mo>⁡</mo></mo><mn>2</mn></msub><mi>θ</mi></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\dfrac{v_1}{v_2}=\dfrac{\sin_1{\theta}}{\sin_2{\theta}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.94356em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1075599999999999em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.20744em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop">sin</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mop">sin</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> will yield the optimal path.</p>
+<p>(talked about photons instead of doing more math, and by that I mean he talked about photons.)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/28/2019S2/PHYS1302/2020-01-28-PHYS1302-L5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/28/2019S2/PHYS1302/2020-01-28-PHYS1302-L5/" class="post-title-link" itemprop="url">PHYS1302 Lecture 5: Guess (electric fields)</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-28 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-28T00:00:00-06:00">2020-01-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-17 13:24:39" itemprop="dateModified" datetime="2020-02-17T13:24:39-06:00">2020-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHYS1302/" itemprop="url" rel="index">
+                    <span itemprop="name">PHYS1302</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<ul>
+<li>Homework still exists.</li>
+</ul>
+<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>5 more electric field problems</li>
+</ul>
+<h3 id="dipole"><a class="markdownIt-Anchor" href="#dipole"></a> Dipole</h3>
+<p>Two charges of equal magnitude but opposite charge, separated by some distance.</p>
+<p>Dipole moment is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>p</mi><mo>⃗</mo></mover><mo>=</mo><mi>q</mi><mover accent="true"><mi>r</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{p}=q\vec{r}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9084399999999999em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">p</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.9084399999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span> where <span class='katex-error' title='ParseError: KaTeX parse error: Expected &#039;}&#039;, got &#039;EOF&#039; at end of input: \vec{r]'>\vec{r]</span> is the vector from the negative to the positive and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span> is the magnitude of the charge. Note that the name is “p” because of orbital configurations, every p-shell has an inherent dipole.</p>
+<p>An external electric field can induce a dipole in an atom, following the rule <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>p</mi><mo>⃗</mo></mover><mo>=</mo><mi>α</mi><mover accent="true"><mi>E</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{p}=\alpha\vec{E}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9084399999999999em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">p</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.9663299999999999em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span> is polarizability.</p>
+<p>Torque induces rotation counterclockwise relative to torque as normal vector. Someone, as in myself, apparently can’t remember the right hand rule. <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>τ</mi><mo>⃗</mo></mover><mo>=</mo><mover accent="true"><mi>r</mi><mo>⃗</mo></mover><mo>×</mo><mover accent="true"><mi>F</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{\tau}= \vec{r}\times\vec{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.714em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.20772em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.79733em;vertical-align:-0.08333em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.9663299999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span>. Thus, dipoles will align with external fields.</p>
+<h3 id="field-summary"><a class="markdownIt-Anchor" href="#field-summary"></a> Field Summary</h3>
+<p>Forces are proprtional to:</p>
+<ul>
+<li>Dipole <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \prop at position 1: \̲p̲r̲o̲p̲ ̲R^{-3}'>\prop R^{-3}</span></li>
+<li>Point charge <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \prop at position 1: \̲p̲r̲o̲p̲ ̲R^{-2}'>\prop R^{-2}</span></li>
+<li>Infinite line <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \prop at position 1: \̲p̲r̲o̲p̲ ̲R^{-1}'>\prop R^{-1}</span></li>
+<li>Infinite plane <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \prop at position 1: \̲p̲r̲o̲p̲ ̲R^0'>\prop R^0</span></li>
+</ul>
+<p>Geiger counters have lines of charge in them and count positive ion collisions with the exterior.</p>
+<h3 id="ring"><a class="markdownIt-Anchor" href="#ring"></a> Ring</h3>
+<p>Let <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> be conveniently along the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span>-axis, along which the center of the ring also lies.</p>
+<p>As always, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mover accent="true"><mi>E</mi><mo>⃗</mo></mover><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi>k</mi><mtext> </mtext><mi>d</mi><mi>q</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mstyle><mover accent="true"><mi>r</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">d\vec{E}=\dfrac{k\ dq}{r^2}\hat{r}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9663299999999999em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.0574399999999997em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714399999999998em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace"> </span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;">^</span></span></span></span></span></span></span></span></span> and <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \dq at position 78: …{z}{r}=\dfrac{k\̲d̲q̲ ̲z}{r^3}'>dE_z = \dfrac{k\ dq}{r^2}\cos{\theta}=\dfrac{k\ dq}{r^2}\dfrac{z}{r}=\dfrac{k\dq z}{r^3}</span>.</p>
+<p>The integral is trivial, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mi>z</mi></msub><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi>k</mi><mi>z</mi></mrow><msup><mi>r</mi><mn>3</mn></msup></mfrac></mstyle><mi>Q</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">E_z = \dfrac{kz}{r^3}Q.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathdefault">Q</span><span class="mord">.</span></span></span></span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/" class="post-title-link" itemprop="url">ENGL1501 Lecture 3: Underground Railroad</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-17 13:24:37" itemprop="dateModified" datetime="2020-02-17T13:24:37-06:00">2020-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ENGL1501/" itemprop="url" rel="index">
+                    <span itemprop="name">ENGL1501</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Scrapbook, Tues</li>
+<li>Contact community organization, Wed</li>
+<li>Visit river for observation journal</li>
+</ul>
+<h2 id="underground-railroad"><a class="markdownIt-Anchor" href="#underground-railroad"></a> Underground Railroad</h2>
+<p>How is the protagonist constructed against the environment?</p>
+<h3 id="expectations"><a class="markdownIt-Anchor" href="#expectations"></a> Expectations</h3>
+<ul>
+<li>Clearly historical fiction, but includes imaginative elements (literal railroad, skyscraper, etc.) and also more character driven than traditionally linear.</li>
+<li>Point of view is third person, but narrator provides insight into (solely) Cora’s thoughts. Any steps away from her perspective are still clearly related, such as family history but only the parts Cora herself knows. Not being first person lends legitimacy.</li>
+<li>Obstacles are physical, psychological, and legal</li>
+<li>As a “hero” Cora does not have time to think as most do, result of circumstances.</li>
+<li>Cora has an identity beyond her victimhood.</li>
+</ul>
+<h3 id="railroad"><a class="markdownIt-Anchor" href="#railroad"></a> Railroad</h3>
+<ul>
+<li>(lost will to take notes already)</li>
+<li>Sociologists from the time claimed that wanting to runaway was an internal condition to maintain narrative</li>
+<li>American portrayal of strength is gendered: males are associated with dominant strength versus feminine enduring strength.</li>
+<li>Big woke: looking outside underground → dark and opaque. They don’t have rights and thus different experience.</li>
+</ul>
+<h3 id="narrative-of-life-of-frederick-douglass"><a class="markdownIt-Anchor" href="#narrative-of-life-of-frederick-douglass"></a> Narrative of Life of Frederick Douglass</h3>
+<ul>
+<li>First person, more of a confessional.</li>
+<li>Draws parallels to puritans.</li>
+<li>History vs historical fiction, legitimacy was external</li>
+<li>Brings up idea of birthday as humanizing, instead grounded in legacy instead of by chronology</li>
+</ul>
+<h3 id="plot"><a class="markdownIt-Anchor" href="#plot"></a> Plot</h3>
+<ul>
+<li>Starts with fun spiralling for context</li>
+<li>Moves on to linearity, chapters titled with location</li>
+<li>Dehumanizing language, focus on chattel slavery</li>
+<li>Completion is fake, “arrival” is just being less on edge which is problematic</li>
+<li>Actions are defensive</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/PHYS1302/2020-01-27-PHYS1302-L4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -366,119 +834,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>Solution will usually be a locus of equidistant points, also known as a circle.</p>
 <p>Moral of the story: scary problems can be solved, or at least intuitively understood, using elementary concepts.</p>
 <p>(Pretty much all of these are competition math problems, which is a good sign)</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/" class="post-title-link" itemprop="url">ENGL1501 Lecture 3: Underground Railroad</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:24:37" itemprop="dateModified" datetime="2020-02-17T13:24:37-06:00">2020-02-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ENGL1501/" itemprop="url" rel="index">
-                    <span itemprop="name">ENGL1501</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Scrapbook, Tues</li>
-<li>Contact community organization, Wed</li>
-<li>Visit river for observation journal</li>
-</ul>
-<h2 id="underground-railroad"><a class="markdownIt-Anchor" href="#underground-railroad"></a> Underground Railroad</h2>
-<p>How is the protagonist constructed against the environment?</p>
-<h3 id="expectations"><a class="markdownIt-Anchor" href="#expectations"></a> Expectations</h3>
-<ul>
-<li>Clearly historical fiction, but includes imaginative elements (literal railroad, skyscraper, etc.) and also more character driven than traditionally linear.</li>
-<li>Point of view is third person, but narrator provides insight into (solely) Cora’s thoughts. Any steps away from her perspective are still clearly related, such as family history but only the parts Cora herself knows. Not being first person lends legitimacy.</li>
-<li>Obstacles are physical, psychological, and legal</li>
-<li>As a “hero” Cora does not have time to think as most do, result of circumstances.</li>
-<li>Cora has an identity beyond her victimhood.</li>
-</ul>
-<h3 id="railroad"><a class="markdownIt-Anchor" href="#railroad"></a> Railroad</h3>
-<ul>
-<li>(lost will to take notes already)</li>
-<li>Sociologists from the time claimed that wanting to runaway was an internal condition to maintain narrative</li>
-<li>American portrayal of strength is gendered: males are associated with dominant strength versus feminine enduring strength.</li>
-<li>Big woke: looking outside underground → dark and opaque. They don’t have rights and thus different experience.</li>
-</ul>
-<h3 id="narrative-of-life-of-frederick-douglass"><a class="markdownIt-Anchor" href="#narrative-of-life-of-frederick-douglass"></a> Narrative of Life of Frederick Douglass</h3>
-<ul>
-<li>First person, more of a confessional.</li>
-<li>Draws parallels to puritans.</li>
-<li>History vs historical fiction, legitimacy was external</li>
-<li>Brings up idea of birthday as humanizing, instead grounded in legacy instead of by chronology</li>
-</ul>
-<h3 id="plot"><a class="markdownIt-Anchor" href="#plot"></a> Plot</h3>
-<ul>
-<li>Starts with fun spiralling for context</li>
-<li>Moves on to linearity, chapters titled with location</li>
-<li>Dehumanizing language, focus on chattel slavery</li>
-<li>Completion is fake, “arrival” is just being less on edge which is problematic</li>
-<li>Actions are defensive</li>
-</ul>
 
       
     </div>
@@ -988,363 +1343,11 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/23/2019S2/CSCI2021/2020-01-23-CSCI2021-L2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/23/2019S2/CSCI2021/2020-01-23-CSCI2021-L2/" class="post-title-link" itemprop="url">CSCI2021 Lecture 2: More Logistics!</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-23 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-23T00:00:00-06:00">2020-01-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:23:56" itemprop="dateModified" datetime="2020-02-17T13:23:56-06:00">2020-02-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCI2021/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCI2021</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
-<ul>
-<li>A 4 credit class costs 2049.20 USD at the in-state rate</li>
-</ul>
-<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Homework remains done</li>
-</ul>
-<h3 id="functions"><a class="markdownIt-Anchor" href="#functions"></a> Functions</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">void swap(int a, int b) &#123;</span><br><span class="line">    int tmp &#x3D; a; </span><br><span class="line">    a &#x3D; b;</span><br><span class="line">    b &#x3D; tmp; </span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><em>What is tragically wrong?</em></p>
-<p>Notice that we are passing <em>values</em> into the function, rather than describing their place in memory. This can be fixed with pointers, which <em>point</em> to the location in memory.</p>
-<p>Functions are called by allocating more memory, the caller (where the function is called) pushes a <em>stack frame</em> onto the functio call stack. That frame has all of the space needed for the local variables from the function. Values are then copied into the frame from the caller, so that the callee can execute with them.</p>
-<p>A stack is a type of data strucure that works as follows: Items can be put onto the top of the stack and removed from the top of the stack, there are no other actions. Every time an item is removed from the function stack execution priority is returned to the next item that is then on top.</p>
-<p><strong>Q: Is memory freed when the variables go out of scope?</strong> Yes.</p>
-<p>C does <em>not</em> have automatic garbage collection, though functions automatically free (return) their memory. Manual management happens with <code>malloc</code> and <code>free</code> (CS50x all over again), which interact with memory in the heap.</p>
-<p>C is very low level, can interact with hardware but at the cost of safety. (Alternatively, Rust is just superior.)</p>
-<h3 id="von-neumann"><a class="markdownIt-Anchor" href="#von-neumann"></a> Von Neumann</h3>
-<p>Processing operations, as a turing machine. Control with instructions, each of which have memory adresses, automatically progressing if not explicitly instructed to do other things. Has long term memory, all points in which have indices.</p>
-<h3 id="pointers"><a class="markdownIt-Anchor" href="#pointers"></a> Pointers</h3>
-<p><code>&amp;x</code> can be used to reference the memory adress of variable <code>x</code><br />
-<code>int *a</code> is a pointer to an integer, as in it stores the location of a memory adress in an integer could be stored<br />
-<code>*a</code> get or set the memory that <code>a</code> points to (also known as dereferencing)</p>
-<p>Thus, the function could be written properly as</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">void swap_ptr(int *a, int *b) &#123;</span><br><span class="line">    int tmp &#x3D; *a;</span><br><span class="line">    *a &#x3D; *b;</span><br><span class="line">    *b &#x3D; tmp;</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>Q: What happened to #2032?</strong> Pointers take up 8 bytes.</p>
-<p><strong>Q: Are pointer types checked?</strong> No. You can “flip the bird at” (quote Kauffman) at the compiler and do whatever you want with types. That said, it’s for safety.</p>
-<h3 id="asterisk"><a class="markdownIt-Anchor" href="#asterisk"></a> Asterisk</h3>
-<p>It has 3 uses:</p>
-<ol>
-<li>Multiplication, <code>a = b*c</code></li>
-<li>Declaring a pointer, <code>int *x</code></li>
-<li>Dereferencing, <code>int p = *x</code></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/22/2019S2/ENGL1501/2020-01-22-ENGL1501-L2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/22/2019S2/ENGL1501/2020-01-22-ENGL1501-L2/" class="post-title-link" itemprop="url">ENGL1501 Lecture 2: The Invisible Man</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-22 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-22T00:00:00-06:00">2020-01-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:23:54" itemprop="dateModified" datetime="2020-02-17T13:23:54-06:00">2020-02-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ENGL1501/" itemprop="url" rel="index">
-                    <span itemprop="name">ENGL1501</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Connect with community organization, Monday</li>
-<li>Scrapbook, Tues</li>
-</ul>
-<h3 id="analysis"><a class="markdownIt-Anchor" href="#analysis"></a> Analysis</h3>
-<p>Diction<br />
-Syntax<br />
-Figurative language<br />
-Point of view</p>
-<h3 id="facing-it"><a class="markdownIt-Anchor" href="#facing-it"></a> Facing It</h3>
-<p>By Yusef Komunyakaa</p>
-<p><em>My black face fades,</em><br />
-<em>hiding inside the black granite.</em><br />
-<em>I said I wouldn’t</em><br />
-<em>dammit: No tears.</em><br />
-<em>I’m stone. I’m flesh.</em><br />
-<em>My clouded reflection eyes me</em><br />
-<em>like a bird of prey, the profile of night</em><br />
-<em>slanted against morning. I turn</em><br />
-<em>this way—the stone lets me go.</em><br />
-<em>I turn that way—I’m inside</em><br />
-<em>the Vietnam Veterans Memorial</em><br />
-<em>again, depending on the light</em><br />
-<em>to make a difference.</em><br />
-<em>I go down the 58,022 names,</em><br />
-<em>half-expecting to find</em><br />
-<em>my own in letters like smoke.</em><br />
-<em>I touch the name Andrew Johnson;</em><br />
-<em>I see the booby trap’s white flash.</em><br />
-<em>Names shimmer on a woman’s blouse</em><br />
-<em>but when she walks away</em><br />
-<em>the names stay on the wall.</em><br />
-<em>Brushstrokes flash, a red bird’s</em><br />
-<em>wings cutting across my stare.</em><br />
-<em>The sky. A plane in the sky.</em><br />
-<em>A white vet’s image floats</em><br />
-<em>closer to me, then his pale eyes</em><br />
-<em>look through mine. I’m a window.</em><br />
-<em>He’s lost his right arm</em><br />
-<em>inside the stone. In the black mirror</em><br />
-<em>a woman’s trying to erase names:</em><br />
-<em>No, she’s brushing a boy’s hair.</em></p>
-<h3 id="prologue-to-invisible-man"><a class="markdownIt-Anchor" href="#prologue-to-invisible-man"></a> Prologue to Invisible Man</h3>
-<p>By Ralph Ellison, 1952</p>
-<p><code>I can hear you say, &quot;What a horrible, irresponsible bastard!&quot; And you're right. I leap to agree with you. I am one of the most irresponsible beings that ever lived. Irresponsibility is part of my invisibility; any way you face it, it is a denial. But to whom can I be responsible, and why should I be, when you refuse to see me? And wait until I reveal how truly irresponsible I am. Responsibility rests upon recognition, and recognition is a form of agreement. Take the man whom I almost killed: Who was responsible for that near murder -- I? I don't think so, and I refuse it. I won't buy it. You can't give it to me. He bumped me, he insulted me. Shouldn't he, for his own personal safety, have recognized my hysteria, my &quot;danger potential&quot;? He, let us say, was lost in a dream world. But didn't he control that dream world -- which, alas, is only too real! -- and didn't he rule me out of it? And if he had yelled for a policeman, wouldn't I have been taken for the offending one? Yes, yes, yes! Let me agree with you, I was the irresponsible one; for I should have used my knife to protect the higher interests of society. Some day that kind of foolishness will cause us tragic trouble. All dreamers and sleepwalkers must pay the price, and even the invisible victim is responsible for the fate of all. But I shirked that responsibility; I became too snarled in the incompatible notions that buzzed within my brain. I was a coward . . .But what did I do to be so blue? Bear with me.</code></p>
-<p>Agreement → recognition → responsibility. Claims to be powerless but also rejects the responsbility.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/21/2019S2/PHYS1302/2020-01-21-PHYS1302-L2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/21/2019S2/PHYS1302/2020-01-21-PHYS1302-L2/" class="post-title-link" itemprop="url">PHYS1302 Lecture 2: Coulomb's Law</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-21 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-21T00:00:00-06:00">2020-01-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:23:52" itemprop="dateModified" datetime="2020-02-17T13:23:52-06:00">2020-02-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1302/" itemprop="url" rel="index">
-                    <span itemprop="name">PHYS1302</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
-<ul>
-<li>Homework still exists.</li>
-</ul>
-<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Homework 😦</li>
-</ul>
-<h3 id="superposition"><a class="markdownIt-Anchor" href="#superposition"></a> Superposition</h3>
-<p>Electric field stuff is all basic vector calculus. Thus, standard vector magic applies such as addition: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mtext>total</mtext></msub><mo>=</mo><msub><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mn>1</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mi>n</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\vec{F}_{\text{total}} = \vec{F}_1 + \dots + \vec{F}_n.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1163299999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">total</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.1163299999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.1163299999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></p>
-<p>Sum of vectors does <em>not</em> dictate velocity, because composition is altered every time position changes.</p>
-<p>Induced diople is weaker in materials without conducting electrons.</p>
-<p>Feynman lectures might be fun.</p>
-<h3 id="electric-fields"><a class="markdownIt-Anchor" href="#electric-fields"></a> Electric fields</h3>
-<p>From + to -. (I figured that out on the diagnostic exam)</p>
-<p>An electric field, indepdennt of the test charge, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span>, depends only on position: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>E</mi><mo>⃗</mo></mover><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mi>q</mi></mfrac></mstyle><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\vec{E} = \dfrac{\vec{F}}{q}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9663299999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.52377em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.64333em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord">.</span></span></span></span></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1410,7 +1413,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">158</span>
+          <span class="site-state-item-count">161</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

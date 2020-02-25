@@ -173,6 +173,293 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/26/2019S1/2019-11-26-PHYS1301-L32/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/26/2019S1/2019-11-26-PHYS1301-L32/" class="post-title-link" itemprop="url">PHYS1301 Lecture 32: Gravitational Force over Extended Objects</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-26T00:00:00-06:00">2019-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
+                    <span itemprop="name">PHYS1301</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Homework Chapter 10, 11, 12 <em>and</em> 13</li>
+<li>Lab</li>
+</ul>
+<h3 id="announcement"><a class="markdownIt-Anchor" href="#announcement"></a> Announcement</h3>
+<ul>
+<li><em>Still</em> no lecture Wednesday</li>
+</ul>
+<h3 id="extended-objects"><a class="markdownIt-Anchor" href="#extended-objects"></a> Extended objects</h3>
+<ul>
+<li>For spherical shells: treat as a point mass for external masses, but inside force is zero</li>
+<li>Oh look, summation still works.</li>
+<li>Force exerted by a ring: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mrow><mi>n</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi>G</mi><msub><mi>m</mi><mi>r</mi></msub><mi>m</mi></mrow><mrow><mo stretchy="false">(</mo><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mo stretchy="false">)</mo><mrow><mn>3</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mfrac></mstyle><mover accent="true"><mi>x</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\vec{F}_{net}=\dfrac{Gm_rm}{((x^2+a^2)^{3/2})}\hat{x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1163299999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.31433em;vertical-align:-0.954em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.2960000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.814em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">/</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">G</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.954em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.22222em;">^</span></span></span></span></span></span></span></span></span></li>
+<li>For the outside of a spherical shell, divide into infinitesimally thin rings.
+<ul>
+<li>(did the calculus on paper, because it was a mess)</li>
+</ul>
+</li>
+<li>Pay attention when taught Gauss’ Law or integrals are a mess.</li>
+<li>Now, we take multiple shells to make an onion
+<ul>
+<li>Oh look, still a point mass</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/26/2019S1/2019-11-26-CSCL1101-L21/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/26/2019S1/2019-11-26-CSCL1101-L21/" class="post-title-link" itemprop="url">CSCL1101 Lecture 21: Never Let Me Go</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-26T00:00:00-06:00">2019-11-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
+                    <span itemprop="name">CSCL1101</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<h2 id="never-let-me-go"><a class="markdownIt-Anchor" href="#never-let-me-go"></a> Never Let Me Go</h2>
+<h3 id="relationships"><a class="markdownIt-Anchor" href="#relationships"></a> Relationships</h3>
+<ul>
+<li>Kathy and Tommy get together</li>
+<li>Some melancholy because they didn’t get together earlier and Tommy has approximately 16 seconds to live. Thus, they go to Madame but she’s like “yeah, deferrals are fake” though she seems moderately sad.</li>
+</ul>
+<h3 id="art"><a class="markdownIt-Anchor" href="#art"></a> Art</h3>
+<ul>
+<li><s><em>The Elephant in the Brain</em> covered this.</s></li>
+<li>Characters think that art is a window into the soul, romaticism at its finest</li>
+</ul>
+<p>Mrs. Emily’s rhetoric results in the samae outcome for the children, but allows guardians to rationalize their own actions. Same endpoints, but allows th organ economy to continue functioning without disruption (i.e. external revolution).</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/25/2019S1/2019-11-25-APEC1101-L20/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/25/2019S1/2019-11-25-APEC1101-L20/" class="post-title-link" itemprop="url">APEC1101 Lecture 20: Input Space</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-25 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-25T00:00:00-06:00">2019-11-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index">
+                    <span itemprop="name">APEC1101</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>ACE</li>
+</ul>
+<h3 id="announcement"><a class="markdownIt-Anchor" href="#announcement"></a> Announcement</h3>
+<ul>
+<li>Final on December 14th (same as physics)</li>
+</ul>
+<h3 id="derived-demand"><a class="markdownIt-Anchor" href="#derived-demand"></a> Derived Demand</h3>
+<ul>
+<li><strong>Def’n:</strong> When a resource is desirable for its ability to create output rather than “instrinsic” value</li>
+<li>MRP and MRC exist, production and cost respectively as a function of input
+<ul>
+<li>MRC line is potentially greater than wages if higher wages are needed to attract additional labor</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/25/2019S1/2019-11-25-PHYS1301-L31/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -756,107 +1043,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/19/2019S1/2019-11-19-CSCL1101-L19/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/19/2019S1/2019-11-19-CSCL1101-L19/" class="post-title-link" itemprop="url">CSCL1101 Lecture 19: Never Let Me Go</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-11-19 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-19T00:00:00-06:00">2019-11-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCL1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>11.21: Essay</li>
-</ul>
-<h2 id="never-let-me-go"><a class="markdownIt-Anchor" href="#never-let-me-go"></a> Never Let Me Go</h2>
-<h3 id="developments"><a class="markdownIt-Anchor" href="#developments"></a> Developments</h3>
-<ul>
-<li>Oh look, they are clones.</li>
-<li>Cloned from low-quality human beings</li>
-<li>Still no real explanation of the system, just Kathy rambling</li>
-</ul>
-<p>Can be read in terms of race, sexuality, etc. Any issue that is centered around the idea of the other because the group is excluded.</p>
-<h3 id="resistance"><a class="markdownIt-Anchor" href="#resistance"></a> Resistance</h3>
-<ul>
-<li>Security: Pretty much the umbrella point, they are provided with everything they need, including validation, and the outside world is a big unknown</li>
-<li>Isolation: Halisham and such are so removed from the “real” world that they would not know how to exist in it.</li>
-<li>Internalization: Social values result in not questioning <s>and McCarthyism</s></li>
-<li>Inferiority: View themselves as less than human because of source material</li>
-</ul>
-<p>Ishiguro himself said that he’s always impressed by how everyne is habituated in some way, normalized injustice is a fact of everyday life.</p>
-<h3 id="deferral"><a class="markdownIt-Anchor" href="#deferral"></a> Deferral</h3>
-<ul>
-<li>Only available to a sub-group (Hailsham)</li>
-<li>Note how it differs in further reading</li>
-<li>With same end result is deferral more ethical?</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/19/2019S1/2019-11-19-PHYS1301-L29/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -955,7 +1141,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/18/2019S1/2019-11-18-PHYS1301-L28/">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/19/2019S1/2019-11-19-CSCL1101-L19/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -969,7 +1155,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/18/2019S1/2019-11-18-PHYS1301-L28/" class="post-title-link" itemprop="url">PHYS1301 Lecture 28: Rolling Objects and Static Equilibrium</a>
+            <a href="/2019/11/19/2019S1/2019-11-19-CSCL1101-L19/" class="post-title-link" itemprop="url">CSCL1101 Lecture 19: Never Let Me Go</a>
         </h1>
 
         <div class="post-meta">
@@ -979,7 +1165,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-11-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-18T00:00:00-06:00">2019-11-18</time>
+              <time title="Created: 2019-11-19 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-19T00:00:00-06:00">2019-11-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -994,8 +1180,8 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
-                    <span itemprop="name">PHYS1301</span>
+                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
+                    <span itemprop="name">CSCL1101</span>
                   </a>
                 </span>
             </span>
@@ -1013,255 +1199,29 @@
       
           <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
 <ul>
-<li>Lab 6, Problem 1</li>
+<li>11.21: Essay</li>
 </ul>
-<h3 id="announcement"><a class="markdownIt-Anchor" href="#announcement"></a> Announcement</h3>
+<h2 id="never-let-me-go"><a class="markdownIt-Anchor" href="#never-let-me-go"></a> Never Let Me Go</h2>
+<h3 id="developments"><a class="markdownIt-Anchor" href="#developments"></a> Developments</h3>
 <ul>
-<li>Exam distribution was fine</li>
+<li>Oh look, they are clones.</li>
+<li>Cloned from low-quality human beings</li>
+<li>Still no real explanation of the system, just Kathy rambling</li>
 </ul>
-<h3 id="recap"><a class="markdownIt-Anchor" href="#recap"></a> Recap</h3>
+<p>Can be read in terms of race, sexuality, etc. Any issue that is centered around the idea of the other because the group is excluded.</p>
+<h3 id="resistance"><a class="markdownIt-Anchor" href="#resistance"></a> Resistance</h3>
 <ul>
-<li>Torque on pulley is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>τ</mi><mo>=</mo><mi>T</mi><mi>R</mi><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">\tau = TR,</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mpunct">,</span></span></span></span> witih angular velocity <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>=</mo><mi>τ</mi><mi mathvariant="normal">/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\alpha = \tau / I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mord">/</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span>.</li>
-<li>Massive pulley has torque equal to difference of tensions: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>τ</mi><mo>=</mo><msub><mi>T</mi><mn>1</mn></msub><mi>R</mi><mo>−</mo><msub><mi>T</mi><mn>2</mn></msub><mi>R</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\tau = T_1R-T_2R.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mord">.</span></span></span></span></li>
-<li>Rotational kinematics is correlated to linear kinematics wrt to radius.</li>
+<li>Security: Pretty much the umbrella point, they are provided with everything they need, including validation, and the outside world is a big unknown</li>
+<li>Isolation: Halisham and such are so removed from the “real” world that they would not know how to exist in it.</li>
+<li>Internalization: Social values result in not questioning <s>and McCarthyism</s></li>
+<li>Inferiority: View themselves as less than human because of source material</li>
 </ul>
-<h3 id="rolling-objects"><a class="markdownIt-Anchor" href="#rolling-objects"></a> Rolling Objects</h3>
+<p>Ishiguro himself said that he’s always impressed by how everyne is habituated in some way, normalized injustice is a fact of everyday life.</p>
+<h3 id="deferral"><a class="markdownIt-Anchor" href="#deferral"></a> Deferral</h3>
 <ul>
-<li>Pretty much put together given tools and remember friction.</li>
-</ul>
-<h3 id="static-equilibrium"><a class="markdownIt-Anchor" href="#static-equilibrium"></a> Static Equilibrium</h3>
-<ul>
-<li><strong>Def’n:</strong> When a rigid body stays at rest. Both torque and force must be zero.</li>
-<li>Lever can be an example</li>
-<li>Center of mass must have support</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/18/2019S1/2019-11-18-APEC1101-L18/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/18/2019S1/2019-11-18-APEC1101-L18/" class="post-title-link" itemprop="url">APEC1101 Lecture 18: Oligopoly</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-11-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-18T00:00:00-06:00">2019-11-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index">
-                    <span itemprop="name">APEC1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>ACE</li>
-</ul>
-<h3 id="announcement"><a class="markdownIt-Anchor" href="#announcement"></a> Announcement</h3>
-<ul>
-<li>Court Sessions are Friday</li>
-</ul>
-<h3 id="monopolistic-competition"><a class="markdownIt-Anchor" href="#monopolistic-competition"></a> Monopolistic Competition</h3>
-<ul>
-<li>Monopoly in the short term, competitive in the long term</li>
-<li>Demand is more elastic wrt to monopoly</li>
-<li>Not productively or allocatively efficient</li>
-</ul>
-<h3 id="oligopoly"><a class="markdownIt-Anchor" href="#oligopoly"></a> Oligopoly</h3>
-<ul>
-<li>Few firms</li>
-<li>Can be differentiated or identical product</li>
-<li>Some market power, but mutual interdependence</li>
-<li>Difficult to enter</li>
-<li>A lot of non-price competition, but must be strategic</li>
-<li>Maximzing profit is complicated</li>
-<li>Both allocatively and productively inefficient</li>
-</ul>
-<h3 id="kinked-demand"><a class="markdownIt-Anchor" href="#kinked-demand"></a> Kinked-Demand</h3>
-<ul>
-<li>Firm dynamics are complicated due to interdependence</li>
-<li>Discontinuous derivative → confused MR curve</li>
-<li>Elastic for increase, inelastic for decrease
-<ul>
-<li>Company that moves suffers.</li>
-</ul>
-</li>
-<li>Broken MR means no reason to change price</li>
-</ul>
-<h3 id="non-cooperative-game-thoery"><a class="markdownIt-Anchor" href="#non-cooperative-game-thoery"></a> Non-cooperative Game Thoery</h3>
-<p>(“outside the scope of this class”)</p>
-<h3 id="collusion-tacit-or-overt"><a class="markdownIt-Anchor" href="#collusion-tacit-or-overt"></a> Collusion (tacit or overt)</h3>
-<ul>
-<li>College sports are an example, players unpaid</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/15/2019S1/2019-11-15-APEC1101-D9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/15/2019S1/2019-11-15-APEC1101-D9/" class="post-title-link" itemprop="url">APEC1101 Discussion 9: Monopolistic Competition</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-11-15 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-15T00:00:00-06:00">2019-11-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index">
-                    <span itemprop="name">APEC1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Weekly</li>
-</ul>
-<h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
-<ul>
-<li>Buy acetominophen instead of tylenol</li>
-</ul>
-<h3 id="scenario"><a class="markdownIt-Anchor" href="#scenario"></a> Scenario</h3>
-<ul>
-<li>Lots of firms
-<ul>
-<li>Small market share</li>
-<li>No collussion</li>
-</ul>
-</li>
-<li>Differentiated Products
-<ul>
-<li>Product attributes</li>
-<li>Service attributes</li>
-<li>Location</li>
-<li>Advertising</li>
-</ul>
-</li>
-<li>Free entry and exit</li>
-<li>Like monopoly, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>R</mi><mi mathvariant="normal">≠</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">MR\neq D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span></li>
-</ul>
-<h3 id="short-term"><a class="markdownIt-Anchor" href="#short-term"></a> Short Term</h3>
-<p>Functions as a monopoly with a unique product.</p>
-<h3 id="long-term"><a class="markdownIt-Anchor" href="#long-term"></a> Long Term</h3>
-<p>Profit is zero, other firms enter the space if it is profitable.</p>
-<h3 id="flaws"><a class="markdownIt-Anchor" href="#flaws"></a> Flaws</h3>
-<ul>
-<li>Close substitutes are usually not made</li>
-<li>Advertising is used to assert uniqueness</li>
-<li>Most consumers don’t bother to acquire competition</li>
+<li>Only available to a sub-group (Hailsham)</li>
+<li>Note how it differs in further reading</li>
+<li>With same end result is deferral more ethical?</li>
 </ul>
 
       
@@ -1282,7 +1242,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1348,7 +1308,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">158</span>
+          <span class="site-state-item-count">161</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
