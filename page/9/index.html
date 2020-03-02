@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -35,8 +35,8 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome : true,
+    isPost : false
   };
 </script>
 
@@ -88,6 +88,14 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
   <div class="site-meta">
 
     <div>
@@ -99,11 +107,9 @@
     </div>
   </div>
 
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -173,7 +179,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/06/2019S1/2019-11-06-CSCL1101-L16/">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/11/2019S1/2019-11-11-PHYS1301-L25/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,7 +193,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/11/06/2019S1/2019-11-06-CSCL1101-L16/" class="post-title-link" itemprop="url">CSCL1101 Lecture 16: Persepolis</a>
+            <a href="/2019/11/11/2019S1/2019-11-11-PHYS1301-L25/" class="post-title-link" itemprop="url">PHYS1301 Lecture 25: Cross Products</a>
         </h1>
 
         <div class="post-meta">
@@ -197,7 +203,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-06T00:00:00-06:00">2019-11-06</time>
+              <time title="Created: 2019-11-11 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-11T00:00:00-06:00">2019-11-11</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -212,9 +218,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCL1101</span>
-                  </a>
+                  <a href="/categories/PHYS1301/" itemprop="url" rel="index"><span itemprop="name">PHYS1301</span></a>
                 </span>
             </span>
 
@@ -231,69 +235,170 @@
       
           <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
 <ul>
-<li>11.12: One body paragraph
+<li>Homework hypothetically</li>
+</ul>
+<h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
 <ul>
-<li>Will do some peer-review</li>
-<li>Thus, must print</li>
+<li>These notes were taken the day after the lecture, so they may be unusually succint</li>
+</ul>
+<h3 id="angular-momentum-vector-edition"><a class="markdownIt-Anchor" href="#angular-momentum-vector-edition"></a> Angular Momentum, Vector-Edition</h3>
+<p>We have <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>L</mi><mo>⃗</mo></mover><mo>=</mo><mover accent="true"><mi>r</mi><mo>⃗</mo></mover><mo>×</mo><mover accent="true"><mi>p</mi><mo>⃗</mo></mover><mo>=</mo><mi>m</mi><mover accent="true"><mi>r</mi><mo>⃗</mo></mover><mo>×</mo><mover accent="true"><mi>p</mi><mo>⃗</mo></mover><mo>=</mo><mi>I</mi><mover accent="true"><mi>ω</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{L} = \vec{r}\times\vec{p}=m\vec{r}\times\vec{p}= I\vec{\omega}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9663299999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">L</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.20772em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.79733em;vertical-align:-0.08333em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.9084399999999999em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">p</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.79733em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">m</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.9084399999999999em;vertical-align:-0.19444em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">p</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.714em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.2355em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span> with magnitude <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∣</mi><mover accent="true"><mi>L</mi><mo>⃗</mo></mover><mi mathvariant="normal">∣</mi><mo>=</mo><mi>m</mi><mi>r</mi><mi>ω</mi><mo>=</mo><mi>m</mi><mi>v</mi><mi>r</mi><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><annotation encoding="application/x-tex">\vert \vec{L}\vert =  mr\omega = mvr\sin{\theta}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.21633em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">L</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.20772em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault" style="margin-right:0.03588em;">ω</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span></span>.</p>
+<h3 id="torque"><a class="markdownIt-Anchor" href="#torque"></a> Torque</h3>
+<p>Exists, is analogous to force. We have <span class='katex-error' title='ParseError: KaTeX parse error: Expected &#039;}&#039;, got &#039;EOF&#039; at end of input: …dt} = m \alpha.'>\tau = \dfrac{d\vec{L}{dt} = m \alpha.</span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/08/2019S1/2019-11-08-APEC1101-D8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/08/2019S1/2019-11-08-APEC1101-D8/" class="post-title-link" itemprop="url">APEC1101 Discussion 8: Monopoly</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-08 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-08T00:00:00-06:00">2019-11-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Weekly</li>
+</ul>
+<h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<ul>
+<li>Exam next week</li>
+<li>Liu totally gives away midterm topics</li>
+</ul>
+<h3 id="context"><a class="markdownIt-Anchor" href="#context"></a> Context</h3>
+<ul>
+<li>Monopolies don’t exist in most places
+<ul>
+<li>Oh wait, ISPs</li>
 </ul>
 </li>
-<li>11.21: Essay</li>
-<li>Read <em>Never Let Me Go</em> first five chapters.</li>
-</ul>
-<h2 id="paper"><a class="markdownIt-Anchor" href="#paper"></a> Paper</h2>
-<h3 id="tips"><a class="markdownIt-Anchor" href="#tips"></a> Tip<s>s</s>?</h3>
+<li>Sherman Antitrust Act from 1890 is doing a pretty good job</li>
+<li>Monopolies exist for a few reasons:
 <ul>
-<li>Change thesis after first draft</li>
-</ul>
-<h3 id="point-of-view"><a class="markdownIt-Anchor" href="#point-of-view"></a> Point of View</h3>
-<ul>
-<li>First-person:
-<ul>
-<li>Things that narrator did, said, heard…</li>
-<li>What they observedd</li>
-<li>Secondhand witness</li>
-<li>Inferentials</li>
-<li>Conjectures from observation</li>
-</ul>
-</li>
-<li>Queries:
-<ul>
-<li>How reliable?</li>
-<li>How is narrator prejudiced?</li>
-<li>Why telling story?</li>
-<li>How involved is the narrator?</li>
-</ul>
-</li>
-<li>Third-person:
-<ul>
-<li>Dramatic or objective</li>
-<li>Omniscient: Narrator is all-knowing, can relate all info</li>
-<li>Limited: Narrator still focuses on major character</li>
+<li>Lobbying.</li>
+<li>(Also intellectual property to encourage research)</li>
+<li>(Natural monopoly, does not make sense to have multiple)</li>
 </ul>
 </li>
 </ul>
-<h2 id="persepolis"><a class="markdownIt-Anchor" href="#persepolis"></a> Persepolis</h2>
-<h3 id="trauma"><a class="markdownIt-Anchor" href="#trauma"></a> Trauma</h3>
+<h3 id="basics"><a class="markdownIt-Anchor" href="#basics"></a> Basics</h3>
 <ul>
-<li>Serious content in stylized form</li>
-<li>Witnessed by child</li>
-</ul>
-<h3 id="unity"><a class="markdownIt-Anchor" href="#unity"></a> Unity</h3>
+<li>Still have <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>=</mo><mi>A</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">P=AR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span> but not <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>R</mi><mo>=</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">MR=D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span></span></span></span> as in perfect competition</li>
+<li>Monopolist takes intersection, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>C</mi><mo>=</mo><mi>M</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">MC=MR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span>, price is then relative to demand curve
 <ul>
-<li>How do individuals identify with the nation?
-<ul>
-<li>Education provides control</li>
+<li>Highest quantity such that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>R</mi><mo>&gt;</mo><mi>M</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">MR&gt;MC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></li>
 </ul>
 </li>
-<li>How is national unity forged? How fractured?
-<ul>
-<li>Secular vs religious groups</li>
-<li>Seperation from the war, neighbors dying while she going to a punk-rock party</li>
-<li>Encouraged to rat out neighbors</li>
-<li>Loyalist vs revolutionary</li>
-<li>Urban and rural, tension over resources for refugees</li>
+<li>Secondary markets <em>exist</em></li>
 </ul>
-</li>
+<h3 id="efficiencies"><a class="markdownIt-Anchor" href="#efficiencies"></a> Efficiencies</h3>
+<ul>
+<li>Productive means P=ATC, firms producing at the least possible cost</li>
+<li>Allocative means D=MR=P=AR, specifically D=MC, the rest are given assumptions. No surplus or shortage</li>
 </ul>
 
       
@@ -353,9 +458,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MATH4990/" itemprop="url" rel="index">
-                    <span itemprop="name">MATH4990</span>
-                  </a>
+                  <a href="/categories/MATH4990/" itemprop="url" rel="index"><span itemprop="name">MATH4990</span></a>
                 </span>
             </span>
 
@@ -510,6 +613,145 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/06/2019S1/2019-11-06-CSCL1101-L16/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/06/2019S1/2019-11-06-CSCL1101-L16/" class="post-title-link" itemprop="url">CSCL1101 Lecture 16: Persepolis</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-06T00:00:00-06:00">2019-11-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCL1101/" itemprop="url" rel="index"><span itemprop="name">CSCL1101</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>11.12: One body paragraph
+<ul>
+<li>Will do some peer-review</li>
+<li>Thus, must print</li>
+</ul>
+</li>
+<li>11.21: Essay</li>
+<li>Read <em>Never Let Me Go</em> first five chapters.</li>
+</ul>
+<h2 id="paper"><a class="markdownIt-Anchor" href="#paper"></a> Paper</h2>
+<h3 id="tips"><a class="markdownIt-Anchor" href="#tips"></a> Tip<s>s</s>?</h3>
+<ul>
+<li>Change thesis after first draft</li>
+</ul>
+<h3 id="point-of-view"><a class="markdownIt-Anchor" href="#point-of-view"></a> Point of View</h3>
+<ul>
+<li>First-person:
+<ul>
+<li>Things that narrator did, said, heard…</li>
+<li>What they observedd</li>
+<li>Secondhand witness</li>
+<li>Inferentials</li>
+<li>Conjectures from observation</li>
+</ul>
+</li>
+<li>Queries:
+<ul>
+<li>How reliable?</li>
+<li>How is narrator prejudiced?</li>
+<li>Why telling story?</li>
+<li>How involved is the narrator?</li>
+</ul>
+</li>
+<li>Third-person:
+<ul>
+<li>Dramatic or objective</li>
+<li>Omniscient: Narrator is all-knowing, can relate all info</li>
+<li>Limited: Narrator still focuses on major character</li>
+</ul>
+</li>
+</ul>
+<h2 id="persepolis"><a class="markdownIt-Anchor" href="#persepolis"></a> Persepolis</h2>
+<h3 id="trauma"><a class="markdownIt-Anchor" href="#trauma"></a> Trauma</h3>
+<ul>
+<li>Serious content in stylized form</li>
+<li>Witnessed by child</li>
+</ul>
+<h3 id="unity"><a class="markdownIt-Anchor" href="#unity"></a> Unity</h3>
+<ul>
+<li>How do individuals identify with the nation?
+<ul>
+<li>Education provides control</li>
+</ul>
+</li>
+<li>How is national unity forged? How fractured?
+<ul>
+<li>Secular vs religious groups</li>
+<li>Seperation from the war, neighbors dying while she going to a punk-rock party</li>
+<li>Encouraged to rat out neighbors</li>
+<li>Loyalist vs revolutionary</li>
+<li>Urban and rural, tension over resources for refugees</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/06/2019S1/2019-11-06-PHYS1301-L24/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -549,9 +791,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
-                    <span itemprop="name">PHYS1301</span>
-                  </a>
+                  <a href="/categories/PHYS1301/" itemprop="url" rel="index"><span itemprop="name">PHYS1301</span></a>
                 </span>
             </span>
 
@@ -643,9 +883,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCL1101</span>
-                  </a>
+                  <a href="/categories/CSCL1101/" itemprop="url" rel="index"><span itemprop="name">CSCL1101</span></a>
                 </span>
             </span>
 
@@ -814,9 +1052,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
-                    <span itemprop="name">PHYS1301</span>
-                  </a>
+                  <a href="/categories/PHYS1301/" itemprop="url" rel="index"><span itemprop="name">PHYS1301</span></a>
                 </span>
             </span>
 
@@ -905,130 +1141,6 @@ c-8,0,-12,-0.7,-12,-2z M1001 80H400000v40H1014z'/></svg></span></span></span><sp
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/04/2019S1/2019-11-04-APEC1101-L16/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/04/2019S1/2019-11-04-APEC1101-L16/" class="post-title-link" itemprop="url">APEC1101 Lecture 16: Monopoly</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-11-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-04T00:00:00-06:00">2019-11-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index">
-                    <span itemprop="name">APEC1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>ACE</li>
-<li>Study for exam?</li>
-</ul>
-<h3 id="review"><a class="markdownIt-Anchor" href="#review"></a> Review</h3>
-<ul>
-<li>Allocative efficiency because benefit to society (price) is equal to cost of production (MC)</li>
-<li>Zero profit, since <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>=</mo><mi>A</mi><mi>T</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">P=ATC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></li>
-<li>Productive efficiency because production occurs at the minimum possible cost</li>
-</ul>
-<h3 id="monopoly"><a class="markdownIt-Anchor" href="#monopoly"></a> Monopoly</h3>
-<ul>
-<li>Entry is blocked
-<ul>
-<li>Thus profit exists</li>
-</ul>
-</li>
-<li>Marginal revenue is lower than price
-<ul>
-<li>Selling additional units requires a lower price</li>
-<li>Because monopoly owns industry vs price-taking</li>
-</ul>
-</li>
-<li>Single seller with no close substitute
-<ul>
-<li>Usually because entry was blocked, patents and such</li>
-</ul>
-</li>
-<li>Can be a “fringe” when not the <em>entire</em> market is controlled but enough to practically influence it</li>
-<li><strong>Natural Monopoly:</strong> When economy of scale creates a monopoly through high initial cost.</li>
-</ul>
-<h3 id="profit-maximization"><a class="markdownIt-Anchor" href="#profit-maximization"></a> Profit Maximization</h3>
-<ul>
-<li>Monopoly chooses unit elastic point on demand curve.
-<ul>
-<li>(this took about 20 minutes to explain, but was thankfully self-evident)</li>
-</ul>
-</li>
-<li>When MC is actually nonzero find intersection of MB and MC</li>
-</ul>
-<h3 id="dead-weight-loss"><a class="markdownIt-Anchor" href="#dead-weight-loss"></a> Dead-Weight Loss</h3>
-<ul>
-<li>Socially we all suffer because products are priced higher at lower quantity
-<ul>
-<li>Not productively <em>or</em> allocatively efficientl</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/04/2019S1/2019-11-06-APEC1101-L17/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1068,9 +1180,7 @@ c-8,0,-12,-0.7,-12,-2z M1001 80H400000v40H1014z'/></svg></span></span></span><sp
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index">
-                    <span itemprop="name">APEC1101</span>
-                  </a>
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
                 </span>
             </span>
 
@@ -1187,6 +1297,128 @@ c-8,0,-12,-0.7,-12,-2z M1001 80H400000v40H1014z'/></svg></span></span></span><sp
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/04/2019S1/2019-11-04-APEC1101-L16/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/04/2019S1/2019-11-04-APEC1101-L16/" class="post-title-link" itemprop="url">APEC1101 Lecture 16: Monopoly</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-04T00:00:00-06:00">2019-11-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>ACE</li>
+<li>Study for exam?</li>
+</ul>
+<h3 id="review"><a class="markdownIt-Anchor" href="#review"></a> Review</h3>
+<ul>
+<li>Allocative efficiency because benefit to society (price) is equal to cost of production (MC)</li>
+<li>Zero profit, since <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>=</mo><mi>A</mi><mi>T</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">P=ATC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></li>
+<li>Productive efficiency because production occurs at the minimum possible cost</li>
+</ul>
+<h3 id="monopoly"><a class="markdownIt-Anchor" href="#monopoly"></a> Monopoly</h3>
+<ul>
+<li>Entry is blocked
+<ul>
+<li>Thus profit exists</li>
+</ul>
+</li>
+<li>Marginal revenue is lower than price
+<ul>
+<li>Selling additional units requires a lower price</li>
+<li>Because monopoly owns industry vs price-taking</li>
+</ul>
+</li>
+<li>Single seller with no close substitute
+<ul>
+<li>Usually because entry was blocked, patents and such</li>
+</ul>
+</li>
+<li>Can be a “fringe” when not the <em>entire</em> market is controlled but enough to practically influence it</li>
+<li><strong>Natural Monopoly:</strong> When economy of scale creates a monopoly through high initial cost.</li>
+</ul>
+<h3 id="profit-maximization"><a class="markdownIt-Anchor" href="#profit-maximization"></a> Profit Maximization</h3>
+<ul>
+<li>Monopoly chooses unit elastic point on demand curve.
+<ul>
+<li>(this took about 20 minutes to explain, but was thankfully self-evident)</li>
+</ul>
+</li>
+<li>When MC is actually nonzero find intersection of MB and MC</li>
+</ul>
+<h3 id="dead-weight-loss"><a class="markdownIt-Anchor" href="#dead-weight-loss"></a> Dead-Weight Loss</h3>
+<ul>
+<li>Socially we all suffer because products are priced higher at lower quantity
+<ul>
+<li>Not productively <em>or</em> allocatively efficientl</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/04/2019S1/2019-11-04-PHYS1301-L22/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1226,9 +1458,7 @@ c-8,0,-12,-0.7,-12,-2z M1001 80H400000v40H1014z'/></svg></span></span></span><sp
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1301/" itemprop="url" rel="index">
-                    <span itemprop="name">PHYS1301</span>
-                  </a>
+                  <a href="/categories/PHYS1301/" itemprop="url" rel="index"><span itemprop="name">PHYS1301</span></a>
                 </span>
             </span>
 
@@ -1316,294 +1546,6 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/11/01/2019S1/2019-11-01-APEC1101-D7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/01/2019S1/2019-11-01-APEC1101-D7/" class="post-title-link" itemprop="url">APEC1101 Discussion 7: Perfect Competition</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-01T00:00:00-05:00">2019-11-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index">
-                    <span itemprop="name">APEC1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Weekly</li>
-</ul>
-<h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
-<ul>
-<li>Exam next week
-<ul>
-<li>7 curve handshake → 21 things to be able to derive</li>
-</ul>
-</li>
-</ul>
-<h3 id="perfect-competition"><a class="markdownIt-Anchor" href="#perfect-competition"></a> Perfect Competition</h3>
-<ul>
-<li>Traits:
-<ul>
-<li>Products are standardized
-<ul>
-<li>fake because no one wants to be standardized</li>
-</ul>
-</li>
-<li>Lots of firms
-<ul>
-<li>fake because firms want to be unique</li>
-</ul>
-</li>
-<li>Firms are price-takers
-<ul>
-<li>fake because real world price-setting is weird</li>
-</ul>
-</li>
-<li>Free entry and exit
-<ul>
-<li>fake because of manufacturing</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Firms avoid perfect competition, because perfect competition → literally zero profit.</li>
-</ul>
-<h3 id="costs"><a class="markdownIt-Anchor" href="#costs"></a> Costs</h3>
-<ul>
-<li>Literally breaking down the terms, nothing to it.</li>
-</ul>
-<h3 id="short-term-analysis"><a class="markdownIt-Anchor" href="#short-term-analysis"></a> Short-term Analysis</h3>
-<ul>
-<li>Steps:
-<ol>
-<li>Find <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Q</mi><mo>∗</mo></mrow><annotation encoding="application/x-tex">Q*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">Q</span><span class="mord">∗</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>C</mi><mo>=</mo><mi>M</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">MC=MR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span></span>.
-<ul>
-<li>Marginal revenue will be the price because this class is not able to comprehend calculus.</li>
-</ul>
-</li>
-<li>Find ATC and AVC for <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Q</mi><mo>∗</mo></mrow><annotation encoding="application/x-tex">Q*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">Q</span><span class="mord">∗</span></span></span></span>.</li>
-<li>Calculate profits, comparison to FC, etc…
-<ul>
-<li>Decision tree:</li>
-<li>Is <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>R</mi><mo>&gt;</mo><mi>A</mi><mi>V</mi><mi>C</mi><mo stretchy="false">?</mo></mrow><annotation encoding="application/x-tex">MR &gt; AVC?</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">?</span></span></span></span>
-<ul>
-<li>Yes → IS <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>R</mi><mo>&gt;</mo><mi>A</mi><mi>T</mi><mi>C</mi><mo stretchy="false">?</mo></mrow><annotation encoding="application/x-tex">MR &gt; ATC?</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">?</span></span></span></span>
-<ul>
-<li>Yes → <em>grofit</em></li>
-<li>No → produce to offset part (or all) of FC</li>
-</ul>
-</li>
-<li>No → shut down. Take FC in loss.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/31/2019S1/2019-10-31-CSCL1101-L14/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/31/2019S1/2019-10-31-CSCL1101-L14/" class="post-title-link" itemprop="url">CSCL1101 Lecture 14: Through the Arc of the Rainforest</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-10-31 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-31T00:00:00-05:00">2019-10-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index">
-                    <span itemprop="name">CSCL1101</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>“Read” <em>Persepolis</em>
-<ul>
-<li>Probably should re-read it.</li>
-</ul>
-</li>
-<li>11.5: Paragraph proposal</li>
-<li>11.12: One body paragraph</li>
-<li>11.21: Essay</li>
-</ul>
-<h2 id="paper"><a class="markdownIt-Anchor" href="#paper"></a> Paper</h2>
-<h3 id="what-is-a-body-paragraph"><a class="markdownIt-Anchor" href="#what-is-a-body-paragraph"></a> What is a body paragraph?</h3>
-<ul>
-<li>Should have an initial claim, analysis, and purpose</li>
-<li>If you want an A arrange your paragraphs (and don’t assume the debate definition of structure 😕)</li>
-<li>Refer back to thesis.</li>
-<li>(Actually important) Inductive &gt; deductive.</li>
-<li>Considering that the paper is 5 pages be overanalytical.</li>
-</ul>
-<h2 id="components"><a class="markdownIt-Anchor" href="#components"></a> Components</h2>
-<h3 id="diction"><a class="markdownIt-Anchor" href="#diction"></a> Diction</h3>
-<ul>
-<li>Resource about diction on canvas.</li>
-<li>How are parts of speech used?</li>
-</ul>
-<h3 id="atttudetone"><a class="markdownIt-Anchor" href="#atttudetone"></a> Atttude/Tone</h3>
-<ul>
-<li>How does character describe?</li>
-<li>Feelings on subject matter?</li>
-</ul>
-<h3 id="themes"><a class="markdownIt-Anchor" href="#themes"></a> THemes</h3>
-<ul>
-<li>What is text trying to get across?</li>
-<li>How does it take a stance?
-<ul>
-<li>Notably not an argument, a theme can’t be “wrong”</li>
-</ul>
-</li>
-</ul>
-<h2 id="through-the-arc-of-the-rainforest"><a class="markdownIt-Anchor" href="#through-the-arc-of-the-rainforest"></a> Through the Arc of the Rainforest</h2>
-<h3 id="globalization"><a class="markdownIt-Anchor" href="#globalization"></a> Globalization</h3>
-<ul>
-<li>Detaches local cultures
-<ul>
-<li>Feather usage spreads out of the Matacao</li>
-</ul>
-</li>
-<li>Displacement for advantage occurs
-<ul>
-<li>Mane Pena watches himself lecture in other languages</li>
-</ul>
-</li>
-</ul>
-<h3 id="simulacrum"><a class="markdownIt-Anchor" href="#simulacrum"></a> Simulacrum</h3>
-<ul>
-<li>(hmm, I wonder where this could be from)</li>
-<li>(he is one sentence from saying Baudrillard)</li>
-<li><strong>Def’n:</strong> Imitation without any original.</li>
-<li>Update: Did not say Baudrillard</li>
-</ul>
-<h3 id="ecological-satire"><a class="markdownIt-Anchor" href="#ecological-satire"></a> Ecological Satire</h3>
-<ul>
-<li>(told us to write on paper for turn in)</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1674,7 +1616,7 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">161</span>
+          <span class="site-state-item-count">163</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1711,18 +1653,13 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2019 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Sasha Hydrie</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
-  </div>
 
         
 

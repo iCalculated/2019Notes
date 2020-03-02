@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Muse","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -35,8 +35,8 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: false
+    isHome : false,
+    isPost : false
   };
 </script>
 
@@ -88,6 +88,14 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
   <div class="site-meta">
 
     <div>
@@ -99,11 +107,9 @@
     </div>
   </div>
 
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -175,7 +181,7 @@
     <div class="posts-collapse">
       <div class="collection-title">
         
-        <span class="collection-header">Great! 161 posts in total. Keep on posting.</span>
+        <span class="collection-header">Great! 163 posts in total. Keep on posting.</span>
       </div>
 
       
@@ -197,46 +203,6 @@
       <h2 class="post-title">
           <a class="post-title-link" href="/2019/09/12/2019S1/2019-09-12-CSCL1101-L4/" itemprop="url">
             <span itemprop="name">CSCL1101 Lecture 4: The Myth of Whiteness</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-09-11T00:00:00-05:00"
-              content="2019-09-11">
-          09-11
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/09/11/2019S1/2019-09-11-PHYS1301-L5/" itemprop="url">
-            <span itemprop="name">PHYS1301 Lecture 5: Impulse</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-09-11T00:00:00-05:00"
-              content="2019-09-11">
-          09-11
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/09/11/2019S1/2019-09-11-CSCL1101-P2/" itemprop="url">
-            <span itemprop="name">CSCL1101 Prompt 2: Antigone</span>
           </a>
       </h2>
 
@@ -277,6 +243,46 @@
       <h2 class="post-title">
           <a class="post-title-link" href="/2019/09/11/2019S1/2019-09-11-MATH4990-L2/" itemprop="url">
             <span itemprop="name">MATH4990 Lecture 2: Varieties and Ideals</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-09-11T00:00:00-05:00"
+              content="2019-09-11">
+          09-11
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2019/09/11/2019S1/2019-09-11-CSCL1101-P2/" itemprop="url">
+            <span itemprop="name">CSCL1101 Prompt 2: Antigone</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-09-11T00:00:00-05:00"
+              content="2019-09-11">
+          09-11
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2019/09/11/2019S1/2019-09-11-PHYS1301-L5/" itemprop="url">
+            <span itemprop="name">PHYS1301 Lecture 5: Impulse</span>
           </a>
       </h2>
 
@@ -335,6 +341,26 @@
       </div>
 
       <h2 class="post-title">
+          <a class="post-title-link" href="/2019/09/09/2019S1/2019-09-09-PHYS1301-L3/" itemprop="url">
+            <span itemprop="name">PHYS1301 Lecture 3: Acceleration</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-09-09T00:00:00-05:00"
+              content="2019-09-09">
+          09-09
+        </time>
+      </div>
+
+      <h2 class="post-title">
           <a class="post-title-link" href="/2019/09/09/2019S1/2019-09-05-CSCL1101-C2/" itemprop="url">
             <span itemprop="name">CSCL1101 Lecture 2: The Ones Who Walk Away from Omelas</span>
           </a>
@@ -357,26 +383,6 @@
       <h2 class="post-title">
           <a class="post-title-link" href="/2019/09/09/2019S1/2019-09-09-APEC1101-L2/" itemprop="url">
             <span itemprop="name">APEC1101 Lecture 2: Optimization</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-09-09T00:00:00-05:00"
-              content="2019-09-09">
-          09-09
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/09/09/2019S1/2019-09-09-PHYS1301-L3/" itemprop="url">
-            <span itemprop="name">PHYS1301 Lecture 3: Acceleration</span>
           </a>
       </h2>
 
@@ -458,7 +464,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">161</span>
+          <span class="site-state-item-count">163</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -495,18 +501,13 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2019 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Sasha Hydrie</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
-  </div>
 
         
 
