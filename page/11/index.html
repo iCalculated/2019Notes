@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"sashahydrie.me","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search","hits_empty":"I didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -179,6 +179,252 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/28/2019S1/2019-10-30-APEC1101-L15/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/28/2019S1/2019-10-30-APEC1101-L15/" class="post-title-link" itemprop="url">APEC1101 Lecture 15: Minimaxing</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-10-28 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-28T00:00:00-05:00">2019-10-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>ACE</li>
+<li>Study for exam? (for real this time.)</li>
+<li>Court Briefs</li>
+</ul>
+<h3 id="review"><a class="markdownIt-Anchor" href="#review"></a> Review</h3>
+<ul>
+<li>Temporarily shutdown if <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>R</mi><mo>&lt;</mo><mi>A</mi><mi>V</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">AR &lt; AVC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>
+<ul>
+<li>Shutdown loses fixed cost only
+<ul>
+<li>Don’t ever lose more than fixed cost or you’ve messed up</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If AR between AVC and ATC then produce at a loss</li>
+<li>Otherwise, <em>grofit!</em></li>
+<li>“Whenever you are indifferent do it.” Life advice from Liu?</li>
+</ul>
+<h3 id="shutdown-and-breakeven"><a class="markdownIt-Anchor" href="#shutdown-and-breakeven"></a> Shutdown and Breakeven</h3>
+<ul>
+<li>Short run supply curve is MC above AVC.</li>
+</ul>
+<h3 id="long-run-decisions"><a class="markdownIt-Anchor" href="#long-run-decisions"></a> Long-run Decisions</h3>
+<ul>
+<li>Profits enourage more firms to get involved until profit is destroyed.
+<ul>
+<li>Obviously shifts the market supply curve</li>
+<li>This class is <em>far</em> too short to spend time on review but we do it anyway</li>
+<li>Converse holds.</li>
+</ul>
+</li>
+</ul>
+<p>At this point Liu decides that the class is too quiet and decides to tell us about how he sings Ne Me Quitte Pas to his wife.</p>
+<h3 id="equilibrium-and-triple-equality"><a class="markdownIt-Anchor" href="#equilibrium-and-triple-equality"></a> Equilibrium and Triple Equality</h3>
+<ul>
+<li>P = MC means that the market has allocative efficiency</li>
+<li>P = min(ATC) means that the market has productive efficiency</li>
+<li>Long run: Market reaches the point MC = ATC.
+<ul>
+<li>No incentive to enter or exit</li>
+<li>Consumers pay only the minimum production cost.</li>
+</ul>
+</li>
+</ul>
+<h3 id="long-run-continued"><a class="markdownIt-Anchor" href="#long-run-continued"></a> Long-run Continued</h3>
+<ul>
+<li><strong>Constant Cost Industry:</strong> The costs of an industry scale with size.
+<ul>
+<li>When there is growth in the industry price increases before returning to original point</li>
+<li>End result is greater quantity with scale</li>
+</ul>
+</li>
+<li><strong>Increasing Cost Industry:</strong> !previous
+<ul>
+<li>Additional demand → increase in price and quantity, but not as extreme</li>
+<li>Important to note that cost curves shift</li>
+</ul>
+</li>
+<li><strong>Industry Supply Curve:</strong> How efficientyl an industry responds to dynamism.</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/28/2019S1/2019-10-28-APEC1101-L14/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/28/2019S1/2019-10-28-APEC1101-L14/" class="post-title-link" itemprop="url">APEC1101 Lecture 14: Minimaxing</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-10-28 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-28T00:00:00-05:00">2019-10-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>ACE</li>
+</ul>
+<h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<ul>
+<li>“When you lose money in business become a professor”</li>
+<li>Court Brief</li>
+</ul>
+<h3 id="perfect-competition"><a class="markdownIt-Anchor" href="#perfect-competition"></a> Perfect Competition</h3>
+<ul>
+<li>Exists and has obvious traits.</li>
+</ul>
+<h3 id="mr-darp"><a class="markdownIt-Anchor" href="#mr-darp"></a> MR. DARP</h3>
+<ul>
+<li>Small firms will avoid a high-quantity market</li>
+<li>Price-taking firm phases perfectly elastic demand curve</li>
+</ul>
+<h3 id="shutdown-and-exxits"><a class="markdownIt-Anchor" href="#shutdown-and-exxits"></a> Shutdown and exxits</h3>
+<ul>
+<li>Fixed costs must be incurred, can choose to shut down if revenue is less than marginal cost
+<ul>
+<li>Shutdown if revenue is less than variable cost, average revenueis less than average cost, or on a DARP graph if price is less than average cost.
+<ul>
+<li>(yes, those terms are all synonomous)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>However, repeated loss suggests leaving the industry entirely</li>
+</ul>
+<h3 id="short-run-maximization"><a class="markdownIt-Anchor" href="#short-run-maximization"></a> Short-Run Maximization</h3>
+<ul>
+<li>Simple  calculus, continue while revenue is greater than cost.</li>
+<li>Remember fixed costs</li>
+<li>This class would be so much better with math and at an actually reasonable pace.</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/25/2019S1/2019-10-25-Science/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -237,6 +483,107 @@
 <p>(\dfrac{x}{y})</p>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mi>x</mi><mi>y</mi></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\dfrac{x}{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.9880000000000002em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle displaystyle="true" scriptlevel="0"><mfrac><mi>x</mi><mi>y</mi></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\dfrac{x}{y}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.9880000000000002em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/25/2019S1/2019-10-25-APEC1101-D6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/25/2019S1/2019-10-25-APEC1101-D6/" class="post-title-link" itemprop="url">APEC1101 Discussion 6: Cost</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-10-25 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-25T00:00:00-05:00">2019-10-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Weekly homework</li>
+</ul>
+<h3 id="division"><a class="markdownIt-Anchor" href="#division"></a> Division</h3>
+<ul>
+<li>Average total cost: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>ATC</mtext><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mtext>total cost</mtext><mtext>output quantity</mtext></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\text{ATC}=\dfrac{\text{total cost}}{\text{output quantity}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">ATC</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">output quantity</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">total cost</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>Average fixed cost, approaches zero asymptotically: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>ATC</mtext><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mtext>fixed cost</mtext><mtext>output quantity</mtext></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\text{ATC}=\dfrac{\text{fixed cost}}{\text{output quantity}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">ATC</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">output quantity</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">fixed cost</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>Average variable cost: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>ATC</mtext><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mtext>variable cost</mtext><mtext>output quantity</mtext></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\text{ATC}=\dfrac{\text{variable cost}}{\text{output quantity}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">ATC</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">output quantity</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">variable cost</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>Marginal cost, same thing but deltas: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>MC</mtext><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi mathvariant="normal">Δ</mi><mtext>total cost</mtext></mrow><mrow><mi mathvariant="normal">Δ</mi><mtext>output</mtext></mrow></mfrac></mstyle><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mrow><mi mathvariant="normal">Δ</mi><mtext>variable cost</mtext></mrow><mrow><mi mathvariant="normal">Δ</mi><mtext>output</mtext></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\text{MC}=\dfrac{\Delta\text{total cost}}{\Delta\text{output}}=\dfrac{\Delta\text{variable cost}}{\Delta\text{output}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">MC</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord text"><span class="mord">output</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord text"><span class="mord">total cost</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.25188em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord text"><span class="mord">output</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Δ</span><span class="mord text"><span class="mord">variable cost</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+</ul>
+<h3 id="curves"><a class="markdownIt-Anchor" href="#curves"></a> Curves</h3>
+<ul>
+<li>(I would draw these but I feel unusually lazy)</li>
+<li>AVC is slightly concave</li>
+<li>ATC asymptotically approaches AVC, distance between the curves is AFC</li>
+<li>MC goes through bottom points of both, because intution
+<ul>
+<li>Law of diminishing returns sets in after minimum</li>
+</ul>
+</li>
+</ul>
+<h3 id="long-run"><a class="markdownIt-Anchor" href="#long-run"></a> Long Run</h3>
+<ul>
+<li>Can be constructed from infinitely many short term curves</li>
+<li>More concave because optimal production quality</li>
+<li>At first scale is good, then it becomes bad.</li>
+</ul>
 
       
     </div>
@@ -471,105 +818,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/23/2019S1/2019-10-23-APEC1101-L13/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/23/2019S1/2019-10-23-APEC1101-L13/" class="post-title-link" itemprop="url">APEC1101 Lecture 13: Long Run Scale</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-10-23 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-23T00:00:00-05:00">2019-10-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>ACE</li>
-<li>Report Final</li>
-</ul>
-<h3 id="computing-mc"><a class="markdownIt-Anchor" href="#computing-mc"></a> Computing MC</h3>
-<ul>
-<li><strong>Momentum:</strong> Difficulty of changing trend</li>
-<li>Literally add fixed and variable costs</li>
-</ul>
-<h3 id="return-to-scale"><a class="markdownIt-Anchor" href="#return-to-scale"></a> Return to Scale</h3>
-<ul>
-<li>Cconstant return via replication</li>
-<li>Increasing returns to scale, consolidating</li>
-<li>Decreasing returns to scale, oversized (diseconomy)</li>
-<li>Long run ATC takes mins from short term</li>
-</ul>
-<h3 id="minimum-efficient-scale"><a class="markdownIt-Anchor" href="#minimum-efficient-scale"></a> Minimum Efficient Scale</h3>
-<ul>
-<li><strong>Def’n:</strong> Lowest level of output at which long-run average cost is minimized</li>
-<li>Based on curve industry type can be extracted</li>
-</ul>
-<h3 id="market-structures"><a class="markdownIt-Anchor" href="#market-structures"></a> Market Structures</h3>
-<ul>
-<li>Main types are monopoly, monopolostic competition, oligopoly, and peerfect competition</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/23/2019S1/2019-10-23-MATH4990-L8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -698,7 +946,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/21/2019S1/2019-10-21-PHYS1301-L17/">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/23/2019S1/2019-10-23-APEC1101-L13/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -712,7 +960,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/21/2019S1/2019-10-21-PHYS1301-L17/" class="post-title-link" itemprop="url">PHYS1301 Lecture 17: Vectors</a>
+            <a href="/2019/10/23/2019S1/2019-10-23-APEC1101-L13/" class="post-title-link" itemprop="url">APEC1101 Lecture 13: Long Run Scale</a>
         </h1>
 
         <div class="post-meta">
@@ -722,7 +970,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-10-21 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-21T00:00:00-05:00">2019-10-21</time>
+              <time title="Created: 2019-10-23 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-23T00:00:00-05:00">2019-10-23</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -737,7 +985,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHYS1301/" itemprop="url" rel="index"><span itemprop="name">PHYS1301</span></a>
+                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
                 </span>
             </span>
 
@@ -754,23 +1002,29 @@
       
           <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
 <ul>
-<li>Homework</li>
+<li>ACE</li>
+<li>Report Final</li>
 </ul>
-<h3 id="vectors"><a class="markdownIt-Anchor" href="#vectors"></a> Vectors</h3>
+<h3 id="computing-mc"><a class="markdownIt-Anchor" href="#computing-mc"></a> Computing MC</h3>
 <ul>
-<li>Exist</li>
-<li>Traditionally <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>r</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{r}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.714em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span> is the position</li>
+<li><strong>Momentum:</strong> Difficulty of changing trend</li>
+<li>Literally add fixed and variable costs</li>
 </ul>
-<h3 id="projectile-motion"><a class="markdownIt-Anchor" href="#projectile-motion"></a> Projectile Motion</h3>
+<h3 id="return-to-scale"><a class="markdownIt-Anchor" href="#return-to-scale"></a> Return to Scale</h3>
 <ul>
-<li>When only gravity acts</li>
-<li>Solve time then extrapolate</li>
+<li>Cconstant return via replication</li>
+<li>Increasing returns to scale, consolidating</li>
+<li>Decreasing returns to scale, oversized (diseconomy)</li>
+<li>Long run ATC takes mins from short term</li>
+</ul>
+<h3 id="minimum-efficient-scale"><a class="markdownIt-Anchor" href="#minimum-efficient-scale"></a> Minimum Efficient Scale</h3>
+<ul>
+<li><strong>Def’n:</strong> Lowest level of output at which long-run average cost is minimized</li>
+<li>Based on curve industry type can be extracted</li>
+</ul>
+<h3 id="market-structures"><a class="markdownIt-Anchor" href="#market-structures"></a> Market Structures</h3>
+<ul>
+<li>Main types are monopoly, monopolostic competition, oligopoly, and peerfect competition</li>
 </ul>
 
       
@@ -925,7 +1179,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/18/2019S1/2019-10-18-APEC1101-D5/">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/21/2019S1/2019-10-21-PHYS1301-L17/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -939,7 +1193,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/10/18/2019S1/2019-10-18-APEC1101-D5/" class="post-title-link" itemprop="url">APEC1101 Discussion 5: Externality</a>
+            <a href="/2019/10/21/2019S1/2019-10-21-PHYS1301-L17/" class="post-title-link" itemprop="url">PHYS1301 Lecture 17: Vectors</a>
         </h1>
 
         <div class="post-meta">
@@ -949,190 +1203,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-10-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-18T00:00:00-05:00">2019-10-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/APEC1101/" itemprop="url" rel="index"><span itemprop="name">APEC1101</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Weekly homework</li>
-</ul>
-<h3 id="defs"><a class="markdownIt-Anchor" href="#defs"></a> Defs</h3>
-<ul>
-<li>
-<p><strong>Excludable:</strong> Can stop people from consuming</p>
-</li>
-<li>
-<p><strong>Rival:</strong> Only finite can have good</p>
-</li>
-<li>
-<p>Two axes:</p>
-<ul>
-<li>Private goods are excludable and rival.</li>
-<li>Public goods are non-excludable and non-rival.</li>
-<li>Commons are non-excludable and rival.</li>
-<li>Collective goods are excludable and non-rival.</li>
-</ul>
-</li>
-<li>
-<p><strong>Coase Thm:</strong> Free market solves for externalities.</p>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/15/2019S1/2019-10-15-CSCL1101-L11/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/15/2019S1/2019-10-15-CSCL1101-L11/" class="post-title-link" itemprop="url">CSCL1101 Lecture 11: Baldwin</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-10-15 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-15T00:00:00-05:00">2019-10-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-13 12:42:53" itemprop="dateModified" datetime="2020-02-13T12:42:53-06:00">2020-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCL1101/" itemprop="url" rel="index"><span itemprop="name">CSCL1101</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Essay
-<ul>
-<li>New prompt Tues</li>
-</ul>
-</li>
-</ul>
-<h3 id="notes-of-a-native-son"><a class="markdownIt-Anchor" href="#notes-of-a-native-son"></a> Notes of a Native Son</h3>
-<ul>
-<li>Watching a film</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2019/10/15/2019S1/2019-10-15-PHYS1301-L16/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/15/2019S1/2019-10-15-PHYS1301-L16/" class="post-title-link" itemprop="url">PHYS1301 Lecture 16: Work, but systems</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-10-15 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-15T00:00:00-05:00">2019-10-15</time>
+              <time title="Created: 2019-10-21 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-21T00:00:00-05:00">2019-10-21</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -1164,24 +1235,23 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       
           <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
 <ul>
-<li>Lab report</li>
-<li>Exam study?</li>
+<li>Homework</li>
 </ul>
-<h3 id="springs"><a class="markdownIt-Anchor" href="#springs"></a> Springs</h3>
+<h3 id="vectors"><a class="markdownIt-Anchor" href="#vectors"></a> Vectors</h3>
 <ul>
-<li>Still calculus</li>
+<li>Exist</li>
+<li>Traditionally <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>r</mi><mo>⃗</mo></mover></mrow><annotation encoding="application/x-tex">\vec{r}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.714em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span></span></span></span> is the position</li>
 </ul>
-<h3 id="systems"><a class="markdownIt-Anchor" href="#systems"></a> Systems</h3>
+<h3 id="projectile-motion"><a class="markdownIt-Anchor" href="#projectile-motion"></a> Projectile Motion</h3>
 <ul>
-<li>Total work is some of individual work</li>
-<li>Work is total change in energy, not necessarily kinetic.</li>
-<li>Thermal enery does not respect boundaries</li>
-</ul>
-<h3 id="center-of-mass"><a class="markdownIt-Anchor" href="#center-of-mass"></a> Center of Mass</h3>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mtext>net</mtext></msub><mo>=</mo><msub><mi>m</mi><mi>s</mi></msub><msub><mi>a</mi><mtext>cm</mtext></msub></mrow><annotation encoding="application/x-tex">F_{\text{net}}=m_sa_{\text{cm}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">net</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">cm</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
-<li>Acceleration is a vector, mass is a scalar</li>
-<li>Properties hold.</li>
+<li>When only gravity acts</li>
+<li>Solve time then extrapolate</li>
 </ul>
 
       
@@ -1268,7 +1338,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">163</span>
+          <span class="site-state-item-count">166</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1336,7 +1406,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
