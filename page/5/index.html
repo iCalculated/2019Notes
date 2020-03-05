@@ -438,6 +438,245 @@ Currently the price is $1.50 per week, and it is estimated that the paper would 
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/CSCI2021/2020-01-27-CSCI2021-L3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/27/2019S2/CSCI2021/2020-01-27-CSCI2021-L3/" class="post-title-link" itemprop="url">CSCI2021 Lecture 3: </a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-17 13:24:10" itemprop="dateModified" datetime="2020-02-17T13:24:10-06:00">2020-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSCI2021/" itemprop="url" rel="index"><span itemprop="name">CSCI2021</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Homework remains done
+<ul>
+<li>HW2 available tomorrow</li>
+<li>Project 1 up soon</li>
+</ul>
+</li>
+<li>Read Bryant Ch1</li>
+<li>Know <em>all of</em> C</li>
+</ul>
+<h3 id="scanf"><a class="markdownIt-Anchor" href="#scanf"></a> scanf</h3>
+<p>Exciting reading function that makes non-local changes. Example usage:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int num &#x3D; -1;</span><br><span class="line">scanf(&quot;%d&quot;, &amp;num);</span><br></pre></td></tr></table></figure>
+<p>Note that it takes in the <code>&amp;num</code>, a memory address. Easy to get an error from forgetting that. Also, the <code>%d</code> flag indicates that scanf is looking for a decimal number.</p>
+<p>(He keeps saying that OCaml does not let you reference memory addresses, but it totally does, admittedly it’s supposed to be done implicitly)</p>
+<p>Comparatively, higher level languages pass back values in the form of a “return” so non-local references are not needed.</p>
+<h3 id="safety"><a class="markdownIt-Anchor" href="#safety"></a> Safety</h3>
+<p><em>1972 - Dennis Ritchie invents a powerful gun that shoots both forward and backward simultaneously. Not satisfied with the number of deaths and permanent maimings from that invention he invents C and Unix.</em> - <a href="http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html" target="_blank" rel="noopener">A Brief, Incomplete, and Mostly Wrong History of Programming Languages</a> (this is hilarious)</p>
+<p>C removes all kinds of safety features for speed and <em>grofit</em>. However, it still is “high-level” to an extent, there are things beneath it: THere are Assembly languages, meant to be CPU readable (but only to specific brands). Assembly is human readable, nut only barely. Binary opcodes then represent the digital signal composes of 1’s and 0’s, each code corresponds directly to actions.</p>
+<h3 id="goals-for-csci2021"><a class="markdownIt-Anchor" href="#goals-for-csci2021"></a> Goals for CSCI2021</h3>
+<ul>
+<li>Be a competent C programmer</li>
+<li>Understand how programs work in physical memory</li>
+<li>Comprehend assembly
+<ul>
+<li>“Even if you just know enough to explain why you hate it, that’ll put you ahead of a lot of folks at lesser institutions”</li>
+</ul>
+</li>
+<li>Ability to use a symbolic debugger</li>
+<li>Understanding of how data is encoded in binary</li>
+</ul>
+<h3 id="sizes"><a class="markdownIt-Anchor" href="#sizes"></a> Sizes</h3>
+<p>C has traditional data types, however they are fiendishly inconsistent. <em>Usually</em> integral types are as follows:</p>
+<ul>
+<li>char (1 bytes)</li>
+<li>short (2 bytes)</li>
+<li>int (4 bytes)</li>
+<li>long (8 bytes)</li>
+</ul>
+<p>Floating types:</p>
+<ul>
+<li>float (4 bytes), 6-7 sig figs</li>
+<li>double (8 bytes), 15 sig figs</li>
+</ul>
+<p>Pointer types:</p>
+<ul>
+<li>pointer (4/8), pointers to a 32 or 64bit address, <code>int *</code></li>
+<li>array, pointer to a fixed location, <code>double[]</code></li>
+</ul>
+<p>Oh look, booleans don’t exist. Usually 0 indicates false, anything else is true. Every type in C has some equivalent of 0.</p>
+<p>Oh look, strings don’t exist. Either it can be an array of chars or terrifying. “You make mistakes, you get hurt <em>very</em> badly.”</p>
+<p>Oh look, integer types are not symmetric. “I think it’s an interesting insight into computer scientists that there are more negatives than positives.” That way there are <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> is the number of bits in the type.</p>
+<p>Null pointer does not have allocated memory, it just stores a location. Incredibly useful for confiscating the compilers ability to type check which gives programmers more chances to screw themselves. “Kids, this is why types are useful.”</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sasha Hydrie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2019-2020 Notes">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/" class="post-title-link" itemprop="url">ENGL1501 Lecture 3: Underground Railroad</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-17 13:24:37" itemprop="dateModified" datetime="2020-02-17T13:24:37-06:00">2020-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ENGL1501/" itemprop="url" rel="index"><span itemprop="name">ENGL1501</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
+<ul>
+<li>Scrapbook, Tues</li>
+<li>Contact community organization, Wed</li>
+<li>Visit river for observation journal</li>
+</ul>
+<h2 id="underground-railroad"><a class="markdownIt-Anchor" href="#underground-railroad"></a> Underground Railroad</h2>
+<p>How is the protagonist constructed against the environment?</p>
+<h3 id="expectations"><a class="markdownIt-Anchor" href="#expectations"></a> Expectations</h3>
+<ul>
+<li>Clearly historical fiction, but includes imaginative elements (literal railroad, skyscraper, etc.) and also more character driven than traditionally linear.</li>
+<li>Point of view is third person, but narrator provides insight into (solely) Cora’s thoughts. Any steps away from her perspective are still clearly related, such as family history but only the parts Cora herself knows. Not being first person lends legitimacy.</li>
+<li>Obstacles are physical, psychological, and legal</li>
+<li>As a “hero” Cora does not have time to think as most do, result of circumstances.</li>
+<li>Cora has an identity beyond her victimhood.</li>
+</ul>
+<h3 id="railroad"><a class="markdownIt-Anchor" href="#railroad"></a> Railroad</h3>
+<ul>
+<li>(lost will to take notes already)</li>
+<li>Sociologists from the time claimed that wanting to runaway was an internal condition to maintain narrative</li>
+<li>American portrayal of strength is gendered: males are associated with dominant strength versus feminine enduring strength.</li>
+<li>Big woke: looking outside underground → dark and opaque. They don’t have rights and thus different experience.</li>
+</ul>
+<h3 id="narrative-of-life-of-frederick-douglass"><a class="markdownIt-Anchor" href="#narrative-of-life-of-frederick-douglass"></a> Narrative of Life of Frederick Douglass</h3>
+<ul>
+<li>First person, more of a confessional.</li>
+<li>Draws parallels to puritans.</li>
+<li>History vs historical fiction, legitimacy was external</li>
+<li>Brings up idea of birthday as humanizing, instead grounded in legacy instead of by chronology</li>
+</ul>
+<h3 id="plot"><a class="markdownIt-Anchor" href="#plot"></a> Plot</h3>
+<ul>
+<li>Starts with fun spiralling for context</li>
+<li>Moves on to linearity, chapters titled with location</li>
+<li>Dehumanizing language, focus on chattel slavery</li>
+<li>Completion is fake, “arrival” is just being less on edge which is problematic</li>
+<li>Actions are defensive</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/PHYS1302/2020-01-27-PHYS1302-L4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -646,7 +885,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/">
+    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/23/2019S2/CSCI2021/2020-01-23-CSCI2021-L2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -660,7 +899,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/01/27/2019S2/ENGL1501/2020-01-28-ENGL1501-L3/" class="post-title-link" itemprop="url">ENGL1501 Lecture 3: Underground Railroad</a>
+            <a href="/2020/01/23/2019S2/CSCI2021/2020-01-23-CSCI2021-L2/" class="post-title-link" itemprop="url">CSCI2021 Lecture 2: More Logistics!</a>
         </h1>
 
         <div class="post-meta">
@@ -670,125 +909,14 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
+              <time title="Created: 2020-01-23 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-23T00:00:00-06:00">2020-01-23</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:24:37" itemprop="dateModified" datetime="2020-02-17T13:24:37-06:00">2020-02-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ENGL1501/" itemprop="url" rel="index"><span itemprop="name">ENGL1501</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Scrapbook, Tues</li>
-<li>Contact community organization, Wed</li>
-<li>Visit river for observation journal</li>
-</ul>
-<h2 id="underground-railroad"><a class="markdownIt-Anchor" href="#underground-railroad"></a> Underground Railroad</h2>
-<p>How is the protagonist constructed against the environment?</p>
-<h3 id="expectations"><a class="markdownIt-Anchor" href="#expectations"></a> Expectations</h3>
-<ul>
-<li>Clearly historical fiction, but includes imaginative elements (literal railroad, skyscraper, etc.) and also more character driven than traditionally linear.</li>
-<li>Point of view is third person, but narrator provides insight into (solely) Cora’s thoughts. Any steps away from her perspective are still clearly related, such as family history but only the parts Cora herself knows. Not being first person lends legitimacy.</li>
-<li>Obstacles are physical, psychological, and legal</li>
-<li>As a “hero” Cora does not have time to think as most do, result of circumstances.</li>
-<li>Cora has an identity beyond her victimhood.</li>
-</ul>
-<h3 id="railroad"><a class="markdownIt-Anchor" href="#railroad"></a> Railroad</h3>
-<ul>
-<li>(lost will to take notes already)</li>
-<li>Sociologists from the time claimed that wanting to runaway was an internal condition to maintain narrative</li>
-<li>American portrayal of strength is gendered: males are associated with dominant strength versus feminine enduring strength.</li>
-<li>Big woke: looking outside underground → dark and opaque. They don’t have rights and thus different experience.</li>
-</ul>
-<h3 id="narrative-of-life-of-frederick-douglass"><a class="markdownIt-Anchor" href="#narrative-of-life-of-frederick-douglass"></a> Narrative of Life of Frederick Douglass</h3>
-<ul>
-<li>First person, more of a confessional.</li>
-<li>Draws parallels to puritans.</li>
-<li>History vs historical fiction, legitimacy was external</li>
-<li>Brings up idea of birthday as humanizing, instead grounded in legacy instead of by chronology</li>
-</ul>
-<h3 id="plot"><a class="markdownIt-Anchor" href="#plot"></a> Plot</h3>
-<ul>
-<li>Starts with fun spiralling for context</li>
-<li>Moves on to linearity, chapters titled with location</li>
-<li>Dehumanizing language, focus on chattel slavery</li>
-<li>Completion is fake, “arrival” is just being less on edge which is problematic</li>
-<li>Actions are defensive</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/27/2019S2/CSCI2021/2020-01-27-CSCI2021-L3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/27/2019S2/CSCI2021/2020-01-27-CSCI2021-L3/" class="post-title-link" itemprop="url">CSCI2021 Lecture 3: </a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-27 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-27T00:00:00-06:00">2020-01-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:24:10" itemprop="dateModified" datetime="2020-02-17T13:24:10-06:00">2020-02-17</time>
+                <time title="Modified: 2020-02-17 13:23:56" itemprop="dateModified" datetime="2020-02-17T13:23:56-06:00">2020-02-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -812,60 +940,39 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 
       
           <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
+<ul>
+<li>A 4 credit class costs 2049.20 USD at the in-state rate</li>
+</ul>
 <h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
 <ul>
-<li>Homework remains done
-<ul>
-<li>HW2 available tomorrow</li>
-<li>Project 1 up soon</li>
+<li>Homework remains done</li>
 </ul>
-</li>
-<li>Read Bryant Ch1</li>
-<li>Know <em>all of</em> C</li>
-</ul>
-<h3 id="scanf"><a class="markdownIt-Anchor" href="#scanf"></a> scanf</h3>
-<p>Exciting reading function that makes non-local changes. Example usage:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int num &#x3D; -1;</span><br><span class="line">scanf(&quot;%d&quot;, &amp;num);</span><br></pre></td></tr></table></figure>
-<p>Note that it takes in the <code>&amp;num</code>, a memory address. Easy to get an error from forgetting that. Also, the <code>%d</code> flag indicates that scanf is looking for a decimal number.</p>
-<p>(He keeps saying that OCaml does not let you reference memory addresses, but it totally does, admittedly it’s supposed to be done implicitly)</p>
-<p>Comparatively, higher level languages pass back values in the form of a “return” so non-local references are not needed.</p>
-<h3 id="safety"><a class="markdownIt-Anchor" href="#safety"></a> Safety</h3>
-<p><em>1972 - Dennis Ritchie invents a powerful gun that shoots both forward and backward simultaneously. Not satisfied with the number of deaths and permanent maimings from that invention he invents C and Unix.</em> - <a href="http://james-iry.blogspot.com/2009/05/brief-incomplete-and-mostly-wrong.html" target="_blank" rel="noopener">A Brief, Incomplete, and Mostly Wrong History of Programming Languages</a> (this is hilarious)</p>
-<p>C removes all kinds of safety features for speed and <em>grofit</em>. However, it still is “high-level” to an extent, there are things beneath it: THere are Assembly languages, meant to be CPU readable (but only to specific brands). Assembly is human readable, nut only barely. Binary opcodes then represent the digital signal composes of 1’s and 0’s, each code corresponds directly to actions.</p>
-<h3 id="goals-for-csci2021"><a class="markdownIt-Anchor" href="#goals-for-csci2021"></a> Goals for CSCI2021</h3>
-<ul>
-<li>Be a competent C programmer</li>
-<li>Understand how programs work in physical memory</li>
-<li>Comprehend assembly
-<ul>
-<li>“Even if you just know enough to explain why you hate it, that’ll put you ahead of a lot of folks at lesser institutions”</li>
-</ul>
-</li>
-<li>Ability to use a symbolic debugger</li>
-<li>Understanding of how data is encoded in binary</li>
-</ul>
-<h3 id="sizes"><a class="markdownIt-Anchor" href="#sizes"></a> Sizes</h3>
-<p>C has traditional data types, however they are fiendishly inconsistent. <em>Usually</em> integral types are as follows:</p>
-<ul>
-<li>char (1 bytes)</li>
-<li>short (2 bytes)</li>
-<li>int (4 bytes)</li>
-<li>long (8 bytes)</li>
-</ul>
-<p>Floating types:</p>
-<ul>
-<li>float (4 bytes), 6-7 sig figs</li>
-<li>double (8 bytes), 15 sig figs</li>
-</ul>
-<p>Pointer types:</p>
-<ul>
-<li>pointer (4/8), pointers to a 32 or 64bit address, <code>int *</code></li>
-<li>array, pointer to a fixed location, <code>double[]</code></li>
-</ul>
-<p>Oh look, booleans don’t exist. Usually 0 indicates false, anything else is true. Every type in C has some equivalent of 0.</p>
-<p>Oh look, strings don’t exist. Either it can be an array of chars or terrifying. “You make mistakes, you get hurt <em>very</em> badly.”</p>
-<p>Oh look, integer types are not symmetric. “I think it’s an interesting insight into computer scientists that there are more negatives than positives.” That way there are <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> is the number of bits in the type.</p>
-<p>Null pointer does not have allocated memory, it just stores a location. Incredibly useful for confiscating the compilers ability to type check which gives programmers more chances to screw themselves. “Kids, this is why types are useful.”</p>
+<h3 id="functions"><a class="markdownIt-Anchor" href="#functions"></a> Functions</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">void swap(int a, int b) &#123;</span><br><span class="line">    int tmp &#x3D; a; </span><br><span class="line">    a &#x3D; b;</span><br><span class="line">    b &#x3D; tmp; </span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em>What is tragically wrong?</em></p>
+<p>Notice that we are passing <em>values</em> into the function, rather than describing their place in memory. This can be fixed with pointers, which <em>point</em> to the location in memory.</p>
+<p>Functions are called by allocating more memory, the caller (where the function is called) pushes a <em>stack frame</em> onto the functio call stack. That frame has all of the space needed for the local variables from the function. Values are then copied into the frame from the caller, so that the callee can execute with them.</p>
+<p>A stack is a type of data strucure that works as follows: Items can be put onto the top of the stack and removed from the top of the stack, there are no other actions. Every time an item is removed from the function stack execution priority is returned to the next item that is then on top.</p>
+<p><strong>Q: Is memory freed when the variables go out of scope?</strong> Yes.</p>
+<p>C does <em>not</em> have automatic garbage collection, though functions automatically free (return) their memory. Manual management happens with <code>malloc</code> and <code>free</code> (CS50x all over again), which interact with memory in the heap.</p>
+<p>C is very low level, can interact with hardware but at the cost of safety. (Alternatively, Rust is just superior.)</p>
+<h3 id="von-neumann"><a class="markdownIt-Anchor" href="#von-neumann"></a> Von Neumann</h3>
+<p>Processing operations, as a turing machine. Control with instructions, each of which have memory adresses, automatically progressing if not explicitly instructed to do other things. Has long term memory, all points in which have indices.</p>
+<h3 id="pointers"><a class="markdownIt-Anchor" href="#pointers"></a> Pointers</h3>
+<p><code>&amp;x</code> can be used to reference the memory adress of variable <code>x</code><br />
+<code>int *a</code> is a pointer to an integer, as in it stores the location of a memory adress in an integer could be stored<br />
+<code>*a</code> get or set the memory that <code>a</code> points to (also known as dereferencing)</p>
+<p>Thus, the function could be written properly as</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">void swap_ptr(int *a, int *b) &#123;</span><br><span class="line">    int tmp &#x3D; *a;</span><br><span class="line">    *a &#x3D; *b;</span><br><span class="line">    *b &#x3D; tmp;</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Q: What happened to #2032?</strong> Pointers take up 8 bytes.</p>
+<p><strong>Q: Are pointer types checked?</strong> No. You can “flip the bird at” (quote Kauffman) at the compiler and do whatever you want with types. That said, it’s for safety.</p>
+<h3 id="asterisk"><a class="markdownIt-Anchor" href="#asterisk"></a> Asterisk</h3>
+<p>It has 3 uses:</p>
+<ol>
+<li>Multiplication, <code>a = b*c</code></li>
+<li>Declaring a pointer, <code>int *x</code></li>
+<li>Dereferencing, <code>int p = *x</code></li>
+</ol>
 
       
     </div>
@@ -1112,113 +1219,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>Wrt to field lines forces are tangent, just a slope field.</p>
 <p>Electric field propogate at the speed of light, thus there is no instantenous action at a distance. As a charge moves, at time <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> the resultant field depends on where the charge was at <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mo>−</mo><mi>d</mi><mi mathvariant="normal">/</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">t-d/c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69841em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord">/</span><span class="mord mathdefault">c</span></span></span></span>.</p>
 <p>When working with vector fields be careful with proportions.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://sashahydrie.me/2020/01/23/2019S2/CSCI2021/2020-01-23-CSCI2021-L2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sasha Hydrie">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="2019-2020 Notes">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/23/2019S2/CSCI2021/2020-01-23-CSCI2021-L2/" class="post-title-link" itemprop="url">CSCI2021 Lecture 2: More Logistics!</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-23 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-23T00:00:00-06:00">2020-01-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-17 13:23:56" itemprop="dateModified" datetime="2020-02-17T13:23:56-06:00">2020-02-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSCI2021/" itemprop="url" rel="index"><span itemprop="name">CSCI2021</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="announcements"><a class="markdownIt-Anchor" href="#announcements"></a> Announcements</h3>
-<ul>
-<li>A 4 credit class costs 2049.20 USD at the in-state rate</li>
-</ul>
-<h3 id="todo"><a class="markdownIt-Anchor" href="#todo"></a> TODO</h3>
-<ul>
-<li>Homework remains done</li>
-</ul>
-<h3 id="functions"><a class="markdownIt-Anchor" href="#functions"></a> Functions</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">void swap(int a, int b) &#123;</span><br><span class="line">    int tmp &#x3D; a; </span><br><span class="line">    a &#x3D; b;</span><br><span class="line">    b &#x3D; tmp; </span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><em>What is tragically wrong?</em></p>
-<p>Notice that we are passing <em>values</em> into the function, rather than describing their place in memory. This can be fixed with pointers, which <em>point</em> to the location in memory.</p>
-<p>Functions are called by allocating more memory, the caller (where the function is called) pushes a <em>stack frame</em> onto the functio call stack. That frame has all of the space needed for the local variables from the function. Values are then copied into the frame from the caller, so that the callee can execute with them.</p>
-<p>A stack is a type of data strucure that works as follows: Items can be put onto the top of the stack and removed from the top of the stack, there are no other actions. Every time an item is removed from the function stack execution priority is returned to the next item that is then on top.</p>
-<p><strong>Q: Is memory freed when the variables go out of scope?</strong> Yes.</p>
-<p>C does <em>not</em> have automatic garbage collection, though functions automatically free (return) their memory. Manual management happens with <code>malloc</code> and <code>free</code> (CS50x all over again), which interact with memory in the heap.</p>
-<p>C is very low level, can interact with hardware but at the cost of safety. (Alternatively, Rust is just superior.)</p>
-<h3 id="von-neumann"><a class="markdownIt-Anchor" href="#von-neumann"></a> Von Neumann</h3>
-<p>Processing operations, as a turing machine. Control with instructions, each of which have memory adresses, automatically progressing if not explicitly instructed to do other things. Has long term memory, all points in which have indices.</p>
-<h3 id="pointers"><a class="markdownIt-Anchor" href="#pointers"></a> Pointers</h3>
-<p><code>&amp;x</code> can be used to reference the memory adress of variable <code>x</code><br />
-<code>int *a</code> is a pointer to an integer, as in it stores the location of a memory adress in an integer could be stored<br />
-<code>*a</code> get or set the memory that <code>a</code> points to (also known as dereferencing)</p>
-<p>Thus, the function could be written properly as</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">void swap_ptr(int *a, int *b) &#123;</span><br><span class="line">    int tmp &#x3D; *a;</span><br><span class="line">    *a &#x3D; *b;</span><br><span class="line">    *b &#x3D; tmp;</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>Q: What happened to #2032?</strong> Pointers take up 8 bytes.</p>
-<p><strong>Q: Are pointer types checked?</strong> No. You can “flip the bird at” (quote Kauffman) at the compiler and do whatever you want with types. That said, it’s for safety.</p>
-<h3 id="asterisk"><a class="markdownIt-Anchor" href="#asterisk"></a> Asterisk</h3>
-<p>It has 3 uses:</p>
-<ol>
-<li>Multiplication, <code>a = b*c</code></li>
-<li>Declaring a pointer, <code>int *x</code></li>
-<li>Dereferencing, <code>int p = *x</code></li>
-</ol>
 
       
     </div>
